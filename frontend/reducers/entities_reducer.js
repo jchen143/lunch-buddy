@@ -3,7 +3,7 @@ import userReducer from './users_reducer'
 
 
 const entitiesReducer = combineReducers({
-    users: userReducerg
+    users: userReducer
 }
 )
 
