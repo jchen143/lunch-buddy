@@ -11,8 +11,4 @@ const usersReducer = (state = {}, action) => {
 
 }
 
-<<<<<<< HEAD
-export default usersRe
-=======
 export default usersReducer
->>>>>>> authentication
