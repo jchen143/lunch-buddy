@@ -1,0 +1,26 @@
+nav{
+    display: flex; 
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.header-container{
+    padding: 10px 24px 7px 16px;
+    position: relative;
+    min-height: 57px;
+}
+.logo{
+    width: 145px;
+    height: 50px;
+}
+
+.home-login-container{
+    border: 1px solid #9F9F9F;
+    color: #FE4239;
+    height: 40px;
+    width: 180px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}

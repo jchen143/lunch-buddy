@@ -34,10 +34,14 @@ class HomePage extends React.Component {
         //debugger
         return(
             <>
-                <nav>
-
-                    <Link className="login-homepage" to='/login'>Login</Link>
-                </nav>
+                <div className="header-container">
+                    <nav>
+                        <img className="logo" src={window.logoURL}/>
+                        <div class='home-login-container'>
+                            <Link className="login-homepage" to='/login'>Login</Link>
+                        </div>
+                    </nav>
+                </div>
 
                 <section className="enticing-deals">
 
