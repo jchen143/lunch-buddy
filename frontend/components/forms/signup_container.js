@@ -3,7 +3,7 @@ import sessionForm from './session_form'
 import { signUp } from '../../actions/session_actions'
 
 const mapStateToProps = (state, ownProps) => {
-    //debugger
+    //adebugger
     return {
         errors: state.errors.session,
         tempEmail: state.session.tempEmail,
