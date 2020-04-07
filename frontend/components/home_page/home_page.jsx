@@ -37,20 +37,25 @@ class HomePage extends React.Component {
                 <div className="header-container">
                     <nav>
                         <img className="logo" src={window.logoURL}/>
-                        <div class='home-login-container'>
-                            <Link className="login-homepage" to='/login'>Login</Link>
-                        </div>
+                        
+                        <Link className="home-login-container" to='/login'>Log In</Link>
+                      
                     </nav>
                 </div>
 
                 <section className="enticing-deals">
-
-                    <input type="text" onChange={this.handleChange('email')} value={this.state.email}/>
-                    <Link to='/signup' onClick={this.handleOfferClick}>Start Saving!</Link>
+                    <img src={window.snackURL}/>
+                    
+                    <section className="enticement-container">
+                        <h1>Begin Signing Up by entering your email below or just by clicking the Demo Button!</h1>
+                        <input type="text" onChange={this.handleChange('email')} value={this.state.email}/>
+                        <Link to='/signup' onClick={this.handleOfferClick}>Start Saving Guap!</Link>
+                        <button onClick={this.handleDemoClick}>Demo Log In</button>
+                    </section>
                 </section>
                 
                 
-                <button onClick={this.handleDemoClick}>Demo</button>
+                
             </>
         )
     }

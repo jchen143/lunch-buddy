@@ -23,4 +23,13 @@ nav{
     display: flex; 
     justify-content: center;
     align-items: center;
+
+    letter-spacing: 2.32px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: ArquitectaHeavy;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 40px;
 }
