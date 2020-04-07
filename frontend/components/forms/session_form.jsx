@@ -6,7 +6,21 @@ class SessionForm extends React.Component{
         super(props); 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this); 
-        this.state = {email: '', password: ''};
+
+        let temp_email; 
+        //debugger
+        temp_email = this.props.tempEmail ? this.props.tempEmail : '';
+        //debugger
+        this.state = {email: temp_email, password: ''};
+        //debugger
+        
+    }
+
+    componentDidMount(){
+        let temp_email;
+        //debugger
+        temp_email = this.props.tempEmail ? this.props.tempEmail : '';
+        this.setState({email: temp_email})
     }
 
     handleSubmit(e){
@@ -45,7 +59,7 @@ class SessionForm extends React.Component{
         }
 
         //Link to the other page
-       
+       //debugger
 
         return(
         <>

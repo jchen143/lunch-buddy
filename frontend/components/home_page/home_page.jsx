@@ -11,20 +11,42 @@ const demo_info = {
 class HomePage extends React.Component {
     constructor(props){
         super(props)
-        this.handleClick = this.handleClick.bind(this); 
+        
+       this.state = {email: ''};
+        this.handleDemoClick = this.handleDemoClick.bind(this);
+        this.handleOfferClick = this.handleOfferClick.bind(this);
+        this.handleChange = this.handleChange.bind(this); 
     }
 
-    handleClick(e){
+    handleDemoClick(e){
         this.props.login(demo_info)
     }
 
-    render() {
+    handleOfferClick(e){
+        this.props.receiveTempEmail(this.state.email)
+    }
 
+    handleChange(key){
+        return e => this.setState({[key]: e.currentTarget.value})
+    }
+
+    render() {
+        //debugger
         return(
             <>
-                <Link to='/login'>Login</Link>
-                <Link to='/signup'>Sign Up</Link>
-                <button onClick={this.handleClick}>Demo</button>
+                <nav>
+
+                    <Link className="login-homepage" to='/login'>Login</Link>
+                </nav>
+
+                <section className="enticement">
+
+                    <input type="text" onChange={this.handleChange('email')} value={this.state.email}/>
+                    <Link to='/signup' onClick={this.handleOfferClick}>Start Saving!</Link>
+                </section>
+                
+                
+                <button onClick={this.handleDemoClick}>Demo</button>
             </>
         )
     }

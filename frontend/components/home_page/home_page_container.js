@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import HomePage from './home_page'; 
-import { login } from '../../actions/session_actions'; 
+import { login, receiveTempEmail } from '../../actions/session_actions'; 
+
 
 
 const msp = (state) => {
@@ -9,7 +10,8 @@ const msp = (state) => {
 
 const mdp = (dispatch) =>{
     return{
-        login: (user) => dispatch(login(user))
+        login: (user) => dispatch(login(user)), 
+        receiveTempEmail: (email) => dispatch(receiveTempEmail(email))
     }
 }
 export default connect(msp, mdp)(HomePage)

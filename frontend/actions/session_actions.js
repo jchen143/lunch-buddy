@@ -1,6 +1,7 @@
 export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER"
 export const LOGOUT_CURRENT_USER = "LOGOUT_CURRENT_USER"
 export const RECEIVE_SESSION_ERRORS = "RECEIVE_ERRORS"
+export const RECEIVE_TEMP_EMAIL = "RECEIVE_TEMP_EMAIL"
 
 import * as SessionApiUtil from '../util/session_api_util'
 
@@ -17,6 +18,13 @@ const receiveSessionErrors = (errors) => ({ //errors is an array
     type: RECEIVE_SESSION_ERRORS,
     errors
 })
+
+export const receiveTempEmail = (email) => {
+    return {
+        type: RECEIVE_TEMP_EMAIL,
+        email: email
+    }
+}
 
 export const login = (user) => (dispatch) => {
     //
