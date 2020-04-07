@@ -2,6 +2,7 @@ export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER"
 export const LOGOUT_CURRENT_USER = "LOGOUT_CURRENT_USER"
 export const RECEIVE_SESSION_ERRORS = "RECEIVE_ERRORS"
 export const RECEIVE_TEMP_EMAIL = "RECEIVE_TEMP_EMAIL"
+export const DELETE_SESSION_ERRORS= "DELETE_SESSION_ERRORS"
 
 import * as SessionApiUtil from '../util/session_api_util'
 
@@ -23,6 +24,12 @@ export const receiveTempEmail = (email) => {
     return {
         type: RECEIVE_TEMP_EMAIL,
         email: email
+    }
+}
+
+export const deleteSessionErrors = () => {
+    return{
+        type: DELETE_SESSION_ERRORS
     }
 }
 

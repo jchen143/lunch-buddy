@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Nav from '../nav_bar/nav'
 
 class SessionForm extends React.Component{
     constructor(props){
@@ -17,10 +18,12 @@ class SessionForm extends React.Component{
     }
 
     componentDidMount(){
-        let temp_email;
+        // let temp_email;
+        // //debugger
+        // temp_email = this.props.tempEmail ? this.props.tempEmail : '';
+        // this.setState({email: temp_email})
         //debugger
-        temp_email = this.props.tempEmail ? this.props.tempEmail : '';
-        this.setState({email: temp_email})
+        this.props.deleteSessionErrors(); 
     }
 
     handleSubmit(e){
@@ -63,6 +66,9 @@ class SessionForm extends React.Component{
 
         return(
         <>
+            <div className="header-container">
+                <Nav /> 
+            </div>
             {header}
                 <ul>
                     {errors}

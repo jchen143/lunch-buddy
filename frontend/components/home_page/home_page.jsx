@@ -1,7 +1,7 @@
 import React from 'react'; 
-import LoginFormContainer from '../forms/login_container'
-import SignUpFormContainer from '../forms/signup_container'
+import Nav from '../nav_bar/nav'
 import { Link } from 'react-router-dom'
+
 
 const demo_info = {
     email: "demo_user@appacademy.io",
@@ -35,22 +35,17 @@ class HomePage extends React.Component {
         return(
             <>
                 <div className="header-container">
-                    <nav>
-                        <img className="logo" src={window.logoURL}/>
-                        
-                        <Link className="home-login-container" to='/login'>Log In</Link>
-                      
-                    </nav>
+                        <Nav /> 
                 </div>
 
                 <section className="enticing-deals">
-                    <img src={window.snackURL}/>
+                    <img className="enticing-deals-child" src={window.snackURL}/>
                     
-                    <section className="enticement-container">
-                        <h1>Begin Signing Up by entering your email below or just by clicking the Demo Button!</h1>
-                        <input type="text" onChange={this.handleChange('email')} value={this.state.email}/>
-                        <Link to='/signup' onClick={this.handleOfferClick}>Start Saving Guap!</Link>
-                        <button onClick={this.handleDemoClick}>Demo Log In</button>
+                    <section className="enticement-container enticing-deals-child">
+                        <h1>Sign Up or Click the Demo Button to Start Grubbin'!</h1>
+                        <input type="text" className="user-input" onChange={this.handleChange('email')} value={this.state.email} placeholder="Enter your email to get access to lunch time deals!"/>
+                        <Link to='/signup' className="invite-button" onClick={this.handleOfferClick}>Start Saving Cash!</Link>
+                        <button className="invite-button" onClick={this.handleDemoClick}>Demo Log In</button>
                     </section>
                 </section>
                 
