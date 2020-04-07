@@ -7,7 +7,7 @@ const Nav = (props) => {
     
     return (
         <nav>
-            <img className="logo" src={window.logoURL} />
+            <Link to="/"><img className="logo" src={window.logoURL} /></Link>
 
             <Link className="home-login-container" to='/login'>Log In</Link>
 

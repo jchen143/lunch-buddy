@@ -69,11 +69,14 @@ class SessionForm extends React.Component{
             <div className="header-container">
                 <Nav /> 
             </div>
-            {header}
-                <ul>
-                    {errors}
-                </ul>
-            <form onSubmit={this.handleSubmit}>
+            
+            <div className="log-in-form-container">
+                    
+            <form className="log-in-form-box" onSubmit={this.handleSubmit}>
+                        {header}
+                        <ul>
+                            {errors}
+                        </ul>
                 <label>Email
                     <input type="text" value={this.state.email} onChange={this.handleChange('email')}/>
                 </label>
@@ -82,9 +85,11 @@ class SessionForm extends React.Component{
                     <input type="password" onChange={this.handleChange('password')} value={this.state.password}/>
                 </label>
                 <button>{buttonText}</button>
+                {message}
+                {link}
             </form>
-            {message}
-            {link}
+            
+        </div>
             
         </>)
     }
