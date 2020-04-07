@@ -1,16 +1,19 @@
 .enticing-deals{
     display: flex;
     justify-content: space-between;
-    align-items: stretch; 
+    align-items: center; 
+    height: 500px;
+    
 }
 
 .enticing-deals img{
     height: 100%;
     width: auto;
+    padding-top: 20px;
 }
 
 .enticement-container{
-    margin: 50px 0;
+    /*margin: 50px 0;*/
     padding: 0 20px;
     width: auto; 
     height: 100%;

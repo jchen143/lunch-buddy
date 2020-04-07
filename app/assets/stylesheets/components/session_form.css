@@ -1,5 +1,5 @@
 .log-in-form-container { 
-    /*background image url */
+    background-image: url(/assets/images/background_form.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
