@@ -39,7 +39,7 @@ class HomePage extends React.Component {
                     <Link className="login-homepage" to='/login'>Login</Link>
                 </nav>
 
-                <section className="enticement">
+                <section className="enticing-deals">
 
                     <input type="text" onChange={this.handleChange('email')} value={this.state.email}/>
                     <Link to='/signup' onClick={this.handleOfferClick}>Start Saving!</Link>
