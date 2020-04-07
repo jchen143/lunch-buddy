@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component{
     constructor(props){
@@ -19,12 +20,17 @@ class SessionForm extends React.Component{
     }
 
     render(){
-        //header message
+        //header message and redirect link
         let header;
+        let message = null; 
+        let link = null;
         if (this.props.formType === 'Log In'){
             header = <h1>WELCOME BACK</h1>
+            message = <p>Don't have a LunchBuddy Account?</p>
+            link = <Link to='signup'>Sign up!</Link>
         }else{
             header = <h1>WELCOME TO LUNCHBUDDY</h1>
+           
         }
 
         //button submission text 
@@ -37,6 +43,9 @@ class SessionForm extends React.Component{
                 return <li key={index}>{error}</li>;
             })
         }
+
+        //Link to the other page
+       
 
         return(
         <>
@@ -54,6 +63,9 @@ class SessionForm extends React.Component{
                 </label>
                 <button>{buttonText}</button>
             </form>
+            {message}
+            {link}
+            
         </>)
     }
 }
