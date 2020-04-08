@@ -47,11 +47,11 @@ class SessionForm extends React.Component{
         let link = null;
         let location = null; 
         if (this.props.formType === 'Log In'){
-            header = <h1>WELCOME BACK</h1>
+            header = <h1 className="form-title">WELCOME BACK</h1>
             message = <p>Don't have a LunchBuddy Account?</p>
             link = <Link to='signup'>Sign up!</Link>
         }else{
-            header = <h1>WELCOME TO LUNCHBUDDY</h1>
+            header = <h1 className="form-title">WELCOME TO LUNCHBUDDY</h1>
             location = (<select id="location-dropdown" onChange={this.handleSelection}>
                 <option value="Manhattan">Manhattan</option>
                 <option value="Bronx">Bronx</option>
