@@ -1,7 +1,7 @@
 import React from 'react'; 
 import Nav from '../nav_bar/nav'
 import { Link } from 'react-router-dom'
-import Image from 'react-bootstrap'
+import {Image} from 'react-bootstrap'
 
 
 const demo_info = {
