@@ -1,6 +1,7 @@
 import React from 'react'; 
 import Nav from '../nav_bar/nav'
 import { Link } from 'react-router-dom'
+import Image from 'react-bootstrap'
 
 
 const demo_info = {
@@ -41,7 +42,7 @@ class HomePage extends React.Component {
 
                     <section className="enticing-deals">
 
-                        <img className="enticing-deals-child" src={window.snackURL}/>
+                        <Image className="enticing-deals-child" src={window.snackURL} fluid/>
                         
                         <section className="enticement-container enticing-deals-child">
                             <h1>Sign Up or Click the Demo Button to Start Grubbin'!</h1>
