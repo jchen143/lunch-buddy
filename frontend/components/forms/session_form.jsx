@@ -52,7 +52,7 @@ class SessionForm extends React.Component{
             link = <Link className="message" to='signup'>Sign up!</Link>
         }else{
             header = <h4 className="form-title">Create an Account</h4>
-            location = (<select id="location-dropdown" onChange={this.handleSelection}>
+            location = (<select class="form-field" id="location-dropdown" onChange={this.handleSelection}>
                 <option value="Manhattan">Manhattan</option>
                 <option value="Bronx">Bronx</option>
                 <option value="Brooklyn">Brooklyn</option>
@@ -101,7 +101,11 @@ class SessionForm extends React.Component{
                     </label>
                 </div>
 
-                {location}
+                <div className="form-field">
+                    <label>Location:
+                        {location}
+                    </label>
+                </div>
                 <br></br>
                 <button className="session-submit">{buttonText}</button>
                 {message}
