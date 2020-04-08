@@ -7,7 +7,7 @@ span, article, footer, time, small {
   padding: 0;
   border: 0;
   outline: 0;
-  font: inherit;
+  /*font: inherit;*/
   color: inherit;
   text-align: inherit;
   text-decoration: inherit;
@@ -42,8 +42,7 @@ input[type="submit"] {
 .user-input{
     display: block;
     width: 100%;
-    margin-top: 10px; 
-    margin-bottom: 15px;
+    margin: 10px 0;
     height: 40px;
     border: 0;
     padding: 0;
@@ -53,4 +52,33 @@ input[type="submit"] {
 
 * {
   box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+select{
+  -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: rgb(248, 248, 248);
+    cursor: default;
+    margin: 0em;
+    font: 400 11px system-ui;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(166, 166, 166);
+    border-image: initial;
+}
+  

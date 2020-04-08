@@ -47,12 +47,12 @@ class SessionForm extends React.Component{
         let link = null;
         let location = null; 
         if (this.props.formType === 'Log In'){
-            header = <h1 className="form-title">WELCOME BACK</h1>
-            message = <p>Don't have a LunchBuddy Account?</p>
-            link = <Link to='signup'>Sign up!</Link>
+            header = <h4 className="form-title">WELCOME BACK</h4>
+            message = <p className="caption">Don't have a LunchBuddy Account?</p>
+            link = <Link className="message" to='signup'>Sign up!</Link>
         }else{
-            header = <h1 className="form-title">WELCOME TO LUNCHBUDDY</h1>
-            location = (<select id="location-dropdown" onChange={this.handleSelection}>
+            header = <h4 className="form-title">Create an Account</h4>
+            location = (<select class="form-field" id="location-dropdown" onChange={this.handleSelection}>
                 <option value="Manhattan">Manhattan</option>
                 <option value="Bronx">Bronx</option>
                 <option value="Brooklyn">Brooklyn</option>
@@ -89,16 +89,25 @@ class SessionForm extends React.Component{
                         <ul>
                             {errors}
                         </ul>
-                <label>Email
-                    <input type="text" value={this.state.email} onChange={this.handleChange('email')}/>
-                </label>
+                <div className="form-field">
+                    <label>Email: 
+                        <input type="text" value={this.state.email} onChange={this.handleChange('email')}/>
+                    </label>
+                </div>
                 
-                <label>Password:
-                    <input type="password" onChange={this.handleChange('password')} value={this.state.password}/>
-                </label>
+                <div className="form-field">
+                    <label>Password:
+                        <input type="password" onChange={this.handleChange('password')} value={this.state.password}/>
+                    </label>
+                </div>
 
-                {location}
-                <button>{buttonText}</button>
+                <div className="form-field">
+                    <label>Location:
+                        {location}
+                    </label>
+                </div>
+                <br></br>
+                <button className="session-submit">{buttonText}</button>
                 {message}
                 {link}
             </form>
