@@ -34,22 +34,25 @@ class HomePage extends React.Component {
         //debugger
         return(
             <>
-                <div className="header-container">
-                        <Nav /> 
-                </div>
+                <div className="home-page">
+                    <div className="header-container">
+                            <Nav /> 
+                    </div>
 
-                <section className="enticing-deals">
-                    <img className="enticing-deals-child" src={window.snackURL}/>
-                    
-                    <section className="enticement-container enticing-deals-child">
-                        <h1>Sign Up or Click the Demo Button to Start Grubbin'!</h1>
-                        <input type="text" className="user-input" onChange={this.handleChange('email')} value={this.state.email} placeholder="Enter your email to get access to lunch time deals!"/>
-                        <Link to='/signup' className="invite-button" onClick={this.handleOfferClick}>Start Saving Cash!</Link>
-                        <button className="invite-button" onClick={this.handleDemoClick}>Demo Log In</button>
+                    <section className="enticing-deals">
+
+                        <img className="enticing-deals-child" src={window.snackURL}/>
+                        
+                        <section className="enticement-container enticing-deals-child">
+                            <h1>Sign Up or Click the Demo Button to Start Grubbin'!</h1>
+                            <input type="text" className="user-input" onChange={this.handleChange('email')} value={this.state.email} placeholder="Enter your email to get access to lunch time deals!"/>
+                            <Link to='/signup' className="invite-button" onClick={this.handleOfferClick}>Start Saving on Lunch!</Link>
+                            <button className="invite-button" onClick={this.handleDemoClick}>Demo Log In</button>
+                        </section>
+                        
                     </section>
-                </section>
-                
-                
+                    
+                </div>
                 
             </>
         )

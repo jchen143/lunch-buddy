@@ -1,5 +1,5 @@
-/* .log-in-form-container { 
-    background-image: url(/assets/images/background_form.jpg);
+.log-in-form-container { 
+    background-image: url('landing-page-bg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-} */
+}
 
 .log-in-form-box{
     align-content: center;

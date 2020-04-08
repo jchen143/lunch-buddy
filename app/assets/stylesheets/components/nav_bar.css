@@ -1,14 +1,19 @@
 nav{
     display: flex; 
     justify-content: space-between;
-    margin: 10px;
-    z-index: 6;
-   
+    z-index: 50;
+    width: 100%;
+    min-height: 60px;
+    border: none; 
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4); */
+    position: fixed; 
 }
+
 
 .header-container{
     padding: 10px 24px 7px 16px;
-    position: relative;
+    width: 97%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
     min-height: 57px;
 }
 .logo{
