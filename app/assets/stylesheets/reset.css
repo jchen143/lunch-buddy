@@ -41,8 +41,9 @@ input[type="submit"] {
 
 .user-input{
     display: block;
-    width: 480px;
-    margin: 10px 0;
+    width: 100%;
+    margin-top: 10px; 
+    margin-bottom: 15px;
     height: 40px;
     border: 0;
     padding: 0;
