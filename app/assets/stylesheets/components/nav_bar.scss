@@ -1,11 +1,9 @@
 nav{
     display: flex; 
     justify-content: space-between;
-    z-index: 50;
     width: 100%;
     min-height: 60px;
     border: none; 
-    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4); */
     position: fixed; 
 }
 
@@ -17,6 +15,7 @@ nav{
     min-height: 57px;
     background-color: white;
     position: fixed; 
+    z-index: 50;
 }
 .logo{
     width: 145px;

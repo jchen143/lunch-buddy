@@ -10,12 +10,17 @@ class Lunches extends React.Component {
     render(){
         return(
             <>
-                <div className="header-container">
-                    <Nav/>
-                </div>
+                <div className="lunches-home">
+                    <div className="header-container">
+                        <Nav/>
+                    </div>
 
-                <h1>Eat Up Homies!</h1>
-                <button onClick={this.props.logout}>logout</button>
+                    <br></br>
+                    <div class="content">
+                        <h1>Eat Up Homies!</h1>
+                        <button onClick={this.props.logout}>logout</button>
+                    </div>
+                </div>
             </>
         )
     }

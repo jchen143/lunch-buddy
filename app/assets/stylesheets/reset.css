@@ -7,7 +7,7 @@ span, article, footer, time, small {
   padding: 0;
   border: 0;
   outline: 0;
-  font: inherit;
+  /*font: inherit;*/
   color: inherit;
   text-align: inherit;
   text-decoration: inherit;
@@ -41,7 +41,7 @@ input[type="submit"] {
 
 .user-input{
     display: block;
-    width: 480px;
+    width: 100%;
     margin: 10px 0;
     height: 40px;
     border: 0;
@@ -52,6 +52,7 @@ input[type="submit"] {
 
 * {
   box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 

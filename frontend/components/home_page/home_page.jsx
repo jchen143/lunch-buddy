@@ -48,6 +48,7 @@ class HomePage extends React.Component {
                         
                         <section className="enticement-container enticing-deals-child">
                             <h1>Sign Up or Click the Demo Button to Start Grubbin'!</h1>
+                            <div className="purple-bar"></div>
                             <input type="text" className="user-input" onChange={this.handleChange('email')} value={this.state.email} placeholder="Enter your email to get access to lunch time deals!"/>
                             <Link to='/signup' className="invite-button" onClick={this.handleOfferClick}>Start Saving on Lunch!</Link>
                             <button className="invite-button" onClick={this.handleDemoClick}>Demo Log In</button>
