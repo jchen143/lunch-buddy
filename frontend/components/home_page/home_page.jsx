@@ -35,14 +35,16 @@ class HomePage extends React.Component {
         //debugger
         return(
             <>
+                <div className="header-container">
+                    <Nav />
+                </div>
+
                 <div className="home-page">
-                    <div className="header-container">
-                            <Nav /> 
-                    </div>
+                    
 
                     <section className="enticing-deals">
 
-                        <Image className="enticing-deals-child" src={window.snackURL} fluid/>
+                       { /*<Image className="enticing-deals-child" src={window.snackURL} fluid/>*/}
                         
                         <section className="enticement-container enticing-deals-child">
                             <h1>Sign Up or Click the Demo Button to Start Grubbin'!</h1>

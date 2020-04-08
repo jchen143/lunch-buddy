@@ -6,9 +6,9 @@
     background-position: center;
     margin: 0 auto;
     padding: 56px 0;
-    display: flex;
-    align-content: center;
+    display: flex; 
     justify-content: center;
+    align-items: center;
 }
 
 .log-in-form-box{
@@ -19,6 +19,11 @@
     margin: 10px;
     padding: 30px 0px;
     background-color: #fff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 } 
 
 .form-title{
@@ -27,4 +32,19 @@
     font-weight: normal;
     text-align: center;
     letter-spacing: 2px;
+}
+
+.form-field{
+    margin-bottom: 15px; 
+}
+
+.session-submit{
+    width: 75%;
+    background-color: #FE422D;
+    color: #fff;
+    padding: 7px 0px;
+    font-weight: 300;
+    font-size: 18px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+    text-align: center;
 }
