@@ -12,6 +12,16 @@
 
 }
 
+.sign-up-form-container { 
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 56px 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
 .log-in-form-box{
     align-content: center;
     width: 560px;
@@ -31,6 +41,7 @@
 .form-title{
     font-size: 32px;
     color: #FE422D;
+    font-family: 'Roboto', serif;
     font-weight: normal;
     text-align: center;
     letter-spacing: 2px;
@@ -60,7 +71,7 @@
     color: #fff;
     padding: 7px 0px;
     font-weight: 300;
-    font-size: 18px;
+    //font-size: 18px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
     text-align: center;
     margin-bottom: 20px; 

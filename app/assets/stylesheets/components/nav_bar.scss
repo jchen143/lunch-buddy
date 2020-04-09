@@ -4,7 +4,8 @@ nav{
     width: 100%;
     min-height: 60px;
     border: none; 
-    position: fixed; 
+    
+    background-color: white;
 }
 
 
@@ -14,9 +15,10 @@ nav{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
     min-height: 57px;
     background-color: white;
-    position: fixed; 
+    position: relative; 
     z-index: 50;
 }
+
 .logo{
     width: 145px;
     height: 50px;

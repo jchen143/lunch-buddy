@@ -3,18 +3,39 @@ import { Link } from 'react-router-dom'
 
 //MAKE THE NAV VARIABLE BASED ON IF LOGGED IN OR NOT CONTAINER TAKES IN SESSION ID
 
-const Nav = (props) => {
-    //debugger
-    return (
+class Nav extends React.Component {
+    constructor(props){
+        super(props)
+    }
+
+    render(){
+
+        let navRight;
         
-        <nav>
-            <Link to="/"><img className="logo" src={window.logoURL} /></Link>
+        if (!this.props.loggedIn){
+            navRight = <Link className="home-login-container" to='/login'>Log In</Link>
+        }else{
+            navRight = (
+                <ul>
+                    <li>
+                        <i className="fas fa-bars" ></i>
+                        <p>Menu</p>
+                    </li>
+                </ul>
+            )
+        }
+        
+        return (
+            
+            <nav>
+                <Link to="/"><img className="logo" src={window.logoURL} /></Link>
 
-            <Link className="home-login-container" to='/login'>Log In</Link>
+                {navRight}
 
-        </nav>
+            </nav>
 
-    )
+        )
+    }
 }
 
 export default Nav

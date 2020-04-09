@@ -37,6 +37,8 @@ button {
 button,
 input[type="submit"] {
   cursor: pointer;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .user-input{
@@ -46,6 +48,7 @@ input[type="submit"] {
     height: 40px;
     border: 0;
     padding: 0;
+    font-size: 17px;
     border-radius: 3px;
     padding-left: 15px;
 }

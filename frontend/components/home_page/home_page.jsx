@@ -1,5 +1,5 @@
 import React from 'react'; 
-import Nav from '../nav_bar/nav'
+import Nav from '../nav_bar/nav_bar_container'
 import { Link } from 'react-router-dom'
 import {Image} from 'react-bootstrap'
 
@@ -47,11 +47,14 @@ class HomePage extends React.Component {
                        { /*<Image className="enticing-deals-child" src={window.snackURL} fluid/>*/}
                         
                         <section className="enticement-container enticing-deals-child">
-                            <h1>Sign Up or Click the Demo Button to Start Grubbin'!</h1>
+                            <h1>Let's Lunch!</h1>
                             <div className="purple-bar"></div>
                             <input type="text" className="user-input" onChange={this.handleChange('email')} value={this.state.email} placeholder="Enter your email to get access to lunch time deals!"/>
-                            <Link to='/signup' className="invite-button" onClick={this.handleOfferClick}>Start Saving on Lunch!</Link>
-                            <button className="invite-button" onClick={this.handleDemoClick}>Demo Log In</button>
+
+                            <div className="sign-up-or-demo-container">
+                                <Link to='/signup' className="invite-button" onClick={this.handleOfferClick}>Start Saving!</Link>
+                                <button className="invite-button" onClick={this.handleDemoClick}>Demo Log In</button>
+                            </div>
                         </section>
                         
                     </section>
