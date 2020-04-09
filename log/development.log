@@ -11888,3 +11888,291 @@ Processing by Api::LunchesController#index as JSON
 Completed 200 OK in 76ms (Views: 13.9ms | ActiveRecord: 42.4ms)
 
 
+Started GET "/" for ::1 at 2020-04-09 16:13:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 819ms (Views: 807.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:14:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 861ms (Views: 854.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/lunches?bounds%5BsouthWest%5D%5Blat%5D=40.767971&bounds%5BsouthWest%5D%5Blng%5D=-73.981991&bounds%5BnorthEast%5D%5Blat%5D=40.799565&bounds%5BnorthEast%5D%5Blng%5D=-73.935342" for ::1 at 2020-04-09 16:14:12 -0400
+Processing by Api::LunchesController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.767971", "lng"=>"-73.981991"}, "northEast"=>{"lat"=>"40.799565", "lng"=>"-73.935342"}}}
+  [1m[36mLunch Load (17.7ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/models/lunch.rb:29
+  [1m[36mRestaurant Load (6.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (3.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (2.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (3.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  Rendering api/lunches/index.json.jbuilder
+  Rendered api/lunches/index.json.jbuilder (1.9ms)
+Completed 200 OK in 116ms (Views: 17.8ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:36:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 734ms (Views: 729.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/lunches?bounds%5BsouthWest%5D%5Blat%5D=40.767971&bounds%5BsouthWest%5D%5Blng%5D=-73.981991&bounds%5BnorthEast%5D%5Blat%5D=40.799565&bounds%5BnorthEast%5D%5Blng%5D=-73.935342" for ::1 at 2020-04-09 16:36:57 -0400
+Processing by Api::LunchesController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.767971", "lng"=>"-73.981991"}, "northEast"=>{"lat"=>"40.799565", "lng"=>"-73.935342"}}}
+  [1m[36mLunch Load (1.5ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/models/lunch.rb:29
+  [1m[36mRestaurant Load (26.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  Rendering api/lunches/index.json.jbuilder
+  Rendered api/lunches/index.json.jbuilder (1.7ms)
+Completed 200 OK in 79ms (Views: 14.6ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:37:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 841ms (Views: 837.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/lunches?bounds%5BsouthWest%5D%5Blat%5D=40.767971&bounds%5BsouthWest%5D%5Blng%5D=-73.981991&bounds%5BnorthEast%5D%5Blat%5D=40.799565&bounds%5BnorthEast%5D%5Blng%5D=-73.935342" for ::1 at 2020-04-09 16:37:28 -0400
+Processing by Api::LunchesController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.767971", "lng"=>"-73.981991"}, "northEast"=>{"lat"=>"40.799565", "lng"=>"-73.935342"}}}
+  [1m[36mLunch Load (18.8ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/models/lunch.rb:29
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (3.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (1.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  Rendering api/lunches/index.json.jbuilder
+  Rendered api/lunches/index.json.jbuilder (1.1ms)
+Completed 200 OK in 70ms (Views: 20.0ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:38:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 531ms (Views: 527.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:39:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 583ms (Views: 577.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/lunches?bounds%5BsouthWest%5D%5Blat%5D=40.767971&bounds%5BsouthWest%5D%5Blng%5D=-73.981991&bounds%5BnorthEast%5D%5Blat%5D=40.799565&bounds%5BnorthEast%5D%5Blng%5D=-73.935342" for ::1 at 2020-04-09 16:39:10 -0400
+Processing by Api::LunchesController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.767971", "lng"=>"-73.981991"}, "northEast"=>{"lat"=>"40.799565", "lng"=>"-73.935342"}}}
+  [1m[36mLunch Load (11.5ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/models/lunch.rb:29
+  [1m[36mRestaurant Load (19.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (5.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  Rendering api/lunches/index.json.jbuilder
+  Rendered api/lunches/index.json.jbuilder (1.3ms)
+Completed 200 OK in 75ms (Views: 14.2ms | ActiveRecord: 39.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:55:02 -0400
+  [1m[35m (16.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 2676ms (Views: 2661.6ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:55:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 132ms (Views: 108.9ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/api/lunches?bounds%5BsouthWest%5D%5Blat%5D=40.767971&bounds%5BsouthWest%5D%5Blng%5D=-73.981991&bounds%5BnorthEast%5D%5Blat%5D=40.799565&bounds%5BnorthEast%5D%5Blng%5D=-73.935342" for ::1 at 2020-04-09 16:55:08 -0400
+Processing by Api::LunchesController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.767971", "lng"=>"-73.981991"}, "northEast"=>{"lat"=>"40.799565", "lng"=>"-73.935342"}}}
+  [1m[36mLunch Load (20.8ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/models/lunch.rb:29
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (4.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (3.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  Rendering api/lunches/index.json.jbuilder
+  Rendered api/lunches/index.json.jbuilder (1.1ms)
+Completed 200 OK in 133ms (Views: 10.5ms | ActiveRecord: 44.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:55:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 81ms (Views: 75.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/lunches?bounds%5BsouthWest%5D%5Blat%5D=40.767971&bounds%5BsouthWest%5D%5Blng%5D=-73.981991&bounds%5BnorthEast%5D%5Blat%5D=40.799565&bounds%5BnorthEast%5D%5Blng%5D=-73.935342" for ::1 at 2020-04-09 16:55:26 -0400
+Processing by Api::LunchesController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.767971", "lng"=>"-73.981991"}, "northEast"=>{"lat"=>"40.799565", "lng"=>"-73.935342"}}}
+  [1m[36mLunch Load (1.0ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/models/lunch.rb:29
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  Rendering api/lunches/index.json.jbuilder
+  Rendered api/lunches/index.json.jbuilder (0.9ms)
+Completed 200 OK in 61ms (Views: 20.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:55:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 538ms (Views: 534.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/lunches?bounds%5BsouthWest%5D%5Blat%5D=40.767971&bounds%5BsouthWest%5D%5Blng%5D=-73.981991&bounds%5BnorthEast%5D%5Blat%5D=40.799565&bounds%5BnorthEast%5D%5Blng%5D=-73.935342" for ::1 at 2020-04-09 16:55:42 -0400
+Processing by Api::LunchesController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.767971", "lng"=>"-73.981991"}, "northEast"=>{"lat"=>"40.799565", "lng"=>"-73.935342"}}}
+  [1m[36mLunch Load (6.1ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/models/lunch.rb:29
+  [1m[36mRestaurant Load (15.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (2.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  Rendering api/lunches/index.json.jbuilder
+  Rendered api/lunches/index.json.jbuilder (13.0ms)
+Completed 200 OK in 133ms (Views: 87.4ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-09 16:57:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GvnHoBUP6E8bwXB3u5bOhw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 124ms (Views: 119.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/lunches?bounds%5BsouthWest%5D%5Blat%5D=40.767971&bounds%5BsouthWest%5D%5Blng%5D=-73.981991&bounds%5BnorthEast%5D%5Blat%5D=40.799565&bounds%5BnorthEast%5D%5Blng%5D=-73.935342" for ::1 at 2020-04-09 16:57:15 -0400
+Processing by Api::LunchesController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.767971", "lng"=>"-73.981991"}, "northEast"=>{"lat"=>"40.799565", "lng"=>"-73.935342"}}}
+  [1m[36mLunch Load (8.5ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/models/lunch.rb:29
+  [1m[36mRestaurant Load (2.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (17.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (20.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/models/lunch.rb:30
+  Rendering api/lunches/index.json.jbuilder
+  Rendered api/lunches/index.json.jbuilder (1.8ms)
+Completed 200 OK in 84ms (Views: 14.4ms | ActiveRecord: 52.9ms)
+
+

@@ -1,5 +1,7 @@
 import React from 'react'; 
 import Nav from '../nav_bar/nav_bar_container'
+import LunchesIndex from './lunches_index'
+import LunchMap from './lunch_map'
 
 class Lunches extends React.Component {
 
@@ -11,14 +13,7 @@ class Lunches extends React.Component {
     }
 
     render(){
-        debugger
-        let lunchesLi = this.props.lunches.map(lunch => {
-
-            return (<li>
-                {lunch.name}
-                {lunch.restaurant_id}
-            </li>)
-        })
+      
         return(
 
             <>
@@ -26,14 +21,9 @@ class Lunches extends React.Component {
                     <div className="header-container">
                         <Nav/>
                     </div>
-
-                    <br></br>
-                    <div className="content">
-                        <h1>Eat Up Homies!</h1>
-                        <ul>
-                            {lunchesLi}
-                        </ul>
-                    </div>
+                
+                    <LunchesIndex lunches={this.props.lunches}/>  
+                    <LunchMap /> 
                 </div>
             </>
         )

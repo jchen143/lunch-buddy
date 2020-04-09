@@ -3,3 +3,6 @@ bundle.js
 bundle.js.map
 bundle.js*
 tmp/
+
+# Ignore application configuration
+/config/application.yml
