@@ -11226,3 +11226,79 @@ No template found for Api::SessionsController#destroy, rendering head :no_conten
 Completed 204 No Content in 111ms (ActiveRecord: 3.2ms)
 
 
+  [1m[35m (18.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6003741491528892615)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateLunches (20200409155632)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (61.0ms)[0m  [1m[35mCREATE TABLE "lunches" ("id" bigserial primary key, "name" character varying NOT NULL, "description" character varying NOT NULL, "image_url" character varying NOT NULL, "size" character varying NOT NULL, "restaurant_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200409155632_create_lunches.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_lunches_on_restaurant_id" ON "lunches"  ("restaurant_id")[0m
+  ↳ db/migrate/20200409155632_create_lunches.rb:12
+  [1m[36mActiveRecord::SchemaMigration Create (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200409155632"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (13.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6003741491528892615)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6003741491528892615)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateReservations (20200409155942)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (25.5ms)[0m  [1m[35mCREATE TABLE "reservations" ("id" bigserial primary key, "diner_id" integer NOT NULL, "lunch_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200409155942_create_reservations.rb:3
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_reservations_on_diner_id" ON "reservations"  ("diner_id")[0m
+  ↳ db/migrate/20200409155942_create_reservations.rb:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_reservations_on_lunch_id" ON "reservations"  ("lunch_id")[0m
+  ↳ db/migrate/20200409155942_create_reservations.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200409155942"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRestaurants (20200409160105)
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (25.4ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" bigserial primary key, "name" character varying NOT NULL, "address" character varying NOT NULL, "latitude" float NOT NULL, "longitude" float NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200409160105_create_restaurants.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200409160105"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateFavorites (20200409160857)
+  [1m[35m (6.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (25.3ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" bigserial primary key, "diner_id" integer NOT NULL, "reservation_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200409160857_create_favorites.rb:3
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE  INDEX  "index_favorites_on_diner_id" ON "favorites"  ("diner_id")[0m
+  ↳ db/migrate/20200409160857_create_favorites.rb:9
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_favorites_on_reservation_id" ON "favorites"  ("reservation_id")[0m
+  ↳ db/migrate/20200409160857_create_favorites.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200409160857"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6003741491528892615)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/bin/annotate:23

@@ -10,10 +10,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_06_183141) do
+ActiveRecord::Schema.define(version: 2020_04_09_160857) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "diner_id", null: false
+    t.integer "reservation_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["diner_id"], name: "index_favorites_on_diner_id"
+    t.index ["reservation_id"], name: "index_favorites_on_reservation_id"
+  end
+
+  create_table "lunches", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "description", null: false
+    t.string "image_url", null: false
+    t.string "size", null: false
+    t.integer "restaurant_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_lunches_on_restaurant_id"
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.integer "diner_id", null: false
+    t.integer "lunch_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["diner_id"], name: "index_reservations_on_diner_id"
+    t.index ["lunch_id"], name: "index_reservations_on_lunch_id"
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "address", null: false
+    t.float "latitude", null: false
+    t.float "longitude", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
