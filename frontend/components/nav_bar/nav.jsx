@@ -6,6 +6,22 @@ import { Link } from 'react-router-dom'
 class Nav extends React.Component {
     constructor(props){
         super(props)
+
+        this.state = {active: false};
+        this.handleClick = this.handleClick.bind(this); 
+        this.handleLogout = this.handleLogout.bind(this)
+    }
+
+    handleClick(e){
+        e.preventDefault(); 
+
+        let oppositeBool = !this.state.active
+        this.setState({active: oppositeBool}); 
+    }
+    handleLogout(e){
+        e.preventDefault(); 
+        debugger
+        this.props.logout();
     }
 
     render(){
@@ -16,14 +32,28 @@ class Nav extends React.Component {
             navRight = <Link className="home-login-container" to='/login'>Log In</Link>
         }else{
             navRight = (
-                <ul className="menu-dropdown">
-                    <li>
-                        <img src={window.menu}/>
-                    </li>
-                    <li className="menu">
-                        <p>Menu</p>
-                    </li>
-                </ul>
+
+                <div className="dropdown-trigger">
+
+                    <button className="menu-dropdown" onClick={this.handleClick}>
+                        <img src={window.menu} />
+                        <p className="menu">Menu</p>
+                    </button>
+                    <ul className={this.state.active ? "dropdown-options active" : "dropdown-options hidden"}> 
+                        
+                        <li className="li-clickable" onClick={this.handleLogout}>
+                            Log Out
+                        </li>
+                        <li className="li-clickable">
+                            Lunch
+                        </li>
+                        <li className="li-clickable">
+                            My Account
+                        </li>
+
+                    </ul>
+                
+                </div>
             )
         }
         

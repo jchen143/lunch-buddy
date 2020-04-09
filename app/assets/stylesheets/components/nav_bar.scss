@@ -66,3 +66,45 @@ nav{
 .fa-bars{
     height: 20px; 
 }
+
+.dropdown-trigger{
+    //position: relative;
+}
+
+.active {
+    display: block; 
+
+}
+
+.hidden {
+    display: none; 
+}
+
+.dropdown-options{
+    // position: absolute;
+    // background-color: #fff;
+    // min-width: 250px; 
+    position: absolute;
+    border: 1px solid #C0BCBB;
+    background-color: #FFF;
+    border-radius: 6px;
+    color: #504D4C;
+    font-family: 'ProximaNovaRegular';
+    font-size: 20px;
+    padding: 0 10px;
+    right: 0;
+    top: 65px;
+    width: 190px;
+    z-index: 999;
+}
+
+.dropdown-options > li{
+    padding: 2px; 
+    position: relative;
+    z-index: 999; 
+    font-size: 12px;
+}
+
+
+
+

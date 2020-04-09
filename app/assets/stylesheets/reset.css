@@ -35,7 +35,7 @@ button {
 }
 
 button,
-input[type="submit"] {
+input[type="submit"], .li-clickable {
   cursor: pointer;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;

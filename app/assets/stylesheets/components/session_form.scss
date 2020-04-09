@@ -38,6 +38,23 @@
     
 } 
 
+.sign-up-form-box{
+    align-content: center;
+    width: 560px;
+    border-radius: 5px;
+    // margin: 10px;
+    padding: 30px 0px;
+    background-color: #fff;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+} 
+
+
+
 .form-title{
     font-size: 32px;
     color: #FE422D;

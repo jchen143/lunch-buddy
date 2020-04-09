@@ -48,14 +48,17 @@ class SessionForm extends React.Component{
         let link = null;
         let location = null; 
         let classname = null;
+        let formClass = null;
         if (this.props.formType === 'Log In'){
-            header = <h4 className="form-title">WELCOME BACK</h4>
-            message = <p className="caption">Don't have a LunchBuddy Account?</p>
-            link = <Link className="message" to='signup'>Sign up!</Link>
-            classname = "log-in-form-container"
+            header = <h4 className="form-title">WELCOME BACK</h4>;
+            message = <p className="caption">Don't have a LunchBuddy Account?</p>;
+            link = <Link className="message" to='signup'>Sign up!</Link>;
+            classname = "log-in-form-container";
+            formClass = "log-in-form-box";
         }else{
             classname = "sign-up-form-container"
             header = <h4 className="form-title">Create an Account</h4>
+            formClass = "sign-up-form-box";
             location = (
              <div className="form-field">
                  <label>Location:
@@ -95,7 +98,7 @@ class SessionForm extends React.Component{
             
             <div className={classname}>
                     
-            <form className="log-in-form-box" onSubmit={this.handleSubmit}>
+            <form className={formClass} onSubmit={this.handleSubmit}>
                         {header}
                         <ul>
                             {errors}
