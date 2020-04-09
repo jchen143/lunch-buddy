@@ -18,4 +18,24 @@ class Lunch < ApplicationRecord
         foreign_key: :restaurant_id,
         class_name: :Restaurant 
 
+     def self.in_bounds(bounds)
+        
+            min_lat = bounds["southWest"]["lat"].to_f
+            max_lat = bounds["northEast"]["lat"].to_f
+            min_long= bounds["southWest"]["lng"].to_f
+            max_long = bounds["northEast"]["lng"].to_f 
+    
+            records_array = [] 
+            self.all.each do |lunch|
+                lat = lunch.restaurant.latitude
+                long = lunch.restaurant.longitude
+                if (lat <= max_lat && lat >= min_lat) && (long <= max_long && long >= min_long)
+                    records_array << lunch
+                end 
+            end 
+        
+        return records_array 
+
+    end
+
 end 
