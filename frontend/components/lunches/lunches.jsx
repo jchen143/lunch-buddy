@@ -18,7 +18,6 @@ class Lunches extends React.Component {
                     <br></br>
                     <div className="content">
                         <h1>Eat Up Homies!</h1>
-                        <button onClick={this.props.logout}>logout</button>
                     </div>
                 </div>
             </>

@@ -16,7 +16,7 @@ nav{
     min-height: 57px;
     background-color: white;
     position: relative; 
-    z-index: 50;
+   // z-index: 50; //TOOK OUT Z INDEX... NOTHING BROKE BUT MAY HAVE TO PUT BACK IN
 }
 
 .logo{
@@ -68,7 +68,7 @@ nav{
 }
 
 .dropdown-trigger{
-    //position: relative;
+    position: relative;
 }
 
 .active {
@@ -88,22 +88,42 @@ nav{
     border: 1px solid #C0BCBB;
     background-color: #FFF;
     border-radius: 6px;
-    color: #504D4C;
-    font-family: 'ProximaNovaRegular';
+   color: #504D4C;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     font-size: 20px;
     padding: 0 10px;
     right: 0;
     top: 65px;
     width: 190px;
-    z-index: 999;
+
 }
 
 .dropdown-options > li{
+    display: flex;
+    justify-content: flex-start;
     padding: 2px; 
-    position: relative;
-    z-index: 999; 
-    font-size: 12px;
+    
 }
+
+.dropdown-options > li > img{
+    margin-right: 8px;
+   
+}
+
+.dropdown-options > li > p{
+   font-size: 20px;
+z-index: 999;
+letter-spacing: 1.32px;
+   
+}
+
+
+
+
+
+
 
 
 

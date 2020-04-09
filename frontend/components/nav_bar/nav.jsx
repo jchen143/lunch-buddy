@@ -42,14 +42,15 @@ class Nav extends React.Component {
                     <ul className={this.state.active ? "dropdown-options active" : "dropdown-options hidden"}> 
                         
                         <li className="li-clickable" onClick={this.handleLogout}>
-                            Log Out
+                            <img src={window.menuLogout}/>
+                            <p>Logout</p>
                         </li>
-                        <li className="li-clickable">
+                        {/* <li className="li-clickable">
                             Lunch
                         </li>
                         <li className="li-clickable">
                             My Account
-                        </li>
+                        </li> */}
 
                     </ul>
                 
