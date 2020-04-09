@@ -43,3 +43,26 @@ nav{
     line-height: 40px;
     margin-right: 20px;
 }
+
+.menu-dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+}
+
+.menu{
+    color: #FE4239;
+    font-size: 17px;
+    font-family: 'Roboto', serif;
+    font-weight: bold; 
+    height: 40px;
+    letter-spacing: 1.32px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.fa-bars{
+    height: 20px; 
+}

@@ -16,9 +16,11 @@ class Nav extends React.Component {
             navRight = <Link className="home-login-container" to='/login'>Log In</Link>
         }else{
             navRight = (
-                <ul>
+                <ul className="menu-dropdown">
                     <li>
-                        <i className="fas fa-bars" ></i>
+                        <img src={window.menu}/>
+                    </li>
+                    <li className="menu">
                         <p>Menu</p>
                     </li>
                 </ul>
