@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Nav from '../nav_bar/nav'
+import Nav from '../nav_bar/nav_bar_container'
+import Footer from '../footer/footer'
 
 class SessionForm extends React.Component{
     constructor(props){
@@ -46,19 +47,32 @@ class SessionForm extends React.Component{
         let message = null; 
         let link = null;
         let location = null; 
+        let classname = null;
+        let formClass = null;
         if (this.props.formType === 'Log In'){
-            header = <h4 className="form-title">WELCOME BACK</h4>
-            message = <p className="caption">Don't have a LunchBuddy Account?</p>
-            link = <Link className="message" to='signup'>Sign up!</Link>
+            header = <h4 className="form-title">WELCOME BACK</h4>;
+            message = <p className="caption">Don't have a LunchBuddy Account?</p>;
+            link = <Link className="message" to='signup'>Sign up!</Link>;
+            classname = "log-in-form-container";
+            formClass = "log-in-form-box";
         }else{
+            classname = "sign-up-form-container"
             header = <h4 className="form-title">Create an Account</h4>
-            location = (<select class="form-field" id="location-dropdown" onChange={this.handleSelection}>
-                <option value="Manhattan">Manhattan</option>
-                <option value="Bronx">Bronx</option>
-                <option value="Brooklyn">Brooklyn</option>
-                <option value="Queens">Queens</option>
-                <option value="Staten Island">Staten Island</option>
-            </select>)
+            formClass = "sign-up-form-box";
+            location = (
+             <div className="form-field">
+                 <label>Location:
+                    <select className="form-field" id="location-dropdown" className="user-input" onChange={this.handleSelection}>
+                        <option value="Manhattan">Manhattan</option>
+                        <option value="Bronx">Bronx</option>
+                        <option value="Brooklyn">Brooklyn</option>
+                        <option value="Queens">Queens</option>
+                        <option value="Staten Island">Staten Island</option>
+                    </select>
+                </label>
+            </div>
+            
+            )
         }
 
         //button submission text 
@@ -82,30 +96,28 @@ class SessionForm extends React.Component{
                 <Nav /> 
             </div>
             
-            <div className="log-in-form-container">
+            <div className={classname}>
                     
-            <form className="log-in-form-box" onSubmit={this.handleSubmit}>
+            <form className={formClass} onSubmit={this.handleSubmit}>
                         {header}
                         <ul>
                             {errors}
                         </ul>
                 <div className="form-field">
                     <label>Email: 
-                        <input type="text" value={this.state.email} onChange={this.handleChange('email')}/>
+                        <input type="text" className="user-input" value={this.state.email} onChange={this.handleChange('email')}/>
                     </label>
                 </div>
                 
                 <div className="form-field">
                     <label>Password:
-                        <input type="password" onChange={this.handleChange('password')} value={this.state.password}/>
+                        <input type="password" className="user-input" onChange={this.handleChange('password')} value={this.state.password}/>
                     </label>
                 </div>
 
-                <div className="form-field">
-                    <label>Location:
-                        {location}
-                    </label>
-                </div>
+                
+                {location}
+                   
                 <br></br>
                 <button className="session-submit">{buttonText}</button>
                 {message}
@@ -113,7 +125,7 @@ class SessionForm extends React.Component{
             </form>
             
         </div>
-            
+           <Footer /> 
         </>)
     }
 }

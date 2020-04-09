@@ -1,5 +1,5 @@
 import React from 'react'; 
-import Nav from '../nav_bar/nav'
+import Nav from '../nav_bar/nav_bar_container'
 
 class Lunches extends React.Component {
 
@@ -16,9 +16,8 @@ class Lunches extends React.Component {
                     </div>
 
                     <br></br>
-                    <div class="content">
+                    <div className="content">
                         <h1>Eat Up Homies!</h1>
-                        <button onClick={this.props.logout}>logout</button>
                     </div>
                 </div>
             </>
