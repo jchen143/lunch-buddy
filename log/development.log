@@ -24838,3 +24838,1353 @@ Processing by Api::RestaurantsController#index as JSON
 Completed 200 OK in 27ms (Views: 20.4ms | ActiveRecord: 2.6ms)
 
 
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71677011479313&bounds%5BsouthWest%5D%5Blng%5D=-74.01120822354437&bounds%5BnorthEast%5D%5Blat%5D=40.794790105910245&bounds%5BnorthEast%5D%5Blng%5D=-73.93996875210883" for ::1 at 2020-04-10 15:23:00 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71677011479313", "lng"=>"-74.01120822354437"}, "northEast"=>{"lat"=>"40.794790105910245", "lng"=>"-73.93996875210883"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71677011479313 AND latitude < 40.794790105910245) AND (longitude > -74.01120822354437 AND longitude < -73.93996875210883))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (23.7ms)
+Completed 200 OK in 45ms (Views: 33.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.7400733193787&bounds%5BsouthWest%5D%5Blng%5D=-73.99116006607882&bounds%5BnorthEast%5D%5Blat%5D=40.818065972377156&bounds%5BnorthEast%5D%5Blng%5D=-73.91992059464327" for ::1 at 2020-04-10 15:23:02 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.7400733193787", "lng"=>"-73.99116006607882"}, "northEast"=>{"lat"=>"40.818065972377156", "lng"=>"-73.91992059464327"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (6.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.7400733193787 AND latitude < 40.818065972377156) AND (longitude > -73.99116006607882 AND longitude < -73.91992059464327))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (25.3ms)
+Completed 200 OK in 66ms (Views: 54.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 15:31:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (11.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "W64Zx2T7iqrqOzYsW7UGdQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (200.5ms)
+Completed 200 OK in 1358ms (Views: 1219.7ms | ActiveRecord: 132.3ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 15:31:44 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (1.1ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (62.8ms)
+Completed 200 OK in 98ms (Views: 51.3ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 15:31:44 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (23.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (82.5ms)
+Completed 200 OK in 124ms (Views: 68.4ms | ActiveRecord: 34.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.703642047881736&bounds%5BsouthWest%5D%5Blng%5D=-74.02166212899826&bounds%5BnorthEast%5D%5Blat%5D=40.78167743449725&bounds%5BnorthEast%5D%5Blng%5D=-73.95042265756271" for ::1 at 2020-04-10 15:45:49 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.703642047881736", "lng"=>"-74.02166212899826"}, "northEast"=>{"lat"=>"40.78167743449725", "lng"=>"-73.95042265756271"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.703642047881736 AND latitude < 40.78167743449725) AND (longitude > -74.02166212899826 AND longitude < -73.95042265756271))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (23.7ms)
+Completed 200 OK in 52ms (Views: 34.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68019983269495&bounds%5BsouthWest%5D%5Blng%5D=-74.04067785489259&bounds%5BnorthEast%5D%5Blat%5D=40.75826270020713&bounds%5BnorthEast%5D%5Blng%5D=-73.96943838345705" for ::1 at 2020-04-10 15:45:51 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68019983269495", "lng"=>"-74.04067785489259"}, "northEast"=>{"lat"=>"40.75826270020713", "lng"=>"-73.96943838345705"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68019983269495 AND latitude < 40.75826270020713) AND (longitude > -74.04067785489259 AND longitude < -73.96943838345705))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.662639771065194&bounds%5BsouthWest%5D%5Blng%5D=-74.05315875899515&bounds%5BnorthEast%5D%5Blat%5D=40.740723215383596&bounds%5BnorthEast%5D%5Blng%5D=-73.9819192875596" for ::1 at 2020-04-10 15:45:52 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.662639771065194", "lng"=>"-74.05315875899515"}, "northEast"=>{"lat"=>"40.740723215383596", "lng"=>"-73.9819192875596"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.662639771065194 AND latitude < 40.740723215383596) AND (longitude > -74.05315875899515 AND longitude < -73.9819192875596))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (7.6ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.642855317664065&bounds%5BsouthWest%5D%5Blng%5D=-74.05917310630205&bounds%5BnorthEast%5D%5Blat%5D=40.72096193655002&bounds%5BnorthEast%5D%5Blng%5D=-73.98793363486651" for ::1 at 2020-04-10 15:45:57 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.642855317664065", "lng"=>"-74.05917310630205"}, "northEast"=>{"lat"=>"40.72096193655002", "lng"=>"-73.98793363486651"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.642855317664065 AND latitude < 40.72096193655002) AND (longitude > -74.05917310630205 AND longitude < -73.98793363486651))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.8ms)
+Completed 200 OK in 37ms (Views: 23.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.65320094247611&bounds%5BsouthWest%5D%5Blng%5D=-74.09909592574878&bounds%5BnorthEast%5D%5Blat%5D=40.73129544414878&bounds%5BnorthEast%5D%5Blng%5D=-74.02785645431324" for ::1 at 2020-04-10 15:45:58 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.65320094247611", "lng"=>"-74.09909592574878"}, "northEast"=>{"lat"=>"40.73129544414878", "lng"=>"-74.02785645431324"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.65320094247611 AND latitude < 40.73129544414878) AND (longitude > -74.09909592574878 AND longitude < -74.02785645431324))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.1ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.605441604376615&bounds%5BsouthWest%5D%5Blng%5D=-74.02088671741474&bounds%5BnorthEast%5D%5Blat%5D=40.68359202249087&bounds%5BnorthEast%5D%5Blng%5D=-73.9496472459792" for ::1 at 2020-04-10 15:46:03 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.605441604376615", "lng"=>"-74.02088671741474"}, "northEast"=>{"lat"=>"40.68359202249087", "lng"=>"-73.9496472459792"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.605441604376615 AND latitude < 40.68359202249087) AND (longitude > -74.02088671741474 AND longitude < -73.9496472459792))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.0ms)
+Completed 200 OK in 50ms (Views: 25.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.58725249842838&bounds%5BsouthWest%5D%5Blng%5D=-73.999378861248&bounds%5BnorthEast%5D%5Blat%5D=40.66542419802399&bounds%5BnorthEast%5D%5Blng%5D=-73.92813938981246" for ::1 at 2020-04-10 15:46:04 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.58725249842838", "lng"=>"-73.999378861248"}, "northEast"=>{"lat"=>"40.66542419802399", "lng"=>"-73.92813938981246"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.58725249842838 AND latitude < 40.66542419802399) AND (longitude > -73.999378861248 AND longitude < -73.92813938981246))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.9ms)
+Completed 200 OK in 19ms (Views: 14.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.59246679151502&bounds%5BsouthWest%5D%5Blng%5D=-73.9964606178398&bounds%5BnorthEast%5D%5Blat%5D=40.670632391126546&bounds%5BnorthEast%5D%5Blng%5D=-73.92522114640425" for ::1 at 2020-04-10 15:46:06 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.59246679151502", "lng"=>"-73.9964606178398"}, "northEast"=>{"lat"=>"40.670632391126546", "lng"=>"-73.92522114640425"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.59246679151502 AND latitude < 40.670632391126546) AND (longitude > -73.9964606178398 AND longitude < -73.92522114640425))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.6ms)
+Completed 200 OK in 20ms (Views: 9.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.70500787591511&bounds%5BsouthWest%5D%5Blng%5D=-73.985127843292&bounds%5BnorthEast%5D%5Blat%5D=40.78304166099239&bounds%5BnorthEast%5D%5Blng%5D=-73.91388837185646" for ::1 at 2020-04-10 15:46:07 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.70500787591511", "lng"=>"-73.985127843292"}, "northEast"=>{"lat"=>"40.78304166099239", "lng"=>"-73.91388837185646"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.70500787591511 AND latitude < 40.78304166099239) AND (longitude > -73.985127843292 AND longitude < -73.91388837185646))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.0ms)
+Completed 200 OK in 38ms (Views: 31.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.75557845960311&bounds%5BsouthWest%5D%5Blng%5D=-73.99833615287861&bounds%5BnorthEast%5D%5Blat%5D=40.83355291563452&bounds%5BnorthEast%5D%5Blng%5D=-73.92709668144306" for ::1 at 2020-04-10 15:46:08 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.75557845960311", "lng"=>"-73.99833615287861"}, "northEast"=>{"lat"=>"40.83355291563452", "lng"=>"-73.92709668144306"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (9.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.75557845960311 AND latitude < 40.83355291563452) AND (longitude > -73.99833615287861 AND longitude < -73.92709668144306))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (17.0ms)
+Completed 200 OK in 38ms (Views: 23.0ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.72792726363059&bounds%5BsouthWest%5D%5Blng%5D=-74.02381385541085&bounds%5BnorthEast%5D%5Blat%5D=40.80593416736291&bounds%5BnorthEast%5D%5Blng%5D=-73.9525743839753" for ::1 at 2020-04-10 15:47:01 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.72792726363059", "lng"=>"-74.02381385541085"}, "northEast"=>{"lat"=>"40.80593416736291", "lng"=>"-73.9525743839753"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (62.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.72792726363059 AND latitude < 40.80593416736291) AND (longitude > -74.02381385541085 AND longitude < -73.9525743839753))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (73.0ms)
+Completed 200 OK in 94ms (Views: 26.4ms | ActiveRecord: 62.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71816996294074&bounds%5BsouthWest%5D%5Blng%5D=-74.02930701947335&bounds%5BnorthEast%5D%5Blat%5D=40.79618831219179&bounds%5BnorthEast%5D%5Blng%5D=-73.9580675480378" for ::1 at 2020-04-10 15:47:03 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71816996294074", "lng"=>"-74.02930701947335"}, "northEast"=>{"lat"=>"40.79618831219179", "lng"=>"-73.9580675480378"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (28.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71816996294074 AND latitude < 40.79618831219179) AND (longitude > -74.02930701947335 AND longitude < -73.9580675480378))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (35.3ms)
+Completed 200 OK in 54ms (Views: 19.6ms | ActiveRecord: 28.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.69888281296494&bounds%5BsouthWest%5D%5Blng%5D=-74.03996885174634&bounds%5BnorthEast%5D%5Blat%5D=40.776923779803006&bounds%5BnorthEast%5D%5Blng%5D=-73.96872938031079" for ::1 at 2020-04-10 15:47:04 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.69888281296494", "lng"=>"-74.03996885174634"}, "northEast"=>{"lat"=>"40.776923779803006", "lng"=>"-73.96872938031079"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.69888281296494 AND latitude < 40.776923779803006) AND (longitude > -74.03996885174634 AND longitude < -73.96872938031079))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68124162919917&bounds%5BsouthWest%5D%5Blng%5D=-74.05142272322765&bounds%5BnorthEast%5D%5Blat%5D=40.759303275708604&bounds%5BnorthEast%5D%5Blng%5D=-73.9801832517921" for ::1 at 2020-04-10 15:47:06 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68124162919917", "lng"=>"-74.05142272322765"}, "northEast"=>{"lat"=>"40.759303275708604", "lng"=>"-73.9801832517921"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (34.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68124162919917 AND latitude < 40.759303275708604) AND (longitude > -74.05142272322765 AND longitude < -73.9801832517921))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (37.9ms)
+Completed 200 OK in 57ms (Views: 18.9ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.66940176240922&bounds%5BsouthWest%5D%5Blng%5D=-74.07890356056386&bounds%5BnorthEast%5D%5Blat%5D=40.747477283921384&bounds%5BnorthEast%5D%5Blng%5D=-74.00766408912831" for ::1 at 2020-04-10 15:47:07 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.66940176240922", "lng"=>"-74.07890356056386"}, "northEast"=>{"lat"=>"40.747477283921384", "lng"=>"-74.00766408912831"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.66940176240922 AND latitude < 40.747477283921384) AND (longitude > -74.07890356056386 AND longitude < -74.00766408912831))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.9ms)
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.654166371358336&bounds%5BsouthWest%5D%5Blng%5D=-74.1061977194994&bounds%5BnorthEast%5D%5Blat%5D=40.73225974215207&bounds%5BnorthEast%5D%5Blng%5D=-74.03495824806386" for ::1 at 2020-04-10 15:47:08 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.654166371358336", "lng"=>"-74.1061977194994"}, "northEast"=>{"lat"=>"40.73225974215207", "lng"=>"-74.03495824806386"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.654166371358336 AND latitude < 40.73225974215207) AND (longitude > -74.1061977194994 AND longitude < -74.03495824806386))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.9ms)
+Completed 200 OK in 24ms (Views: 18.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.67186839477747&bounds%5BsouthWest%5D%5Blng%5D=-74.06741641366632&bounds%5BnorthEast%5D%5Blat%5D=40.749941025946185&bounds%5BnorthEast%5D%5Blng%5D=-73.99617694223078" for ::1 at 2020-04-10 15:47:10 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.67186839477747", "lng"=>"-74.06741641366632"}, "northEast"=>{"lat"=>"40.749941025946185", "lng"=>"-73.99617694223078"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.67186839477747 AND latitude < 40.749941025946185) AND (longitude > -74.06741641366632 AND longitude < -73.99617694223078))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (28.7ms)
+Completed 200 OK in 54ms (Views: 47.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68436616694233&bounds%5BsouthWest%5D%5Blng%5D=-74.04201052987726&bounds%5BnorthEast%5D%5Blat%5D=40.762424151287206&bounds%5BnorthEast%5D%5Blng%5D=-73.97077105844171" for ::1 at 2020-04-10 15:47:11 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68436616694233", "lng"=>"-74.04201052987726"}, "northEast"=>{"lat"=>"40.762424151287206", "lng"=>"-73.97077105844171"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68436616694233 AND latitude < 40.762424151287206) AND (longitude > -74.04201052987726 AND longitude < -73.97077105844171))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.7ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.70585661876634&bounds%5BsouthWest%5D%5Blng%5D=-74.0155016770195&bounds%5BnorthEast%5D%5Blat%5D=40.78388940860517&bounds%5BnorthEast%5D%5Blng%5D=-73.94426220558395" for ::1 at 2020-04-10 15:47:12 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.70585661876634", "lng"=>"-74.0155016770195"}, "northEast"=>{"lat"=>"40.78388940860517", "lng"=>"-73.94426220558395"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.70585661876634 AND latitude < 40.78388940860517) AND (longitude > -74.0155016770195 AND longitude < -73.94426220558395))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (10.6ms)
+Completed 200 OK in 25ms (Views: 18.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.74953027948428&bounds%5BsouthWest%5D%5Blng%5D=-74.00930187663349&bounds%5BnorthEast%5D%5Blat%5D=40.827511834390485&bounds%5BnorthEast%5D%5Blng%5D=-73.93806240519794" for ::1 at 2020-04-10 15:47:13 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.74953027948428", "lng"=>"-74.00930187663349"}, "northEast"=>{"lat"=>"40.827511834390485", "lng"=>"-73.93806240519794"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.74953027948428 AND latitude < 40.827511834390485) AND (longitude > -74.00930187663349 AND longitude < -73.93806240519794))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (7.8ms)
+Completed 200 OK in 64ms (Views: 51.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.77418371311444&bounds%5BsouthWest%5D%5Blng%5D=-73.95156309401483&bounds%5BnorthEast%5D%5Blat%5D=40.85213632633534&bounds%5BnorthEast%5D%5Blng%5D=-73.88032362257928" for ::1 at 2020-04-10 15:47:14 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.77418371311444", "lng"=>"-73.95156309401483"}, "northEast"=>{"lat"=>"40.85213632633534", "lng"=>"-73.88032362257928"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.77418371311444 AND latitude < 40.85213632633534) AND (longitude > -73.95156309401483 AND longitude < -73.88032362257928))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.2ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-04-10 15:47:17 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "W64Zx2T7iqrqOzYsW7UGdQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demo_user@appacademy.io"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "RaHXV6HUEynEVa5iv8wV9w"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Update (2.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "RaHXV6HUEynEVa5iv8wV9w"], ["updated_at", "2020-04-10 19:47:17.561034"], ["id", 18]]
+  ↳ app/models/user.rb:48
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:48
+No template found for Api::SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 159ms (ActiveRecord: 7.8ms)
+
+
+Started POST "/api/session" for ::1 at 2020-04-10 15:47:19 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"demo_user@appacademy.io", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo_user@appacademy.io"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demo_user@appacademy.io"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["updated_at", "2020-04-10 19:47:19.610423"], ["id", 18]]
+  ↳ app/models/user.rb:48
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:48
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (2.4ms)
+Completed 200 OK in 308ms (Views: 10.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 15:47:19 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (1.3ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (4.7ms)
+Completed 200 OK in 37ms (Views: 28.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 15:47:19 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.6ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.73451811643066&bounds%5BsouthWest%5D%5Blng%5D=-73.99459925807619&bounds%5BnorthEast%5D%5Blat%5D=40.81251728767619&bounds%5BnorthEast%5D%5Blng%5D=-73.92335978664065" for ::1 at 2020-04-10 15:47:21 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.73451811643066", "lng"=>"-73.99459925807619"}, "northEast"=>{"lat"=>"40.81251728767619", "lng"=>"-73.92335978664065"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.73451811643066 AND latitude < 40.81251728767619) AND (longitude > -73.99459925807619 AND longitude < -73.92335978664065))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 23ms (Views: 18.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.69236362933368&bounds%5BsouthWest%5D%5Blng%5D=-74.00118340273346&bounds%5BnorthEast%5D%5Blat%5D=40.770412239068925&bounds%5BnorthEast%5D%5Blng%5D=-73.92994393129791" for ::1 at 2020-04-10 16:05:23 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.69236362933368", "lng"=>"-74.00118340273346"}, "northEast"=>{"lat"=>"40.770412239068925", "lng"=>"-73.92994393129791"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (12.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.69236362933368 AND latitude < 40.770412239068925) AND (longitude > -74.00118340273346 AND longitude < -73.92994393129791))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (27.3ms)
+Completed 200 OK in 50ms (Views: 27.6ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.70280205978931&bounds%5BsouthWest%5D%5Blng%5D=-74.01565922496742&bounds%5BnorthEast%5D%5Blat%5D=40.78083843133341&bounds%5BnorthEast%5D%5Blng%5D=-73.94441975353188" for ::1 at 2020-04-10 16:05:25 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.70280205978931", "lng"=>"-74.01565922496742"}, "northEast"=>{"lat"=>"40.78083843133341", "lng"=>"-73.94441975353188"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.70280205978931 AND latitude < 40.78083843133341) AND (longitude > -74.01565922496742 AND longitude < -73.94441975353188))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.2ms)
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71446776592733&bounds%5BsouthWest%5D%5Blng%5D=-74.01548756359047&bounds%5BnorthEast%5D%5Blat%5D=40.79249045734222&bounds%5BnorthEast%5D%5Blng%5D=-73.94424809215492" for ::1 at 2020-04-10 16:05:26 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71446776592733", "lng"=>"-74.01548756359047"}, "northEast"=>{"lat"=>"40.79249045734222", "lng"=>"-73.94424809215492"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71446776592733 AND latitude < 40.79249045734222) AND (longitude > -74.01548756359047 AND longitude < -73.94424809215492))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.6ms)
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 16:06:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 744ms (Views: 724.3ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 16:06:23 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (64.4ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (67.7ms)
+Completed 200 OK in 85ms (Views: 17.4ms | ActiveRecord: 64.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 16:06:23 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.9ms)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.74578529522352&bounds%5BsouthWest%5D%5Blng%5D=-74.00335995736671&bounds%5BnorthEast%5D%5Blat%5D=40.823771245260794&bounds%5BnorthEast%5D%5Blng%5D=-73.93212048593116" for ::1 at 2020-04-10 16:06:26 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.74578529522352", "lng"=>"-74.00335995736671"}, "northEast"=>{"lat"=>"40.823771245260794", "lng"=>"-73.93212048593116"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.74578529522352 AND latitude < 40.823771245260794) AND (longitude > -74.00335995736671 AND longitude < -73.93212048593116))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.4ms)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.73413923098347&bounds%5BsouthWest%5D%5Blng%5D=-73.97004362984784&bounds%5BnorthEast%5D%5Blat%5D=40.812138846771&bounds%5BnorthEast%5D%5Blng%5D=-73.89880415841229" for ::1 at 2020-04-10 16:06:27 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.73413923098347", "lng"=>"-73.97004362984784"}, "northEast"=>{"lat"=>"40.812138846771", "lng"=>"-73.89880415841229"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.73413923098347 AND latitude < 40.812138846771) AND (longitude > -73.97004362984784 AND longitude < -73.89880415841229))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.5ms)
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 16:08:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 63ms (Views: 58.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 16:08:27 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (1.0ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (4.0ms)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 16:08:28 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.8ms)
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71479499041744&bounds%5BsouthWest%5D%5Blng%5D=-74.0276862921548&bounds%5BnorthEast%5D%5Blat%5D=40.79281729805645&bounds%5BnorthEast%5D%5Blng%5D=-73.95644682071925" for ::1 at 2020-04-10 16:08:31 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71479499041744", "lng"=>"-74.0276862921548"}, "northEast"=>{"lat"=>"40.79281729805645", "lng"=>"-73.95644682071925"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71479499041744 AND latitude < 40.79281729805645) AND (longitude > -74.0276862921548 AND longitude < -73.95644682071925))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.3ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.7045977459652&bounds%5BsouthWest%5D%5Blng%5D=-74.04589918581877&bounds%5BnorthEast%5D%5Blat%5D=40.78263201195602&bounds%5BnorthEast%5D%5Blng%5D=-73.97465971438322" for ::1 at 2020-04-10 16:08:33 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.7045977459652", "lng"=>"-74.04589918581877"}, "northEast"=>{"lat"=>"40.78263201195602", "lng"=>"-73.97465971438322"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (5.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.7045977459652 AND latitude < 40.78263201195602) AND (longitude > -74.04589918581877 AND longitude < -73.97465971438322))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (9.2ms)
+Completed 200 OK in 23ms (Views: 15.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.6801495651169&bounds%5BsouthWest%5D%5Blng%5D=-74.05299344798199&bounds%5BnorthEast%5D%5Blat%5D=40.758212491542885&bounds%5BnorthEast%5D%5Blng%5D=-73.98175397654644" for ::1 at 2020-04-10 16:11:50 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.6801495651169", "lng"=>"-74.05299344798199"}, "northEast"=>{"lat"=>"40.758212491542885", "lng"=>"-73.98175397654644"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.6801495651169 AND latitude < 40.758212491542885) AND (longitude > -74.05299344798199 AND longitude < -73.98175397654644))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.0ms)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.640823262404226&bounds%5BsouthWest%5D%5Blng%5D=-74.05488172312847&bounds%5BnorthEast%5D%5Blat%5D=40.718932261016604&bounds%5BnorthEast%5D%5Blng%5D=-73.98364225169293" for ::1 at 2020-04-10 16:12:48 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.640823262404226", "lng"=>"-74.05488172312847"}, "northEast"=>{"lat"=>"40.718932261016604", "lng"=>"-73.98364225169293"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.640823262404226 AND latitude < 40.718932261016604) AND (longitude > -74.05488172312847 AND longitude < -73.98364225169293))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 23ms (Views: 18.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.63235596002737&bounds%5BsouthWest%5D%5Blng%5D=-74.08553118557482&bounds%5BnorthEast%5D%5Blat%5D=40.71047487358565&bounds%5BnorthEast%5D%5Blng%5D=-74.01429171413928" for ::1 at 2020-04-10 16:12:49 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.63235596002737", "lng"=>"-74.08553118557482"}, "northEast"=>{"lat"=>"40.71047487358565", "lng"=>"-74.01429171413928"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.63235596002737 AND latitude < 40.71047487358565) AND (longitude > -74.08553118557482 AND longitude < -74.01429171413928))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.1ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 16:20:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 839ms (Views: 832.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 16:20:20 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (10.9ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (19.3ms)
+Completed 200 OK in 37ms (Views: 21.8ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 16:20:20 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (13.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (16.9ms)
+Completed 200 OK in 34ms (Views: 16.5ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.69354266902853&bounds%5BsouthWest%5D%5Blng%5D=-74.04724170294564&bounds%5BnorthEast%5D%5Blat%5D=40.771589896567406&bounds%5BnorthEast%5D%5Blng%5D=-73.9760022315101" for ::1 at 2020-04-10 16:20:24 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.69354266902853", "lng"=>"-74.04724170294564"}, "northEast"=>{"lat"=>"40.771589896567406", "lng"=>"-73.9760022315101"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.69354266902853 AND latitude < 40.771589896567406) AND (longitude > -74.04724170294564 AND longitude < -73.9760022315101))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.8ms)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.660455487792696&bounds%5BsouthWest%5D%5Blng%5D=-74.06703919343283&bounds%5BnorthEast%5D%5Blat%5D=40.738541491133056&bounds%5BnorthEast%5D%5Blng%5D=-73.99579972199729" for ::1 at 2020-04-10 16:20:25 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.660455487792696", "lng"=>"-74.06703919343283"}, "northEast"=>{"lat"=>"40.738541491133056", "lng"=>"-73.99579972199729"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.660455487792696 AND latitude < 40.738541491133056) AND (longitude > -74.06703919343283 AND longitude < -73.99579972199729))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.3ms)
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.63506287967836&bounds%5BsouthWest%5D%5Blng%5D=-74.09192343957274&bounds%5BnorthEast%5D%5Blat%5D=40.713178623703676&bounds%5BnorthEast%5D%5Blng%5D=-74.02068396813719" for ::1 at 2020-04-10 16:20:26 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.63506287967836", "lng"=>"-74.09192343957274"}, "northEast"=>{"lat"=>"40.713178623703676", "lng"=>"-74.02068396813719"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.63506287967836 AND latitude < 40.713178623703676) AND (longitude > -74.09192343957274 AND longitude < -74.02068396813719))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.5ms)
+Completed 200 OK in 27ms (Views: 20.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 16:27:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 628ms (Views: 624.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 16:27:28 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (13.2ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (18.3ms)
+Completed 200 OK in 31ms (Views: 15.1ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 16:27:28 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (7.6ms)
+Completed 200 OK in 32ms (Views: 23.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.47041606582371&bounds%5BsouthWest%5D%5Blng%5D=-74.25615788574217&bounds%5BnorthEast%5D%5Blat%5D=41.094318762795346&bounds%5BnorthEast%5D%5Blng%5D=-73.6862421142578" for ::1 at 2020-04-10 16:27:40 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.47041606582371", "lng"=>"-74.25615788574217"}, "northEast"=>{"lat"=>"41.094318762795346", "lng"=>"-73.6862421142578"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.47041606582371 AND latitude < 41.094318762795346) AND (longitude > -74.25615788574217 AND longitude < -73.6862421142578))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.4ms)
+Completed 200 OK in 25ms (Views: 20.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.47041606582371&bounds%5BsouthWest%5D%5Blng%5D=-74.192911397171&bounds%5BnorthEast%5D%5Blat%5D=41.094318762795346&bounds%5BnorthEast%5D%5Blng%5D=-73.74948860282896" for ::1 at 2020-04-10 16:27:40 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.47041606582371", "lng"=>"-74.192911397171"}, "northEast"=>{"lat"=>"41.094318762795346", "lng"=>"-73.74948860282896"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.47041606582371 AND latitude < 41.094318762795346) AND (longitude > -74.192911397171 AND longitude < -73.74948860282896))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.3ms)
+Completed 200 OK in 25ms (Views: 16.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.15626941882231&bounds%5BsouthWest%5D%5Blng%5D=-74.41462279434202&bounds%5BnorthEast%5D%5Blat%5D=41.40407008049394&bounds%5BnorthEast%5D%5Blng%5D=-73.52777720565794" for ::1 at 2020-04-10 16:27:44 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.15626941882231", "lng"=>"-74.41462279434202"}, "northEast"=>{"lat"=>"41.40407008049394", "lng"=>"-73.52777720565794"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.15626941882231 AND latitude < 41.40407008049394) AND (longitude > -74.41462279434202 AND longitude < -73.52777720565794))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.7ms)
+Completed 200 OK in 21ms (Views: 16.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.47041606582371&bounds%5BsouthWest%5D%5Blng%5D=-74.192911397171&bounds%5BnorthEast%5D%5Blat%5D=41.094318762795346&bounds%5BnorthEast%5D%5Blng%5D=-73.74948860282896" for ::1 at 2020-04-10 16:27:46 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.47041606582371", "lng"=>"-74.192911397171"}, "northEast"=>{"lat"=>"41.094318762795346", "lng"=>"-73.74948860282896"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.47041606582371 AND latitude < 41.094318762795346) AND (longitude > -74.192911397171 AND longitude < -73.74948860282896))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.8ms)
+Completed 200 OK in 24ms (Views: 18.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.62694103003211&bounds%5BsouthWest%5D%5Blng%5D=-74.08205569858549&bounds%5BnorthEast%5D%5Blat%5D=40.9388926742345&bounds%5BnorthEast%5D%5Blng%5D=-73.86034430141447" for ::1 at 2020-04-10 16:27:47 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.62694103003211", "lng"=>"-74.08205569858549"}, "northEast"=>{"lat"=>"40.9388926742345", "lng"=>"-73.86034430141447"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.62694103003211 AND latitude < 40.9388926742345) AND (longitude > -74.08205569858549 AND longitude < -73.86034430141447))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (9.0ms)
+Completed 200 OK in 26ms (Views: 17.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 16:29:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 136ms (Views: 131.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 16:29:47 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (16.8ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (20.0ms)
+Completed 200 OK in 31ms (Views: 12.0ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 16:29:47 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.0ms)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.70819758660319&bounds%5BsouthWest%5D%5Blng%5D=-74.03930094655155&bounds%5BnorthEast%5D%5Blat%5D=40.786227631327385&bounds%5BnorthEast%5D%5Blng%5D=-73.968061475116" for ::1 at 2020-04-10 16:29:50 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.70819758660319", "lng"=>"-74.03930094655155"}, "northEast"=>{"lat"=>"40.786227631327385", "lng"=>"-73.968061475116"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (4.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.70819758660319 AND latitude < 40.786227631327385) AND (longitude > -74.03930094655155 AND longitude < -73.968061475116))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (8.7ms)
+Completed 200 OK in 25ms (Views: 16.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.70819758660319&bounds%5BsouthWest%5D%5Blng%5D=-74.03798666413425&bounds%5BnorthEast%5D%5Blat%5D=40.786227631327385&bounds%5BnorthEast%5D%5Blng%5D=-73.9693757575333" for ::1 at 2020-04-10 16:29:50 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.70819758660319", "lng"=>"-74.03798666413425"}, "northEast"=>{"lat"=>"40.786227631327385", "lng"=>"-73.9693757575333"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.70819758660319 AND latitude < 40.786227631327385) AND (longitude > -74.03798666413425 AND longitude < -73.9693757575333))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.3ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68084224706384&bounds%5BsouthWest%5D%5Blng%5D=-74.05395117219089&bounds%5BnorthEast%5D%5Blat%5D=40.75890436165879&bounds%5BnorthEast%5D%5Blng%5D=-73.98534026558994" for ::1 at 2020-04-10 16:29:53 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68084224706384", "lng"=>"-74.05395117219089"}, "northEast"=>{"lat"=>"40.75890436165879", "lng"=>"-73.98534026558994"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68084224706384 AND latitude < 40.75890436165879) AND (longitude > -74.05395117219089 AND longitude < -73.98534026558994))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.0ms)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68084224706384&bounds%5BsouthWest%5D%5Blng%5D=-74.05526545460819&bounds%5BnorthEast%5D%5Blat%5D=40.75890436165879&bounds%5BnorthEast%5D%5Blng%5D=-73.98402598317264" for ::1 at 2020-04-10 16:29:53 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68084224706384", "lng"=>"-74.05526545460819"}, "northEast"=>{"lat"=>"40.75890436165879", "lng"=>"-73.98402598317264"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68084224706384 AND latitude < 40.75890436165879) AND (longitude > -74.05526545460819 AND longitude < -73.98402598317264))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.3ms)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.6635260843745&bounds%5BsouthWest%5D%5Blng%5D=-74.06831171925663&bounds%5BnorthEast%5D%5Blat%5D=40.74160849029015&bounds%5BnorthEast%5D%5Blng%5D=-73.99707224782108" for ::1 at 2020-04-10 16:29:55 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.6635260843745", "lng"=>"-74.06831171925663"}, "northEast"=>{"lat"=>"40.74160849029015", "lng"=>"-73.99707224782108"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.6635260843745 AND latitude < 40.74160849029015) AND (longitude > -74.06831171925663 AND longitude < -73.99707224782108))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.1ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.6970744625934&bounds%5BsouthWest%5D%5Blng%5D=-74.03846788073376&bounds%5BnorthEast%5D%5Blat%5D=40.77511754958879&bounds%5BnorthEast%5D%5Blng%5D=-73.96722840929822" for ::1 at 2020-04-10 16:29:57 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.6970744625934", "lng"=>"-74.03846788073376"}, "northEast"=>{"lat"=>"40.77511754958879", "lng"=>"-73.96722840929822"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.6970744625934 AND latitude < 40.77511754958879) AND (longitude > -74.03846788073376 AND longitude < -73.96722840929822))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.1ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.6970744625934&bounds%5BsouthWest%5D%5Blng%5D=-74.03715359831646&bounds%5BnorthEast%5D%5Blat%5D=40.77511754958879&bounds%5BnorthEast%5D%5Blng%5D=-73.96854269171551" for ::1 at 2020-04-10 16:29:57 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.6970744625934", "lng"=>"-74.03715359831646"}, "northEast"=>{"lat"=>"40.77511754958879", "lng"=>"-73.96854269171551"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.6970744625934 AND latitude < 40.77511754958879) AND (longitude > -74.03715359831646 AND longitude < -73.96854269171551))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.9ms)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.72140653786302&bounds%5BsouthWest%5D%5Blng%5D=-73.99951488424077&bounds%5BnorthEast%5D%5Blat%5D=40.79942109079403&bounds%5BnorthEast%5D%5Blng%5D=-73.93090397763982" for ::1 at 2020-04-10 16:29:59 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.72140653786302", "lng"=>"-73.99951488424077"}, "northEast"=>{"lat"=>"40.79942109079403", "lng"=>"-73.93090397763982"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.72140653786302 AND latitude < 40.79942109079403) AND (longitude > -73.99951488424077 AND longitude < -73.93090397763982))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.9ms)
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.72140653786302&bounds%5BsouthWest%5D%5Blng%5D=-74.00082916665806&bounds%5BnorthEast%5D%5Blat%5D=40.79942109079403&bounds%5BnorthEast%5D%5Blng%5D=-73.92958969522252" for ::1 at 2020-04-10 16:29:59 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.72140653786302", "lng"=>"-74.00082916665806"}, "northEast"=>{"lat"=>"40.79942109079403", "lng"=>"-73.92958969522252"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.72140653786302 AND latitude < 40.79942109079403) AND (longitude > -74.00082916665806 AND longitude < -73.92958969522252))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.4ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.74734345570373&bounds%5BsouthWest%5D%5Blng%5D=-73.99540165272718&bounds%5BnorthEast%5D%5Blat%5D=40.825327577116965&bounds%5BnorthEast%5D%5Blng%5D=-73.92416218129163" for ::1 at 2020-04-10 16:30:01 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.74734345570373", "lng"=>"-73.99540165272718"}, "northEast"=>{"lat"=>"40.825327577116965", "lng"=>"-73.92416218129163"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.74734345570373 AND latitude < 40.825327577116965) AND (longitude > -73.99540165272718 AND longitude < -73.92416218129163))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.2ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 16:30:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 901ms (Views: 897.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 16:30:15 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (3.6ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (7.2ms)
+Completed 200 OK in 24ms (Views: 16.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 16:30:15 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (10.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (14.2ms)
+Completed 200 OK in 29ms (Views: 14.3ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71420635287901&bounds%5BsouthWest%5D%5Blng%5D=-74.03968465462239&bounds%5BnorthEast%5D%5Blat%5D=40.79222935088288&bounds%5BnorthEast%5D%5Blng%5D=-73.96844518318684" for ::1 at 2020-04-10 16:30:16 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71420635287901", "lng"=>"-74.03968465462239"}, "northEast"=>{"lat"=>"40.79222935088288", "lng"=>"-73.96844518318684"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71420635287901 AND latitude < 40.79222935088288) AND (longitude > -74.03968465462239 AND longitude < -73.96844518318684))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.687181850167015&bounds%5BsouthWest%5D%5Blng%5D=-74.05444753304036&bounds%5BnorthEast%5D%5Blat%5D=40.76523653414673&bounds%5BnorthEast%5D%5Blng%5D=-73.98320806160481" for ::1 at 2020-04-10 16:30:18 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.687181850167015", "lng"=>"-74.05444753304036"}, "northEast"=>{"lat"=>"40.76523653414673", "lng"=>"-73.98320806160481"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (5.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.687181850167015 AND latitude < 40.76523653414673) AND (longitude > -74.05444753304036 AND longitude < -73.98320806160481))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (8.8ms)
+Completed 200 OK in 25ms (Views: 16.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.67247130807783&bounds%5BsouthWest%5D%5Blng%5D=-74.06680715218098&bounds%5BnorthEast%5D%5Blat%5D=40.75054323274454&bounds%5BnorthEast%5D%5Blng%5D=-73.99556768074544" for ::1 at 2020-04-10 16:30:20 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.67247130807783", "lng"=>"-74.06680715218098"}, "northEast"=>{"lat"=>"40.75054323274454", "lng"=>"-73.99556768074544"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.67247130807783 AND latitude < 40.75054323274454) AND (longitude > -74.06680715218098 AND longitude < -73.99556768074544))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.2ms)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.65801796903686&bounds%5BsouthWest%5D%5Blng%5D=-74.07350194588216&bounds%5BnorthEast%5D%5Blat%5D=40.73610682794635&bounds%5BnorthEast%5D%5Blng%5D=-74.00226247444661" for ::1 at 2020-04-10 16:30:22 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.65801796903686", "lng"=>"-74.07350194588216"}, "northEast"=>{"lat"=>"40.73610682794635", "lng"=>"-74.00226247444661"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.65801796903686 AND latitude < 40.73610682794635) AND (longitude > -74.07350194588216 AND longitude < -74.00226247444661))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.0ms)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.647028288789244&bounds%5BsouthWest%5D%5Blng%5D=-74.09720334948963&bounds%5BnorthEast%5D%5Blat%5D=40.72513002042887&bounds%5BnorthEast%5D%5Blng%5D=-74.02596387805409" for ::1 at 2020-04-10 16:30:23 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.647028288789244", "lng"=>"-74.09720334948963"}, "northEast"=>{"lat"=>"40.72513002042887", "lng"=>"-74.02596387805409"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.647028288789244 AND latitude < 40.72513002042887) AND (longitude > -74.09720334948963 AND longitude < -74.02596387805409))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.5ms)
+Completed 200 OK in 19ms (Views: 14.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.67068001197523&bounds%5BsouthWest%5D%5Blng%5D=-74.06783493240171&bounds%5BnorthEast%5D%5Blat%5D=40.74875403568177&bounds%5BnorthEast%5D%5Blng%5D=-73.99659546096616" for ::1 at 2020-04-10 16:30:25 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.67068001197523", "lng"=>"-74.06783493240171"}, "northEast"=>{"lat"=>"40.74875403568177", "lng"=>"-73.99659546096616"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.67068001197523 AND latitude < 40.74875403568177) AND (longitude > -74.06783493240171 AND longitude < -73.99659546096616))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.1ms)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68930590891242&bounds%5BsouthWest%5D%5Blng%5D=-74.0392145004873&bounds%5BnorthEast%5D%5Blat%5D=40.76735810308075&bounds%5BnorthEast%5D%5Blng%5D=-73.96797502905176" for ::1 at 2020-04-10 16:30:26 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68930590891242", "lng"=>"-74.0392145004873"}, "northEast"=>{"lat"=>"40.76735810308075", "lng"=>"-73.96797502905176"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68930590891242 AND latitude < 40.76735810308075) AND (longitude > -74.0392145004873 AND longitude < -73.96797502905176))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.4ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 16:30:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mhPe4m_-fjN04Dd7SlBrUw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 92ms (Views: 87.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 16:30:37 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (5.2ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (8.6ms)
+Completed 200 OK in 32ms (Views: 22.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-74.00681973571776&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.93558026428221" for ::1 at 2020-04-10 16:30:37 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-74.00681973571776"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.93558026428221"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -74.00681973571776 AND longitude < -73.93558026428221))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.1ms)
+Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.78004895724948&bounds%5BsouthWest%5D%5Blng%5D=-73.97370702657696&bounds%5BnorthEast%5D%5Blat%5D=40.857994682895985&bounds%5BnorthEast%5D%5Blng%5D=-73.90246755514141" for ::1 at 2020-04-10 16:30:38 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.78004895724948", "lng"=>"-73.97370702657696"}, "northEast"=>{"lat"=>"40.857994682895985", "lng"=>"-73.90246755514141"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.78004895724948 AND latitude < 40.857994682895985) AND (longitude > -73.97370702657696 AND longitude < -73.90246755514141))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.9ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.81792681495591&bounds%5BsouthWest%5D%5Blng%5D=-73.9312513960707&bounds%5BnorthEast%5D%5Blat%5D=40.89582804088427&bounds%5BnorthEast%5D%5Blng%5D=-73.86001192463516" for ::1 at 2020-04-10 16:30:40 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.81792681495591", "lng"=>"-73.9312513960707"}, "northEast"=>{"lat"=>"40.89582804088427", "lng"=>"-73.86001192463516"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.81792681495591 AND latitude < 40.89582804088427) AND (longitude > -73.9312513960707 AND longitude < -73.86001192463516))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.9ms)
+Completed 200 OK in 19ms (Views: 13.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.789674056948435&bounds%5BsouthWest%5D%5Blng%5D=-73.96424731458727&bounds%5BnorthEast%5D%5Blat%5D=40.867608478043664&bounds%5BnorthEast%5D%5Blng%5D=-73.89300784315172" for ::1 at 2020-04-10 16:30:41 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.789674056948435", "lng"=>"-73.96424731458727"}, "northEast"=>{"lat"=>"40.867608478043664", "lng"=>"-73.89300784315172"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.789674056948435 AND latitude < 40.867608478043664) AND (longitude > -73.96424731458727 AND longitude < -73.89300784315172))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.0ms)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.751074209523345&bounds%5BsouthWest%5D%5Blng%5D=-73.98722926586942&bounds%5BnorthEast%5D%5Blat%5D=40.82905395236921&bounds%5BnorthEast%5D%5Blng%5D=-73.91598979443387" for ::1 at 2020-04-10 16:30:42 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.751074209523345", "lng"=>"-73.98722926586942"}, "northEast"=>{"lat"=>"40.82905395236921", "lng"=>"-73.91598979443387"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.751074209523345 AND latitude < 40.82905395236921) AND (longitude > -73.98722926586942 AND longitude < -73.91598979443387))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.7ms)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.633932934086765&bounds%5BsouthWest%5D%5Blng%5D=-74.09408847302274&bounds%5BnorthEast%5D%5Blat%5D=40.94585181322432&bounds%5BnorthEast%5D%5Blng%5D=-73.80913058728055" for ::1 at 2020-04-10 16:30:44 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.633932934086765", "lng"=>"-74.09408847302274"}, "northEast"=>{"lat"=>"40.94585181322432", "lng"=>"-73.80913058728055"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.633932934086765 AND latitude < 40.94585181322432) AND (longitude > -74.09408847302274 AND longitude < -73.80913058728055))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (8.0ms)
+Completed 200 OK in 30ms (Views: 20.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.633932934086765&bounds%5BsouthWest%5D%5Blng%5D=-74.05025581330136&bounds%5BnorthEast%5D%5Blat%5D=40.94585181322432&bounds%5BnorthEast%5D%5Blng%5D=-73.85296324700192" for ::1 at 2020-04-10 16:30:44 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.633932934086765", "lng"=>"-74.05025581330136"}, "northEast"=>{"lat"=>"40.94585181322432", "lng"=>"-73.85296324700192"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.633932934086765 AND latitude < 40.94585181322432) AND (longitude > -74.05025581330136 AND longitude < -73.85296324700192))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.3ms)
+Completed 200 OK in 18ms (Views: 12.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61858220647643&bounds%5BsouthWest%5D%5Blng%5D=-74.08184150666074&bounds%5BnorthEast%5D%5Blat%5D=40.93057301527061&bounds%5BnorthEast%5D%5Blng%5D=-73.8845489403613" for ::1 at 2020-04-10 16:30:51 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61858220647643", "lng"=>"-74.08184150666074"}, "northEast"=>{"lat"=>"40.93057301527061", "lng"=>"-73.8845489403613"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61858220647643 AND latitude < 40.93057301527061) AND (longitude > -74.08184150666074 AND longitude < -73.8845489403613))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.8ms)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.76501031958578&bounds%5BsouthWest%5D%5Blng%5D=-73.98936061620788&bounds%5BnorthEast%5D%5Blat%5D=40.78450975128462&bounds%5BnorthEast%5D%5Blng%5D=-73.97702983081416" for ::1 at 2020-04-10 16:34:08 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.76501031958578", "lng"=>"-73.98936061620788"}, "northEast"=>{"lat"=>"40.78450975128462", "lng"=>"-73.97702983081416"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.76501031958578 AND latitude < 40.78450975128462) AND (longitude > -73.98936061620788 AND longitude < -73.97702983081416))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.4ms)
+Completed 200 OK in 19ms (Views: 12.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.76501031958578&bounds%5BsouthWest%5D%5Blng%5D=-73.99210015744046&bounds%5BnorthEast%5D%5Blat%5D=40.78450975128462&bounds%5BnorthEast%5D%5Blng%5D=-73.97429028958157" for ::1 at 2020-04-10 16:34:08 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.76501031958578", "lng"=>"-73.99210015744046"}, "northEast"=>{"lat"=>"40.78450975128462", "lng"=>"-73.97429028958157"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.76501031958578 AND latitude < 40.78450975128462) AND (longitude > -73.99210015744046 AND longitude < -73.97429028958157))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.2ms)
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.755258457631804&bounds%5BsouthWest%5D%5Blng%5D=-74.0010050913699&bounds%5BnorthEast%5D%5Blat%5D=40.79425732088487&bounds%5BnorthEast%5D%5Blng%5D=-73.96538535565213" for ::1 at 2020-04-10 16:34:10 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.755258457631804", "lng"=>"-74.0010050913699"}, "northEast"=>{"lat"=>"40.79425732088487", "lng"=>"-73.96538535565213"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.755258457631804 AND latitude < 40.79425732088487) AND (longitude > -74.0010050913699 AND longitude < -73.96538535565213))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.1ms)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.05443469494656&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.91195575207547" for ::1 at 2020-04-10 16:34:11 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.05443469494656"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.91195575207547"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.05443469494656 AND longitude < -73.91195575207547))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (7.6ms)
+Completed 200 OK in 33ms (Views: 22.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.03251836508588&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.93387208193616" for ::1 at 2020-04-10 16:34:11 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.03251836508588"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.93387208193616"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.03251836508588 AND longitude < -73.93387208193616))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.5ms)
+Completed 200 OK in 24ms (Views: 19.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.03960744351224&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.9267830035098" for ::1 at 2020-04-10 16:34:11 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.03960744351224"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.9267830035098"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.03960744351224 AND longitude < -73.9267830035098))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.2ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61858220647643&bounds%5BsouthWest%5D%5Blng%5D=-74.09601966351346&bounds%5BnorthEast%5D%5Blat%5D=40.93057301527061&bounds%5BnorthEast%5D%5Blng%5D=-73.87037078350858" for ::1 at 2020-04-10 16:34:13 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61858220647643", "lng"=>"-74.09601966351346"}, "northEast"=>{"lat"=>"40.93057301527061", "lng"=>"-73.87037078350858"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (5.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61858220647643 AND latitude < 40.93057301527061) AND (longitude > -74.09601966351346 AND longitude < -73.87037078350858))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (9.1ms)
+Completed 200 OK in 27ms (Views: 17.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61858220647643&bounds%5BsouthWest%5D%5Blng%5D=-74.08184150666074&bounds%5BnorthEast%5D%5Blat%5D=40.93057301527061&bounds%5BnorthEast%5D%5Blng%5D=-73.8845489403613" for ::1 at 2020-04-10 16:34:13 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61858220647643", "lng"=>"-74.08184150666074"}, "northEast"=>{"lat"=>"40.93057301527061", "lng"=>"-73.8845489403613"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61858220647643 AND latitude < 40.93057301527061) AND (longitude > -74.08184150666074 AND longitude < -73.8845489403613))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.3ms)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.03251836508588&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.93387208193616" for ::1 at 2020-04-10 16:34:15 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.03251836508588"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.93387208193616"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.03251836508588 AND longitude < -73.93387208193616))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.7ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.03960744351224&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.9267830035098" for ::1 at 2020-04-10 16:34:15 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.03960744351224"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.9267830035098"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.03960744351224 AND longitude < -73.9267830035098))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.4ms)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.73575044187787&bounds%5BsouthWest%5D%5Blng%5D=-74.01140133351163&bounds%5BnorthEast%5D%5Blat%5D=40.81374816722651&bounds%5BnorthEast%5D%5Blng%5D=-73.95498911351041" for ::1 at 2020-04-10 16:34:18 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.73575044187787", "lng"=>"-74.01140133351163"}, "northEast"=>{"lat"=>"40.81374816722651", "lng"=>"-73.95498911351041"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (8.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.73575044187787 AND latitude < 40.81374816722651) AND (longitude > -74.01140133351163 AND longitude < -73.95498911351041))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (11.3ms)
+Completed 200 OK in 28ms (Views: 15.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.73575044187787&bounds%5BsouthWest%5D%5Blng%5D=-74.01881495922879&bounds%5BnorthEast%5D%5Blat%5D=40.81374816722651&bounds%5BnorthEast%5D%5Blng%5D=-73.94757548779324" for ::1 at 2020-04-10 16:34:18 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.73575044187787", "lng"=>"-74.01881495922879"}, "northEast"=>{"lat"=>"40.81374816722651", "lng"=>"-73.94757548779324"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.73575044187787 AND latitude < 40.81374816722651) AND (longitude > -74.01881495922879 AND longitude < -73.94757548779324))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.6ms)
+Completed 200 OK in 17ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.462037684329815&bounds%5BsouthWest%5D%5Blng%5D=-74.2681531092532&bounds%5BnorthEast%5D%5Blat%5D=41.086018709249515&bounds%5BnorthEast%5D%5Blng%5D=-73.69823733776883" for ::1 at 2020-04-10 16:34:20 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.462037684329815", "lng"=>"-74.2681531092532"}, "northEast"=>{"lat"=>"41.086018709249515", "lng"=>"-73.69823733776883"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.462037684329815 AND latitude < 41.086018709249515) AND (longitude > -74.2681531092532 AND longitude < -73.69823733776883))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.5ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.462037684329815&bounds%5BsouthWest%5D%5Blng%5D=-74.18048778981046&bounds%5BnorthEast%5D%5Blat%5D=41.086018709249515&bounds%5BnorthEast%5D%5Blng%5D=-73.78590265721158" for ::1 at 2020-04-10 16:34:20 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.462037684329815", "lng"=>"-74.18048778981046"}, "northEast"=>{"lat"=>"41.086018709249515", "lng"=>"-73.78590265721158"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.462037684329815 AND latitude < 41.086018709249515) AND (longitude > -74.18048778981046 AND longitude < -73.78590265721158))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.3ms)
+Completed 200 OK in 24ms (Views: 17.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.14785197328255&bounds%5BsouthWest%5D%5Blng%5D=-74.3777803561099&bounds%5BnorthEast%5D%5Blat%5D=41.39580928096706&bounds%5BnorthEast%5D%5Blng%5D=-73.58861009091214" for ::1 at 2020-04-10 16:34:22 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.14785197328255", "lng"=>"-74.3777803561099"}, "northEast"=>{"lat"=>"41.39580928096706", "lng"=>"-73.58861009091214"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.14785197328255 AND latitude < 41.39580928096706) AND (longitude > -74.3777803561099 AND longitude < -73.58861009091214))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (7.2ms)
+Completed 200 OK in 23ms (Views: 15.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61858220647643&bounds%5BsouthWest%5D%5Blng%5D=-74.08184150666074&bounds%5BnorthEast%5D%5Blat%5D=40.93057301527061&bounds%5BnorthEast%5D%5Blng%5D=-73.8845489403613" for ::1 at 2020-04-10 16:34:24 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61858220647643", "lng"=>"-74.08184150666074"}, "northEast"=>{"lat"=>"40.93057301527061", "lng"=>"-73.8845489403613"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61858220647643 AND latitude < 40.93057301527061) AND (longitude > -74.08184150666074 AND longitude < -73.8845489403613))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.1ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.03251836508588&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.93387208193616" for ::1 at 2020-04-10 16:34:25 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.03251836508588"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.93387208193616"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (4.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.03251836508588 AND longitude < -73.93387208193616))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (8.3ms)
+Completed 200 OK in 25ms (Views: 16.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.03960744351224&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.9267830035098" for ::1 at 2020-04-10 16:34:25 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.03960744351224"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.9267830035098"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.03960744351224 AND longitude < -73.9267830035098))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.2ms)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61858220647643&bounds%5BsouthWest%5D%5Blng%5D=-74.09601966351346&bounds%5BnorthEast%5D%5Blat%5D=40.93057301527061&bounds%5BnorthEast%5D%5Blng%5D=-73.87037078350858" for ::1 at 2020-04-10 16:34:29 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61858220647643", "lng"=>"-74.09601966351346"}, "northEast"=>{"lat"=>"40.93057301527061", "lng"=>"-73.87037078350858"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61858220647643 AND latitude < 40.93057301527061) AND (longitude > -74.09601966351346 AND longitude < -73.87037078350858))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.2ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61858220647643&bounds%5BsouthWest%5D%5Blng%5D=-74.08184150666074&bounds%5BnorthEast%5D%5Blat%5D=40.93057301527061&bounds%5BnorthEast%5D%5Blng%5D=-73.8845489403613" for ::1 at 2020-04-10 16:34:29 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61858220647643", "lng"=>"-74.08184150666074"}, "northEast"=>{"lat"=>"40.93057301527061", "lng"=>"-73.8845489403613"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61858220647643 AND latitude < 40.93057301527061) AND (longitude > -74.08184150666074 AND longitude < -73.8845489403613))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.3ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.03251836508588&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.93387208193616" for ::1 at 2020-04-10 16:34:30 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.03251836508588"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.93387208193616"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.03251836508588 AND longitude < -73.93387208193616))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.1ms)
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.696717245030065&bounds%5BsouthWest%5D%5Blng%5D=-74.03960744351224&bounds%5BnorthEast%5D%5Blat%5D=40.85271268646738&bounds%5BnorthEast%5D%5Blng%5D=-73.9267830035098" for ::1 at 2020-04-10 16:34:30 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.696717245030065", "lng"=>"-74.03960744351224"}, "northEast"=>{"lat"=>"40.85271268646738", "lng"=>"-73.9267830035098"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.696717245030065 AND latitude < 40.85271268646738) AND (longitude > -74.03960744351224 AND longitude < -73.9267830035098))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.2ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61858220647643&bounds%5BsouthWest%5D%5Blng%5D=-74.09601966351346&bounds%5BnorthEast%5D%5Blat%5D=40.93057301527061&bounds%5BnorthEast%5D%5Blng%5D=-73.87037078350858" for ::1 at 2020-04-10 16:34:32 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61858220647643", "lng"=>"-74.09601966351346"}, "northEast"=>{"lat"=>"40.93057301527061", "lng"=>"-73.87037078350858"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61858220647643 AND latitude < 40.93057301527061) AND (longitude > -74.09601966351346 AND longitude < -73.87037078350858))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.5ms)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61858220647643&bounds%5BsouthWest%5D%5Blng%5D=-74.08184150666074&bounds%5BnorthEast%5D%5Blat%5D=40.93057301527061&bounds%5BnorthEast%5D%5Blng%5D=-73.8845489403613" for ::1 at 2020-04-10 16:34:32 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61858220647643", "lng"=>"-74.08184150666074"}, "northEast"=>{"lat"=>"40.93057301527061", "lng"=>"-73.8845489403613"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61858220647643 AND latitude < 40.93057301527061) AND (longitude > -74.08184150666074 AND longitude < -73.8845489403613))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.1ms)
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.76501031958578&bounds%5BsouthWest%5D%5Blng%5D=-73.98936061620788&bounds%5BnorthEast%5D%5Blat%5D=40.78450975128462&bounds%5BnorthEast%5D%5Blng%5D=-73.97702983081416" for ::1 at 2020-04-10 16:45:01 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.76501031958578", "lng"=>"-73.98936061620788"}, "northEast"=>{"lat"=>"40.78450975128462", "lng"=>"-73.97702983081416"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (13.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.76501031958578 AND latitude < 40.78450975128462) AND (longitude > -73.98936061620788 AND longitude < -73.97702983081416))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (15.8ms)
+Completed 200 OK in 28ms (Views: 11.2ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.76501031958578&bounds%5BsouthWest%5D%5Blng%5D=-73.99210015744046&bounds%5BnorthEast%5D%5Blat%5D=40.78450975128462&bounds%5BnorthEast%5D%5Blng%5D=-73.97429028958157" for ::1 at 2020-04-10 16:45:01 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.76501031958578", "lng"=>"-73.99210015744046"}, "northEast"=>{"lat"=>"40.78450975128462", "lng"=>"-73.97429028958157"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.76501031958578 AND latitude < 40.78450975128462) AND (longitude > -73.99210015744046 AND longitude < -73.97429028958157))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.9ms)
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.76248878367621&bounds%5BsouthWest%5D%5Blng%5D=-73.99804807781369&bounds%5BnorthEast%5D%5Blat%5D=40.78198895532556&bounds%5BnorthEast%5D%5Blng%5D=-73.9802382099548" for ::1 at 2020-04-10 16:45:03 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.76248878367621", "lng"=>"-73.99804807781369"}, "northEast"=>{"lat"=>"40.78198895532556", "lng"=>"-73.9802382099548"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.76248878367621 AND latitude < 40.78198895532556) AND (longitude > -73.99804807781369 AND longitude < -73.9802382099548))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.9ms)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.74241516291948&bounds%5BsouthWest%5D%5Blng%5D=-74.0040810647112&bounds%5BnorthEast%5D%5Blat%5D=40.761921223872065&bounds%5BnorthEast%5D%5Blng%5D=-73.98627119685231" for ::1 at 2020-04-10 16:45:04 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.74241516291948", "lng"=>"-74.0040810647112"}, "northEast"=>{"lat"=>"40.761921223872065", "lng"=>"-73.98627119685231"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.74241516291948 AND latitude < 40.761921223872065) AND (longitude > -74.0040810647112 AND longitude < -73.98627119685231))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.7ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.713145342595695&bounds%5BsouthWest%5D%5Blng%5D=-74.03079586649953&bounds%5BnorthEast%5D%5Blat%5D=40.791169584951&bounds%5BnorthEast%5D%5Blng%5D=-73.95955639506398" for ::1 at 2020-04-10 16:45:05 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.713145342595695", "lng"=>"-74.03079586649953"}, "northEast"=>{"lat"=>"40.791169584951", "lng"=>"-73.95955639506398"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (5.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.713145342595695 AND latitude < 40.791169584951) AND (longitude > -74.03079586649953 AND longitude < -73.95955639506398))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (10.3ms)
+Completed 200 OK in 21ms (Views: 12.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.688403070262076&bounds%5BsouthWest%5D%5Blng%5D=-74.0397222581011&bounds%5BnorthEast%5D%5Blat%5D=40.76645632274659&bounds%5BnorthEast%5D%5Blng%5D=-73.96848278666555" for ::1 at 2020-04-10 16:45:07 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.688403070262076", "lng"=>"-74.0397222581011"}, "northEast"=>{"lat"=>"40.76645632274659", "lng"=>"-73.96848278666555"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.688403070262076 AND latitude < 40.76645632274659) AND (longitude > -74.0397222581011 AND longitude < -73.96848278666555))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.9ms)
+Completed 200 OK in 18ms (Views: 12.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.673041825690724&bounds%5BsouthWest%5D%5Blng%5D=-74.05259686137258&bounds%5BnorthEast%5D%5Blat%5D=40.751113081809194&bounds%5BnorthEast%5D%5Blng%5D=-73.98135738993703" for ::1 at 2020-04-10 16:45:08 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.673041825690724", "lng"=>"-74.05259686137258"}, "northEast"=>{"lat"=>"40.751113081809194", "lng"=>"-73.98135738993703"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.673041825690724 AND latitude < 40.751113081809194) AND (longitude > -74.05259686137258 AND longitude < -73.98135738993703))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.4ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.692568221321864&bounds%5BsouthWest%5D%5Blng%5D=-74.03478699351369&bounds%5BnorthEast%5D%5Blat%5D=40.73160384996893&bounds%5BnorthEast%5D%5Blng%5D=-73.99916725779592" for ::1 at 2020-04-10 16:45:09 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.692568221321864", "lng"=>"-74.03478699351369"}, "northEast"=>{"lat"=>"40.73160384996893", "lng"=>"-73.99916725779592"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (5.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.692568221321864 AND latitude < 40.73160384996893) AND (longitude > -74.03478699351369 AND longitude < -73.99916725779592))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (9.0ms)
+Completed 200 OK in 26ms (Views: 16.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.673041825690724&bounds%5BsouthWest%5D%5Blng%5D=-74.05259686137258&bounds%5BnorthEast%5D%5Blat%5D=40.751113081809194&bounds%5BnorthEast%5D%5Blng%5D=-73.98135738993703" for ::1 at 2020-04-10 16:45:11 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.673041825690724", "lng"=>"-74.05259686137258"}, "northEast"=>{"lat"=>"40.751113081809194", "lng"=>"-73.98135738993703"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.673041825690724 AND latitude < 40.751113081809194) AND (longitude > -74.05259686137258 AND longitude < -73.98135738993703))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.7ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.63397187477349&bounds%5BsouthWest%5D%5Blng%5D=-74.08821659709035&bounds%5BnorthEast%5D%5Blat%5D=40.79011437760528&bounds%5BnorthEast%5D%5Blng%5D=-73.94573765421926" for ::1 at 2020-04-10 16:45:12 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.63397187477349", "lng"=>"-74.08821659709035"}, "northEast"=>{"lat"=>"40.79011437760528", "lng"=>"-73.94573765421926"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.63397187477349 AND latitude < 40.79011437760528) AND (longitude > -74.08821659709035 AND longitude < -73.94573765421926))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.5ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.63397187477349&bounds%5BsouthWest%5D%5Blng%5D=-74.06630026722966&bounds%5BnorthEast%5D%5Blat%5D=40.79011437760528&bounds%5BnorthEast%5D%5Blng%5D=-73.96765398407994" for ::1 at 2020-04-10 16:45:12 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.63397187477349", "lng"=>"-74.06630026722966"}, "northEast"=>{"lat"=>"40.79011437760528", "lng"=>"-73.96765398407994"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.63397187477349 AND latitude < 40.79011437760528) AND (longitude > -74.06630026722966 AND longitude < -73.96765398407994))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.5ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.63397187477349&bounds%5BsouthWest%5D%5Blng%5D=-74.07338934565603&bounds%5BnorthEast%5D%5Blat%5D=40.79011437760528&bounds%5BnorthEast%5D%5Blng%5D=-73.96056490565358" for ::1 at 2020-04-10 16:45:12 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.63397187477349", "lng"=>"-74.07338934565603"}, "northEast"=>{"lat"=>"40.79011437760528", "lng"=>"-73.96056490565358"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.63397187477349 AND latitude < 40.79011437760528) AND (longitude > -74.07338934565603 AND longitude < -73.96056490565358))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.7ms)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.55576335107562&bounds%5BsouthWest%5D%5Blng%5D=-74.12980156565725&bounds%5BnorthEast%5D%5Blat%5D=40.86804828149727&bounds%5BnorthEast%5D%5Blng%5D=-73.90415268565236" for ::1 at 2020-04-10 16:45:13 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.55576335107562", "lng"=>"-74.12980156565725"}, "northEast"=>{"lat"=>"40.86804828149727", "lng"=>"-73.90415268565236"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (6.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.55576335107562 AND latitude < 40.86804828149727) AND (longitude > -74.12980156565725 AND longitude < -73.90415268565236))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (10.9ms)
+Completed 200 OK in 32ms (Views: 19.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.55576335107562&bounds%5BsouthWest%5D%5Blng%5D=-74.11562340880452&bounds%5BnorthEast%5D%5Blat%5D=40.86804828149727&bounds%5BnorthEast%5D%5Blng%5D=-73.91833084250509" for ::1 at 2020-04-10 16:45:13 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.55576335107562", "lng"=>"-74.11562340880452"}, "northEast"=>{"lat"=>"40.86804828149727", "lng"=>"-73.91833084250509"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.55576335107562 AND latitude < 40.86804828149727) AND (longitude > -74.11562340880452 AND longitude < -73.91833084250509))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.2ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.399071952662965&bounds%5BsouthWest%5D%5Blng%5D=-74.21426969195424&bounds%5BnorthEast%5D%5Blat%5D=41.02364121154562&bounds%5BnorthEast%5D%5Blng%5D=-73.81968455935537" for ::1 at 2020-04-10 16:45:14 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.399071952662965", "lng"=>"-74.21426969195424"}, "northEast"=>{"lat"=>"41.02364121154562", "lng"=>"-73.81968455935537"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.399071952662965 AND latitude < 41.02364121154562) AND (longitude > -74.21426969195424 AND longitude < -73.81968455935537))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.4ms)
+Completed 200 OK in 27ms (Views: 20.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.55318025192423&bounds%5BsouthWest%5D%5Blng%5D=-74.07719773564034&bounds%5BnorthEast%5D%5Blat%5D=41.17630849520783&bounds%5BnorthEast%5D%5Blng%5D=-73.68261260304146" for ::1 at 2020-04-10 16:45:16 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.55318025192423", "lng"=>"-74.07719773564034"}, "northEast"=>{"lat"=>"41.17630849520783", "lng"=>"-73.68261260304146"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.55318025192423 AND latitude < 41.17630849520783) AND (longitude > -74.07719773564034 AND longitude < -73.68261260304146))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.6ms)
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+

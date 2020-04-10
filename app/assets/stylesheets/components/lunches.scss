@@ -11,3 +11,21 @@
     display: flex;
     justify-content: space-between;
 }
+
+.lunch-index-ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:flex-start;
+  padding: 10px;
+}
+
+.lunch-li{
+  height: 250px;
+  min-width: 190px;
+  max-width: 190px;
+  border: 1px solid #dfd9d8;
+  margin: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
