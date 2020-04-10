@@ -1,12 +1,14 @@
 import { connect } from 'react-redux'
 import Lunches from './lunches'
-import {logout} from '../../actions/session_actions'
 import {fetchLunches} from '../../actions/lunches_actions'
+import {currentLocation} from '../../selectors/user_location_selector'
+
 
 const msp = (state) => {
     
     return {
-        lunches: Object.values(state.entities.lunches)
+        lunches: Object.values(state.entities.lunches),
+        location: currentLocation(state)
     }
 }
 

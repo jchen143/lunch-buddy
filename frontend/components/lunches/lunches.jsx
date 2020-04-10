@@ -23,7 +23,7 @@ class Lunches extends React.Component {
                     </div>
                 
                     <LunchesIndex lunches={this.props.lunches}/>  
-                    <LunchMap /> 
+                    <LunchMap location={this.props.location}/> 
                 </div>
             </>
         )
