@@ -7,15 +7,11 @@ class LunchesIndex extends React.Component{
     
     }
     
-    componentDidMount(){
-        this.props.fetchLunches()
-        this.props.fetchRestaurants({ southWest: { lat: 40.767971, lng: -73.981991 }, northEast: { lat: 40.799565, lng: -73.935342 } }); 
-    }
-
     render(){
-      
+        let restaurants = this.props.restaurants
         let lunches = this.props.lunches.map(lunch => {
-            if (Object.keys(this.props.restaurants).includes(lunch.restaurant_id)){
+            //debugger
+            if (Object.keys(restaurants).includes((lunch.restaurant_id).toString())){
                 return <li key={lunch.id}>{lunch.name} {lunch.description}</li>
             }
         })
