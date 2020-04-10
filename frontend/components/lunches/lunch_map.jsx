@@ -8,6 +8,7 @@ class LunchMap extends React.Component{
 
     componentDidMount() {
         // set the map to show SF
+       debugger
         let burough; 
         switch(this.props.location){
             case "Manhattan":
@@ -43,7 +44,7 @@ class LunchMap extends React.Component{
 
     render() {
         //debugger
-
+        debugger
         return (
             <div id="map-container" ref={map => this.mapNode = map}>
 

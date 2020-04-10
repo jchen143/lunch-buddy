@@ -2,7 +2,7 @@
     export const fetchRestaurants = (bounds) => {
         return $.ajax({
             method: "GET",
-            url: '/api/lunches',
+            url: '/api/restaurants',
             data: {bounds}
         })
 

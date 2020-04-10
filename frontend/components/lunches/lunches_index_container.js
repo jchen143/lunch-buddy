@@ -1,24 +1,21 @@
-import { connect } from 'react-redux'
-import Lunches from './lunches'
+import {connect} from 'react-redux'
+import LunchesIndex from './lunches_index'
 import {fetchLunches} from '../../actions/lunches_actions'
-import {currentLocation} from '../../selectors/user_location_selector'
 import {fetchRestaurants} from '../../actions/restaurants_actions'
 
-
 const msp = (state) => {
-    debugger
     return {
         lunches: Object.values(state.entities.lunches),
-        restaurants: state.entities.restaurants,
-        location: currentLocation(state)
+        restaurants: state.entities.restaurants
     }
 }
 
 const mdp = (dispatch) => {
-    return {
+
+    return{
         fetchLunches: () => dispatch(fetchLunches()),
         fetchRestaurants: (bounds) => dispatch(fetchRestaurants(bounds))
     }
 }
 
-export default connect(msp, mdp)(Lunches)
+export default connect(msp, mdp)(LunchesIndex)

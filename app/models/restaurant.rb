@@ -30,7 +30,7 @@ class Restaurant < ApplicationRecord
             min_long= bounds["southWest"]["lng"].to_f
             max_long = bounds["northEast"]["lng"].to_f
            
-        records_array = self.where("(lat > ? AND lat < ?) AND (lng > ? AND lng < ?)" , min_lat, max_lat, min_long, max_long)
+        records_array = self.where("(latitude > ? AND latitude < ?) AND (longitude > ? AND longitude < ?)" , min_lat, max_lat, min_long, max_long)
   
         return records_array 
 

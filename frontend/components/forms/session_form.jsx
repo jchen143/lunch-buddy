@@ -13,7 +13,7 @@ class SessionForm extends React.Component{
         //debugger
         temp_email = this.props.tempEmail ? this.props.tempEmail : '';
         //debugger
-        this.state = {email: temp_email, password: '', location: ''};
+        this.state = {email: temp_email, password: '', location: 'Manhattan'};
         //debugger
         
     
@@ -63,7 +63,7 @@ class SessionForm extends React.Component{
              <div className="form-field">
                  <label>Location:
                     <select className="form-field" id="location-dropdown" className="user-input" onChange={this.handleSelection}>
-                        <option value="Manhattan">Manhattan</option>
+                        <option value="Manhattan" selected>Manhattan</option>
                         <option value="Bronx">Bronx</option>
                         <option value="Brooklyn">Brooklyn</option>
                         <option value="Queens">Queens</option>
