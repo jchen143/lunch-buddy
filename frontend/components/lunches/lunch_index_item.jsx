@@ -6,6 +6,7 @@ const LunchIndexItem = (props) => {
 
     return (
         <li className="lunch-li" key={lunch.id}>
+            <div className="item-header">Lunch</div>
             <p>{lunch.name}</p>
             <p>{lunch.description}</p>
             <p>{lunch.size}</p>
