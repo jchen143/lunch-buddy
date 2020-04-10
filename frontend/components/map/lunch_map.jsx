@@ -46,7 +46,7 @@ class LunchMap extends React.Component{
 
     componentDidMount() {
         // set the map to show SF
-       debugger
+       //debugger
         this.initMap();
         this.registerListeners(); 
         this.MarkerManager.updateMarkers(this.props.restaurants);
@@ -55,7 +55,7 @@ class LunchMap extends React.Component{
     }
 
     registerListeners() {
-        debugger
+        //
         this.map.addListener('idle', () => {
             let latLongBnds = this.map.getBounds();
             let northEastLat = latLongBnds.getNorthEast().lat();

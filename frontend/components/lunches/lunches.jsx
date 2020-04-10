@@ -16,10 +16,7 @@ class Lunches extends React.Component {
     }
 
     render(){
-        let testLis = Object.values(this.props.restaurants).map(restaurant => {
-            return <li key={restaurant.id}>{restaurant.name}</li>
-        })
-
+       
         return(
             
             <>
@@ -28,12 +25,12 @@ class Lunches extends React.Component {
                         <Nav/>
                     </div>
 
-                    <ul>
-                        {testLis}
-                    </ul>
+                    
                 
-                    <LunchesIndex lunches={this.props.lunches} restaurants={this.props.restaurants} />  
-                    <LunchMap location={this.props.location} restaurants={this.props.restaurants} updateFilter={this.props.updateFilter}/> 
+                    <div className="lunches-content">
+                        <LunchesIndex lunches={this.props.lunches} restaurants={this.props.restaurants} />  
+                        <LunchMap location={this.props.location} restaurants={this.props.restaurants} updateFilter={this.props.updateFilter}/> 
+                    </div>
                 </div>
             </>
         )

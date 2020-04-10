@@ -20,7 +20,7 @@ class Nav extends React.Component {
     }
     handleLogout(e){
         e.preventDefault(); 
-        debugger
+        //debugger
         this.props.logout();
     }
 

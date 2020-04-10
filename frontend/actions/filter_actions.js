@@ -21,6 +21,6 @@ export const changeFilter = (filter, value) => ({
 
 export const updateFilter = (filter, value) => (dispatch, getState) => {
     dispatch(changeFilter(filter, value));
-    debugger
+    //debugger
     return fetchRestaurants(getState().ui.filters.bounds)(dispatch);
 };
