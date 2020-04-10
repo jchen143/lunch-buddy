@@ -9,11 +9,11 @@ class Lunches extends React.Component {
         super(props)
     }
     componentDidMount(){
-        this.props.fetchLunches({ southWest: { lat: 40.767971, lng: -73.981991 }, northEast: { lat: 40.799565, lng: -73.935342 } })
+        this.props.fetchLunches();
     }
 
     render(){
-      
+        
         return(
 
             <>

@@ -17,4 +17,23 @@ class Restaurant < ApplicationRecord
         foreign_key: :restaurant_id, 
         class_name: :Lunch 
 
+    def self.in_bounds(bounds)
+        # google map bounds will be in the following format:
+            # {
+            #   "northEast"=> {"lat"=>"37.80971", "lng"=>"-122.39208"},
+            #   "southWest"=> {"lat"=>"37.74187", "lng"=>"-122.47791"}
+            # }
+            #... query logic goes here
+            
+            min_lat = bounds["southWest"]["lat"].to_f
+            max_lat = bounds["northEast"]["lat"].to_f
+            min_long= bounds["southWest"]["lng"].to_f
+            max_long = bounds["northEast"]["lng"].to_f
+           
+        records_array = self.where("(lat > ? AND lat < ?) AND (lng > ? AND lng < ?)" , min_lat, max_lat, min_long, max_long)
+  
+        return records_array 
+
+    end
+
 end 
