@@ -10,7 +10,7 @@ User.destroy_all
 Lunch.destroy_all
 Restaurant.destroy_all
 
-
+require 'open-uri'
 #DEMO USER
 User.create(email: "demo_user@appacademy.io", password: "password");
 
