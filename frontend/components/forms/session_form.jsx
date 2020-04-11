@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import Nav from '../nav_bar/nav_bar_container'
 import Footer from '../footer/footer'
 
+const demo_info = {
+    email: "demo_user@appacademy.io",
+    password: "password"
+}
+
 class SessionForm extends React.Component{
     constructor(props){
         super(props); 
@@ -16,12 +21,14 @@ class SessionForm extends React.Component{
         this.state = {email: temp_email, password: '', location: 'Manhattan'};
         //debugger
         
-    
+        this.handleDemoClick = this.handleDemoClick.bind(this);
     }
     handleSelection(e){
         this.setState({location: e.target.value})
     }
-
+    handleDemoClick(e) {
+        this.props.login(demo_info)
+    }
     componentDidMount(){
         // let temp_email;
         // //debugger
@@ -120,6 +127,7 @@ class SessionForm extends React.Component{
                    
                 <br></br>
                 <button className="session-submit">{buttonText}</button>
+                <button className="session-submit" onClick={this.handleDemoClick}>Demo Log In</button>
                 {message}
                 {link}
             </form>
