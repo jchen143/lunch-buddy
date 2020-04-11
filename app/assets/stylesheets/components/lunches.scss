@@ -51,9 +51,8 @@ border-radius: 5px 5px 0 0;
 .lunch-name, .restaurant-name, .restaurant-address{
   text-align: left;
   margin: 0;
-  width: calc(100% - 30px);
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 
