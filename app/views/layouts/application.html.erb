@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>LunchBud</title>
+     <link rel="icon" 
+     type="image/png" 
+     href="<%= image_url('favicon.png')%>">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -23,6 +26,9 @@
       window.snackURL = "<%= image_url('burger.png') %>";
       window.menu = "<%= image_url('hamburger-red-menu.png') %>";
       window.menuLogout = "<%= image_url('menu-logout.png') %>";
+      window.footerLogo = "<%= image_url('logo_white.png')%>";
+      window.favicon = "<%= image_url('favicon.png')%>"
+
     </script>
   </head>
 

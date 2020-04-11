@@ -5,7 +5,7 @@ const Footer = (props) => {
     return(
         <>
             <div className="footer">
-                <p>LunchBuddy- Logo Incoming</p>
+                <img src={window.footerLogo}/>
 
                     
                 <div className="footer-links">
