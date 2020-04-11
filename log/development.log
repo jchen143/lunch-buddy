@@ -26344,3 +26344,1819 @@ Processing by Api::RestaurantsController#index as JSON
 Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 0.6ms)
 
 
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (23.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (24.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 37]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 36]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mLunch Load (8.1ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (2.5ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mRestaurant Load (7.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (1.1ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo_user@appacademy.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "W9xeEXUYUcydTzlVRWLhDQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "demo_user@appacademy.io"], ["password_digest", "$2a$12$k6qo2Ehdco7GtPoZN1vp1Ofb81YUloKKy8ztTWPkmdItkOkLUJWtO"], ["session_token", "W9xeEXUYUcydTzlVRWLhDQ"], ["created_at", "2020-04-10 23:14:53.187910"], ["updated_at", "2020-04-10 23:14:53.187910"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mRestaurant Create (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "App Academy Cafe"], ["address", "90 5th Ave"], ["latitude", 40.7352422], ["longitude", -73.9960728], ["created_at", "2020-04-10 23:14:53.193554"], ["updated_at", "2020-04-10 23:14:53.193554"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jos Crabshack"], ["address", "1804 3rd Ave, Apt. 3"], ["latitude", 40.7879917], ["longitude", -73.9496956], ["created_at", "2020-04-10 23:14:53.197299"], ["updated_at", "2020-04-10 23:14:53.197299"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lincoln Square Tavern"], ["address", "113 W 60th St"], ["latitude", 40.772826], ["longitude", -73.9869315], ["created_at", "2020-04-10 23:14:53.200892"], ["updated_at", "2020-04-10 23:14:53.200892"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Central Park Hideaway"], ["address", "Park Ave"], ["latitude", 40.774768], ["longitude", -73.97197], ["created_at", "2020-04-10 23:14:53.204459"], ["updated_at", "2020-04-10 23:14:53.204459"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Liberty Island Tacos"], ["address", "1 Main St"], ["latitude", 40.6983762], ["longitude", -74.0468981], ["created_at", "2020-04-10 23:14:53.207726"], ["updated_at", "2020-04-10 23:14:53.207726"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "World Trade Center Food Court"], ["address", "285 Fulton St"], ["latitude", 40.7115322], ["longitude", -74.0167379], ["created_at", "2020-04-10 23:14:53.211512"], ["updated_at", "2020-04-10 23:14:53.211512"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Peter Kim Korean BBQ Extraordinaire"], ["address", "229 W 28 St"], ["latitude", 40.748346], ["longitude", -73.9961638], ["created_at", "2020-04-10 23:14:53.214750"], ["updated_at", "2020-04-10 23:14:53.214750"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rams Deli Plus"], ["address", "441 East Fordham Rd"], ["latitude", 40.8586227], ["longitude", -73.8880667], ["created_at", "2020-04-10 23:14:53.217608"], ["updated_at", "2020-04-10 23:14:53.217608"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rancho Estrella"], ["address", "616 E 187th St"], ["latitude", 40.8551323], ["longitude", -73.8892581], ["created_at", "2020-04-10 23:14:53.221585"], ["updated_at", "2020-04-10 23:14:53.221585"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Staten Island Soup Spot"], ["address", "34 Baker St"], ["latitude", 40.5737968], ["longitude", -74.1493022], ["created_at", "2020-04-10 23:14:53.225418"], ["updated_at", "2020-04-10 23:14:53.225418"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Soleluna"], ["address", "40 Queens Blvd"], ["latitude", 40.7442052], ["longitude", -73.9265901], ["created_at", "2020-04-10 23:14:53.228785"], ["updated_at", "2020-04-10 23:14:53.228785"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sotto Le Stelle"], ["address", "43 Queens Blvd"], ["latitude", 40.7433062], ["longitude", -73.9224616], ["created_at", "2020-04-10 23:14:53.232516"], ["updated_at", "2020-04-10 23:14:53.232516"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mLunch Create (22.1ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Fullstack Tears Soup"], ["description", "Soup that does not soothe the soul"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 13], ["created_at", "2020-04-10 23:14:53.250670"], ["updated_at", "2020-04-10 23:14:53.250670"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mLunch Create (0.5ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Seafood Medley"], ["description", "Yummy seafood"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 14], ["created_at", "2020-04-10 23:14:53.280561"], ["updated_at", "2020-04-10 23:14:53.280561"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Burger and Fries"], ["description", "Classic"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 15], ["created_at", "2020-04-10 23:14:53.286669"], ["updated_at", "2020-04-10 23:14:53.286669"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Leafy Salad"], ["description", "Healthy"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 16], ["created_at", "2020-04-10 23:14:53.292662"], ["updated_at", "2020-04-10 23:14:53.292662"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mLunch Create (0.5ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Fish Tacos"], ["description", "Crunchy"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 17], ["created_at", "2020-04-10 23:14:53.299698"], ["updated_at", "2020-04-10 23:14:53.299698"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sushi"], ["description", "BYOSoy sauce"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 18], ["created_at", "2020-04-10 23:14:53.306860"], ["updated_at", "2020-04-10 23:14:53.306860"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bulgogi Bowl"], ["description", "Pork and rice, what more?"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 19], ["created_at", "2020-04-10 23:14:53.312402"], ["updated_at", "2020-04-10 23:14:53.312402"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mLunch Create (0.6ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chicken Over Rice"], ["description", "White Sauce + Hot Sauce"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 20], ["created_at", "2020-04-10 23:14:53.318536"], ["updated_at", "2020-04-10 23:14:53.318536"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mLunch Create (0.5ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Al Pastor Tacos"], ["description", "Delicioso"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 21], ["created_at", "2020-04-10 23:14:53.324129"], ["updated_at", "2020-04-10 23:14:53.324129"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chicken Noodle Soup"], ["description", "Slurp Slurp"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 22], ["created_at", "2020-04-10 23:14:53.331143"], ["updated_at", "2020-04-10 23:14:53.331143"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mLunch Create (0.5ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Spaghetti Carbonara"], ["description", "Break a few eggs to make a winner"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 23], ["created_at", "2020-04-10 23:14:53.338444"], ["updated_at", "2020-04-10 23:14:53.338444"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mLunch Create (0.6ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sausage Rigatoni"], ["description", "Seasoned Perfectly"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 24], ["created_at", "2020-04-10 23:14:53.350629"], ["updated_at", "2020-04-10 23:14:53.350629"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+Started GET "/" for ::1 at 2020-04-10 19:15:54 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "JO_Z8qMO9cDOpG1DfmpJtg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 2675ms (Views: 2664.4ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/api/users" for ::1 at 2020-04-10 19:16:08 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"jchen143s", "password"=>"[FILTERED]", "location"=>"Queens"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jchen143s"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XwWWzdgZr8yiIUxo0FKxaA"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "jchen143s"], ["password_digest", "$2a$12$noF3ypQbl0/CfzlqLaAPseAVQaPny.yd7yXgp3sKm8eIazsvt8/t6"], ["session_token", "XwWWzdgZr8yiIUxo0FKxaA"], ["location", "Queens"], ["created_at", "2020-04-10 23:16:09.274562"], ["updated_at", "2020-04-10 23:16:09.274562"]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "jchen143s"], ["id", 39], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "ebZgAhL51KMt7kNCbaDpaw"], ["id", 39], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "ebZgAhL51KMt7kNCbaDpaw"], ["updated_at", "2020-04-10 23:16:09.281453"], ["id", 39]]
+  ↳ app/models/user.rb:48
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:48
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered api/users/show.json.jbuilder (1.9ms)
+Completed 200 OK in 286ms (Views: 9.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 19:16:09 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (1.3ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.689162375293066&bounds%5BsouthWest%5D%5Blng%5D=-73.82064920654295&bounds%5BnorthEast%5D%5Blat%5D=40.7672147377142&bounds%5BnorthEast%5D%5Blng%5D=-73.76915079345702" for ::1 at 2020-04-10 19:16:09 -0400
+  Rendered api/lunches/index.json.jbuilder (37.1ms)
+Completed 200 OK in 61ms (Views: 34.8ms | ActiveRecord: 13.1ms)
+
+
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.689162375293066", "lng"=>"-73.82064920654295"}, "northEast"=>{"lat"=>"40.7672147377142", "lng"=>"-73.76915079345702"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.689162375293066 AND latitude < 40.7672147377142) AND (longitude > -73.82064920654295 AND longitude < -73.76915079345702))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (10.5ms)
+Completed 200 OK in 25ms (Views: 9.6ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.650101868299934&bounds%5BsouthWest%5D%5Blng%5D=-73.84639841308592&bounds%5BnorthEast%5D%5Blat%5D=40.80620658377439&bounds%5BnorthEast%5D%5Blng%5D=-73.74340158691405" for ::1 at 2020-04-10 19:16:19 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.650101868299934", "lng"=>"-73.84639841308592"}, "northEast"=>{"lat"=>"40.80620658377439", "lng"=>"-73.74340158691405"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.650101868299934 AND latitude < 40.80620658377439) AND (longitude > -73.84639841308592 AND longitude < -73.74340158691405))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.1ms)
+Completed 200 OK in 25ms (Views: 18.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.57191222650755&bounds%5BsouthWest%5D%5Blng%5D=-73.89789682617186&bounds%5BnorthEast%5D%5Blat%5D=40.88412158251325&bounds%5BnorthEast%5D%5Blng%5D=-73.69190317382811" for ::1 at 2020-04-10 19:16:20 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.57191222650755", "lng"=>"-73.89789682617186"}, "northEast"=>{"lat"=>"40.88412158251325", "lng"=>"-73.69190317382811"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.57191222650755 AND latitude < 40.88412158251325) AND (longitude > -73.89789682617186 AND longitude < -73.69190317382811))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (23.8ms)
+Completed 200 OK in 33ms (Views: 19.6ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.41525856760938&bounds%5BsouthWest%5D%5Blng%5D=-74.00089365234373&bounds%5BnorthEast%5D%5Blat%5D=41.03967668005008&bounds%5BnorthEast%5D%5Blng%5D=-73.58890634765623" for ::1 at 2020-04-10 19:16:21 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.41525856760938", "lng"=>"-74.00089365234373"}, "northEast"=>{"lat"=>"41.03967668005008", "lng"=>"-73.58890634765623"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.41525856760938 AND latitude < 41.03967668005008) AND (longitude > -74.00089365234373 AND longitude < -73.58890634765623))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.5ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.42257720605874&bounds%5BsouthWest%5D%5Blng%5D=-74.09565073242186&bounds%5BnorthEast%5D%5Blat%5D=41.04692696280542&bounds%5BnorthEast%5D%5Blng%5D=-73.68366342773436" for ::1 at 2020-04-10 19:16:23 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.42257720605874", "lng"=>"-74.09565073242186"}, "northEast"=>{"lat"=>"41.04692696280542", "lng"=>"-73.68366342773436"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.42257720605874 AND latitude < 41.04692696280542) AND (longitude > -74.09565073242186 AND longitude < -73.68366342773436))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.8ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.108207602256485&bounds%5BsouthWest%5D%5Blng%5D=-74.30164438476561&bounds%5BnorthEast%5D%5Blat%5D=41.35690232702205&bounds%5BnorthEast%5D%5Blng%5D=-73.47766977539061" for ::1 at 2020-04-10 19:16:26 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.108207602256485", "lng"=>"-74.30164438476561"}, "northEast"=>{"lat"=>"41.35690232702205", "lng"=>"-73.47766977539061"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.108207602256485 AND latitude < 41.35690232702205) AND (longitude > -74.30164438476561 AND longitude < -73.47766977539061))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.1ms)
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.69645113573343&bounds%5BsouthWest%5D%5Blng%5D=-73.91540628662108&bounds%5BnorthEast%5D%5Blat%5D=40.77449495351556&bounds%5BnorthEast%5D%5Blng%5D=-73.86390787353514" for ::1 at 2020-04-10 19:16:31 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.69645113573343", "lng"=>"-73.91540628662108"}, "northEast"=>{"lat"=>"40.77449495351556", "lng"=>"-73.86390787353514"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.69645113573343 AND latitude < 40.77449495351556) AND (longitude > -73.91540628662108 AND longitude < -73.86390787353514))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.6ms)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.70047449107948&bounds%5BsouthWest%5D%5Blng%5D=-73.93077407508434&bounds%5BnorthEast%5D%5Blat%5D=40.77851359172821&bounds%5BnorthEast%5D%5Blng%5D=-73.8792756619984" for ::1 at 2020-04-10 19:16:33 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.70047449107948", "lng"=>"-73.93077407508434"}, "northEast"=>{"lat"=>"40.77851359172821", "lng"=>"-73.8792756619984"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.70047449107948 AND latitude < 40.77851359172821) AND (longitude > -73.93077407508434 AND longitude < -73.8792756619984))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.3ms)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.708852401237024&bounds%5BsouthWest%5D%5Blng%5D=-73.94677115269224&bounds%5BnorthEast%5D%5Blat%5D=40.786881678075495&bounds%5BnorthEast%5D%5Blng%5D=-73.8952727396063" for ::1 at 2020-04-10 19:16:33 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.708852401237024", "lng"=>"-73.94677115269224"}, "northEast"=>{"lat"=>"40.786881678075495", "lng"=>"-73.8952727396063"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.708852401237024 AND latitude < 40.786881678075495) AND (longitude > -73.94677115269224 AND longitude < -73.8952727396063))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.7ms)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.7092427753549&bounds%5BsouthWest%5D%5Blng%5D=-73.95981741734067&bounds%5BnorthEast%5D%5Blat%5D=40.787271594406036&bounds%5BnorthEast%5D%5Blng%5D=-73.90831900425474" for ::1 at 2020-04-10 19:16:35 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.7092427753549", "lng"=>"-73.95981741734067"}, "northEast"=>{"lat"=>"40.787271594406036", "lng"=>"-73.90831900425474"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.7092427753549 AND latitude < 40.787271594406036) AND (longitude > -73.95981741734067 AND longitude < -73.90831900425474))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.1ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.704791861425704&bounds%5BsouthWest%5D%5Blng%5D=-73.93588646711385&bounds%5BnorthEast%5D%5Blat%5D=40.78282589979954&bounds%5BnorthEast%5D%5Blng%5D=-73.88438805402791" for ::1 at 2020-04-10 19:16:38 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.704791861425704", "lng"=>"-73.93588646711385"}, "northEast"=>{"lat"=>"40.78282589979954", "lng"=>"-73.88438805402791"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.704791861425704 AND latitude < 40.78282589979954) AND (longitude > -73.93588646711385 AND longitude < -73.88438805402791))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.1ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68926420903893&bounds%5BsouthWest%5D%5Blng%5D=-73.85638348390644&bounds%5BnorthEast%5D%5Blat%5D=40.76731645208868&bounds%5BnorthEast%5D%5Blng%5D=-73.8048850708205" for ::1 at 2020-04-10 19:16:40 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68926420903893", "lng"=>"-73.85638348390644"}, "northEast"=>{"lat"=>"40.76731645208868", "lng"=>"-73.8048850708205"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68926420903893 AND latitude < 40.76731645208868) AND (longitude > -73.85638348390644 AND longitude < -73.8048850708205))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.4ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.69515057356222&bounds%5BsouthWest%5D%5Blng%5D=-73.83907207961468&bounds%5BnorthEast%5D%5Blat%5D=40.773195916090295&bounds%5BnorthEast%5D%5Blng%5D=-73.78757366652874" for ::1 at 2020-04-10 19:16:41 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.69515057356222", "lng"=>"-73.83907207961468"}, "northEast"=>{"lat"=>"40.773195916090295", "lng"=>"-73.78757366652874"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.69515057356222 AND latitude < 40.773195916090295) AND (longitude > -73.83907207961468 AND longitude < -73.78757366652874))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.7ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.69267433791717&bounds%5BsouthWest%5D%5Blng%5D=-73.81273683666478&bounds%5BnorthEast%5D%5Blat%5D=40.77072258340979&bounds%5BnorthEast%5D%5Blng%5D=-73.76123842357885" for ::1 at 2020-04-10 19:16:42 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.69267433791717", "lng"=>"-73.81273683666478"}, "northEast"=>{"lat"=>"40.77072258340979", "lng"=>"-73.76123842357885"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.69267433791717 AND latitude < 40.77072258340979) AND (longitude > -73.81273683666478 AND longitude < -73.76123842357885))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (13.7ms)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68814076693299&bounds%5BsouthWest%5D%5Blng%5D=-73.8077121096163&bounds%5BnorthEast%5D%5Blat%5D=40.766194326888346&bounds%5BnorthEast%5D%5Blng%5D=-73.75621369653037" for ::1 at 2020-04-10 19:16:43 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68814076693299", "lng"=>"-73.8077121096163"}, "northEast"=>{"lat"=>"40.766194326888346", "lng"=>"-73.75621369653037"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68814076693299 AND latitude < 40.766194326888346) AND (longitude > -73.8077121096163 AND longitude < -73.75621369653037))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.5ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-04-10 19:16:48 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ebZgAhL51KMt7kNCbaDpaw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "jchen143s"], ["id", 39], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "_xC0X1JEUeaZSYpz3JwqGw"], ["id", 39], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Update (12.6ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "_xC0X1JEUeaZSYpz3JwqGw"], ["updated_at", "2020-04-10 23:16:48.261369"], ["id", 39]]
+  ↳ app/models/user.rb:48
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:48
+No template found for Api::SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 113ms (ActiveRecord: 15.3ms)
+
+
+Started POST "/api/users" for ::1 at 2020-04-10 19:16:55 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"fasdf", "password"=>"[FILTERED]", "location"=>"Bronx"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "fasdf"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "YfdQ81uyA74jCDXQM8OZ7g"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "fasdf"], ["password_digest", "$2a$12$6SnPpbtBZGPc33gU1WJrPeBPAPqS2xzK8xc/7u1PBfSSAOZAOBcee"], ["session_token", "YfdQ81uyA74jCDXQM8OZ7g"], ["location", "Bronx"], ["created_at", "2020-04-10 23:16:56.222125"], ["updated_at", "2020-04-10 23:16:56.222125"]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "fasdf"], ["id", 40], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "XD8jaFr6_C0L_KVM8DB8jw"], ["id", 40], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "XD8jaFr6_C0L_KVM8DB8jw"], ["updated_at", "2020-04-10 23:16:56.228544"], ["id", 40]]
+  ↳ app/models/user.rb:48
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:48
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.7ms)
+Completed 200 OK in 274ms (Views: 8.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 19:16:56 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (4.7ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (9.2ms)
+Completed 200 OK in 27ms (Views: 18.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.80583082947849&bounds%5BsouthWest%5D%5Blng%5D=-73.89054920654297&bounds%5BnorthEast%5D%5Blat%5D=40.88374626972414&bounds%5BnorthEast%5D%5Blng%5D=-73.83905079345703" for ::1 at 2020-04-10 19:16:56 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.80583082947849", "lng"=>"-73.89054920654297"}, "northEast"=>{"lat"=>"40.88374626972414", "lng"=>"-73.83905079345703"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.80583082947849 AND latitude < 40.88374626972414) AND (longitude > -73.89054920654297 AND longitude < -73.83905079345703))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.2ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.6887859590702&bounds%5BsouthWest%5D%5Blng%5D=-73.96779682617188&bounds%5BnorthEast%5D%5Blat%5D=41.00044762907265&bounds%5BnorthEast%5D%5Blng%5D=-73.76180317382813" for ::1 at 2020-04-10 19:17:02 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.6887859590702", "lng"=>"-73.96779682617188"}, "northEast"=>{"lat"=>"41.00044762907265", "lng"=>"-73.76180317382813"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.6887859590702 AND latitude < 41.00044762907265) AND (longitude > -73.96779682617188 AND longitude < -73.76180317382813))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.2ms)
+Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.532405803196106&bounds%5BsouthWest%5D%5Blng%5D=-74.07079365234375&bounds%5BnorthEast%5D%5Blat%5D=41.15572856090139&bounds%5BnorthEast%5D%5Blng%5D=-73.65880634765625" for ::1 at 2020-04-10 19:17:02 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.532405803196106", "lng"=>"-74.07079365234375"}, "northEast"=>{"lat"=>"41.15572856090139", "lng"=>"-73.65880634765625"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.532405803196106 AND latitude < 41.15572856090139) AND (longitude > -74.07079365234375 AND longitude < -73.65880634765625))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.7ms)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-04-10 19:17:04 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "XD8jaFr6_C0L_KVM8DB8jw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "fasdf"], ["id", 40], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "Yj4eAgncAbp29R7r3hiWQg"], ["id", 40], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "Yj4eAgncAbp29R7r3hiWQg"], ["updated_at", "2020-04-10 23:17:04.879226"], ["id", 40]]
+  ↳ app/models/user.rb:48
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:48
+No template found for Api::SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 94ms (ActiveRecord: 2.8ms)
+
+
+Started POST "/api/users" for ::1 at 2020-04-10 19:17:15 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"password", "password"=>"[FILTERED]", "location"=>"Staten Island"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "password"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "EF6kk7o9Q2NWqYXK9FB3IQ"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "password"], ["password_digest", "$2a$12$RXPJFnkMwdv4tPXxdIi.D.kmPO6Dz3w.QMa9cTj3u3Vi8PfWR4o6C"], ["session_token", "EF6kk7o9Q2NWqYXK9FB3IQ"], ["location", "Staten Island"], ["created_at", "2020-04-10 23:17:15.797394"], ["updated_at", "2020-04-10 23:17:15.797394"]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "password"], ["id", 41], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "zKYDT3WhtsdtoTMhqMnn3w"], ["id", 41], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "zKYDT3WhtsdtoTMhqMnn3w"], ["updated_at", "2020-04-10 23:17:15.803714"], ["id", 41]]
+  ↳ app/models/user.rb:48
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:48
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.8ms)
+Completed 200 OK in 273ms (Views: 8.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 19:17:15 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (17.5ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (21.9ms)
+Completed 200 OK in 38ms (Views: 16.2ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.54037531046392&bounds%5BsouthWest%5D%5Blng%5D=-74.17594920654297&bounds%5BnorthEast%5D%5Blat%5D=40.61860182069848&bounds%5BnorthEast%5D%5Blng%5D=-74.12445079345703" for ::1 at 2020-04-10 19:17:15 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.54037531046392", "lng"=>"-74.17594920654297"}, "northEast"=>{"lat"=>"40.61860182069848", "lng"=>"-74.12445079345703"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.54037531046392 AND latitude < 40.61860182069848) AND (longitude > -74.17594920654297 AND longitude < -74.12445079345703))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.8ms)
+Completed 200 OK in 23ms (Views: 15.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.501227756969385&bounds%5BsouthWest%5D%5Blng%5D=-74.20169841308594&bounds%5BnorthEast%5D%5Blat%5D=40.65768076772552&bounds%5BnorthEast%5D%5Blng%5D=-74.09870158691406" for ::1 at 2020-04-10 19:17:19 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.501227756969385", "lng"=>"-74.20169841308594"}, "northEast"=>{"lat"=>"40.65768076772552", "lng"=>"-74.09870158691406"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.501227756969385 AND latitude < 40.65768076772552) AND (longitude > -74.20169841308594 AND longitude < -74.09870158691406))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.6ms)
+Completed 200 OK in 24ms (Views: 16.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.42286407784968&bounds%5BsouthWest%5D%5Blng%5D=-74.25319682617187&bounds%5BnorthEast%5D%5Blat%5D=40.735770021657444&bounds%5BnorthEast%5D%5Blng%5D=-74.04720317382812" for ::1 at 2020-04-10 19:17:20 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.42286407784968", "lng"=>"-74.25319682617187"}, "northEast"=>{"lat"=>"40.735770021657444", "lng"=>"-74.04720317382812"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.42286407784968 AND latitude < 40.735770021657444) AND (longitude > -74.25319682617187 AND longitude < -74.04720317382812))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.26586257185693&bounds%5BsouthWest%5D%5Blng%5D=-74.35619365234375&bounds%5BnorthEast%5D%5Blat%5D=40.89167383781147&bounds%5BnorthEast%5D%5Blng%5D=-73.94420634765625" for ::1 at 2020-04-10 19:17:21 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.26586257185693", "lng"=>"-74.35619365234375"}, "northEast"=>{"lat"=>"40.89167383781147", "lng"=>"-73.94420634765625"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.26586257185693 AND latitude < 40.89167383781147) AND (longitude > -74.35619365234375 AND longitude < -73.94420634765625))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.0ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=39.95076413354401&bounds%5BsouthWest%5D%5Blng%5D=-74.5621873046875&bounds%5BnorthEast%5D%5Blat%5D=41.20238169136491&bounds%5BnorthEast%5D%5Blng%5D=-73.7382126953125" for ::1 at 2020-04-10 19:17:21 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"39.95076413354401", "lng"=>"-74.5621873046875"}, "northEast"=>{"lat"=>"41.20238169136491", "lng"=>"-73.7382126953125"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 39.95076413354401 AND latitude < 41.20238169136491) AND (longitude > -74.5621873046875 AND longitude < -73.7382126953125))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (8.5ms)
+Completed 200 OK in 20ms (Views: 14.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.23620735398312&bounds%5BsouthWest%5D%5Blng%5D=-74.31468753224773&bounds%5BnorthEast%5D%5Blat%5D=41.48251909118623&bounds%5BnorthEast%5D%5Blng%5D=-73.49071292287273" for ::1 at 2020-04-10 19:17:22 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.23620735398312", "lng"=>"-74.31468753224773"}, "northEast"=>{"lat"=>"41.48251909118623", "lng"=>"-73.49071292287273"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.23620735398312 AND latitude < 41.48251909118623) AND (longitude > -74.31468753224773 AND longitude < -73.49071292287273))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.0ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.7843539934833&bounds%5BsouthWest%5D%5Blng%5D=-73.95419864064617&bounds%5BnorthEast%5D%5Blat%5D=40.940143721605345&bounds%5BnorthEast%5D%5Blng%5D=-73.8512018144743" for ::1 at 2020-04-10 19:17:24 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.7843539934833", "lng"=>"-73.95419864064617"}, "northEast"=>{"lat"=>"40.940143721605345", "lng"=>"-73.8512018144743"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.7843539934833 AND latitude < 40.940143721605345) AND (longitude > -73.95419864064617 AND longitude < -73.8512018144743))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.8ms)
+Completed 200 OK in 20ms (Views: 13.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.72034425495392&bounds%5BsouthWest%5D%5Blng%5D=-73.97708908634462&bounds%5BnorthEast%5D%5Blat%5D=40.87628427153333&bounds%5BnorthEast%5D%5Blng%5D=-73.87409226017274" for ::1 at 2020-04-10 19:17:25 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.72034425495392", "lng"=>"-73.97708908634462"}, "northEast"=>{"lat"=>"40.87628427153333", "lng"=>"-73.87409226017274"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.72034425495392 AND latitude < 40.87628427153333) AND (longitude > -73.97708908634462 AND longitude < -73.87409226017274))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.4ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.693277407631534&bounds%5BsouthWest%5D%5Blng%5D=-73.98395554142274&bounds%5BnorthEast%5D%5Blat%5D=40.849280916125245&bounds%5BnorthEast%5D%5Blng%5D=-73.88095871525087" for ::1 at 2020-04-10 19:17:27 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.693277407631534", "lng"=>"-73.98395554142274"}, "northEast"=>{"lat"=>"40.849280916125245", "lng"=>"-73.88095871525087"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.693277407631534 AND latitude < 40.849280916125245) AND (longitude > -73.98395554142274 AND longitude < -73.88095871525087))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.5ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.615138338029944&bounds%5BsouthWest%5D%5Blng%5D=-74.03545395450868&bounds%5BnorthEast%5D%5Blat%5D=40.92714528087332&bounds%5BnorthEast%5D%5Blng%5D=-73.82946030216493" for ::1 at 2020-04-10 19:17:28 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.615138338029944", "lng"=>"-74.03545395450868"}, "northEast"=>{"lat"=>"40.92714528087332", "lng"=>"-73.82946030216493"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.615138338029944 AND latitude < 40.92714528087332) AND (longitude > -74.03545395450868 AND longitude < -73.82946030216493))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.4ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.59310938051868&bounds%5BsouthWest%5D%5Blng%5D=-73.89793948977108&bounds%5BnorthEast%5D%5Blat%5D=40.905219499511325&bounds%5BnorthEast%5D%5Blng%5D=-73.69194583742733" for ::1 at 2020-04-10 19:17:29 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.59310938051868", "lng"=>"-73.89793948977108"}, "northEast"=>{"lat"=>"40.905219499511325", "lng"=>"-73.69194583742733"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.59310938051868 AND latitude < 40.905219499511325) AND (longitude > -73.89793948977108 AND longitude < -73.69194583742733))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.2ms)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.6712742283474&bounds%5BsouthWest%5D%5Blng%5D=-73.84644107668514&bounds%5BnorthEast%5D%5Blat%5D=40.8273293251193&bounds%5BnorthEast%5D%5Blng%5D=-73.74344425051326" for ::1 at 2020-04-10 19:17:30 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.6712742283474", "lng"=>"-73.84644107668514"}, "northEast"=>{"lat"=>"40.8273293251193", "lng"=>"-73.74344425051326"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (7.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.6712742283474 AND latitude < 40.8273293251193) AND (longitude > -73.84644107668514 AND longitude < -73.74344425051326))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (9.1ms)
+Completed 200 OK in 21ms (Views: 10.3ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71032233447498&bounds%5BsouthWest%5D%5Blng%5D=-73.82069187014217&bounds%5BnorthEast%5D%5Blat%5D=40.78834988752035&bounds%5BnorthEast%5D%5Blng%5D=-73.76919345705623" for ::1 at 2020-04-10 19:17:30 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71032233447498", "lng"=>"-73.82069187014217"}, "northEast"=>{"lat"=>"40.78834988752035", "lng"=>"-73.76919345705623"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71032233447498 AND latitude < 40.78834988752035) AND (longitude > -73.82069187014217 AND longitude < -73.76919345705623))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.9ms)
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.692493204845356&bounds%5BsouthWest%5D%5Blng%5D=-73.81966190188045&bounds%5BnorthEast%5D%5Blat%5D=40.77054166267995&bounds%5BnorthEast%5D%5Blng%5D=-73.76816348879451" for ::1 at 2020-04-10 19:17:31 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.692493204845356", "lng"=>"-73.81966190188045"}, "northEast"=>{"lat"=>"40.77054166267995", "lng"=>"-73.76816348879451"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.692493204845356 AND latitude < 40.77054166267995) AND (longitude > -73.81966190188045 AND longitude < -73.76816348879451))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.8ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71201390178319&bounds%5BsouthWest%5D%5Blng%5D=-73.80678729860897&bounds%5BnorthEast%5D%5Blat%5D=40.751038131285505&bounds%5BnorthEast%5D%5Blng%5D=-73.781038092066" for ::1 at 2020-04-10 19:17:33 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71201390178319", "lng"=>"-73.80678729860897"}, "northEast"=>{"lat"=>"40.751038131285505", "lng"=>"-73.781038092066"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71201390178319 AND latitude < 40.751038131285505) AND (longitude > -73.80678729860897 AND longitude < -73.781038092066))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.0ms)
+Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71201390178319&bounds%5BsouthWest%5D%5Blng%5D=-73.81082134096737&bounds%5BnorthEast%5D%5Blat%5D=40.751038131285505&bounds%5BnorthEast%5D%5Blng%5D=-73.7850721344244" for ::1 at 2020-04-10 19:17:35 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71201390178319", "lng"=>"-73.81082134096737"}, "northEast"=>{"lat"=>"40.751038131285505", "lng"=>"-73.7850721344244"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71201390178319 AND latitude < 40.751038131285505) AND (longitude > -73.81082134096737 AND longitude < -73.7850721344244))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.7ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.72008078543393&bounds%5BsouthWest%5D%5Blng%5D=-73.80511360018367&bounds%5BnorthEast%5D%5Blat%5D=40.739593396149566&bounds%5BnorthEast%5D%5Blng%5D=-73.79223899691219" for ::1 at 2020-04-10 19:17:39 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.72008078543393", "lng"=>"-73.80511360018367"}, "northEast"=>{"lat"=>"40.739593396149566", "lng"=>"-73.79223899691219"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.72008078543393 AND latitude < 40.739593396149566) AND (longitude > -73.80511360018367 AND longitude < -73.79223899691219))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.7ms)
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.72419517019235&bounds%5BsouthWest%5D%5Blng%5D=-73.8024528488409&bounds%5BnorthEast%5D%5Blat%5D=40.733951587610974&bounds%5BnorthEast%5D%5Blng%5D=-73.79601554720516" for ::1 at 2020-04-10 19:17:40 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.72419517019235", "lng"=>"-73.8024528488409"}, "northEast"=>{"lat"=>"40.733951587610974", "lng"=>"-73.79601554720516"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.72419517019235 AND latitude < 40.733951587610974) AND (longitude > -73.8024528488409 AND longitude < -73.79601554720516))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.0ms)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.724742997077875&bounds%5BsouthWest%5D%5Blng%5D=-73.80212291919348&bounds%5BnorthEast%5D%5Blat%5D=40.73449933418191&bounds%5BnorthEast%5D%5Blng%5D=-73.79568561755774" for ::1 at 2020-04-10 19:17:43 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.724742997077875", "lng"=>"-73.80212291919348"}, "northEast"=>{"lat"=>"40.73449933418191", "lng"=>"-73.79568561755774"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.724742997077875 AND latitude < 40.73449933418191) AND (longitude > -73.80212291919348 AND longitude < -73.79568561755774))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.8ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.72539346405399&bounds%5BsouthWest%5D%5Blng%5D=-73.80407556735632&bounds%5BnorthEast%5D%5Blat%5D=40.73514970579469&bounds%5BnorthEast%5D%5Blng%5D=-73.79763826572058" for ::1 at 2020-04-10 19:17:44 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.72539346405399", "lng"=>"-73.80407556735632"}, "northEast"=>{"lat"=>"40.73514970579469", "lng"=>"-73.79763826572058"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.72539346405399 AND latitude < 40.73514970579469) AND (longitude > -73.80407556735632 AND longitude < -73.79763826572058))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.8ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71075641943547&bounds%5BsouthWest%5D%5Blng%5D=-73.81373151980993&bounds%5BnorthEast%5D%5Blat%5D=40.74978138621537&bounds%5BnorthEast%5D%5Blng%5D=-73.78798231326697" for ::1 at 2020-04-10 19:17:46 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71075641943547", "lng"=>"-73.81373151980993"}, "northEast"=>{"lat"=>"40.74978138621537", "lng"=>"-73.78798231326697"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71075641943547 AND latitude < 40.74978138621537) AND (longitude > -73.81373151980993 AND longitude < -73.78798231326697))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.9ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.7107564194355&bounds%5BsouthWest%5D%5Blng%5D=-73.80926832400915&bounds%5BnorthEast%5D%5Blat%5D=40.749781386215396&bounds%5BnorthEast%5D%5Blng%5D=-73.78351911746618" for ::1 at 2020-04-10 19:17:48 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.7107564194355", "lng"=>"-73.80926832400915"}, "northEast"=>{"lat"=>"40.749781386215396", "lng"=>"-73.78351911746618"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.7107564194355 AND latitude < 40.749781386215396) AND (longitude > -73.80926832400915 AND longitude < -73.78351911746618))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.7ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.6912353539156&bounds%5BsouthWest%5D%5Blng%5D=-73.82214292728064&bounds%5BnorthEast%5D%5Blat%5D=40.76928528630504&bounds%5BnorthEast%5D%5Blng%5D=-73.7706445141947" for ::1 at 2020-04-10 19:20:40 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.6912353539156", "lng"=>"-73.82214292728064"}, "northEast"=>{"lat"=>"40.76928528630504", "lng"=>"-73.7706445141947"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.6912353539156 AND latitude < 40.76928528630504) AND (longitude > -73.82214292728064 AND longitude < -73.7706445141947))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (7.1ms)
+Completed 200 OK in 18ms (Views: 10.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.65217606156299&bounds%5BsouthWest%5D%5Blng%5D=-73.8478921338236&bounds%5BnorthEast%5D%5Blat%5D=40.80827591697888&bounds%5BnorthEast%5D%5Blng%5D=-73.74489530765173" for ::1 at 2020-04-10 19:20:40 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.65217606156299", "lng"=>"-73.8478921338236"}, "northEast"=>{"lat"=>"40.80827591697888", "lng"=>"-73.74489530765173"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.65217606156299 AND latitude < 40.80827591697888) AND (longitude > -73.8478921338236 AND longitude < -73.74489530765173))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.5ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.57398884828911&bounds%5BsouthWest%5D%5Blng%5D=-73.89939054690954&bounds%5BnorthEast%5D%5Blat%5D=40.88618848421611&bounds%5BnorthEast%5D%5Blng%5D=-73.6933968945658" for ::1 at 2020-04-10 19:20:41 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.57398884828911", "lng"=>"-73.89939054690954"}, "northEast"=>{"lat"=>"40.88618848421611", "lng"=>"-73.6933968945658"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.57398884828911 AND latitude < 40.88618848421611) AND (longitude > -73.89939054690954 AND longitude < -73.6933968945658))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.7ms)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.41734004330994&bounds%5BsouthWest%5D%5Blng%5D=-74.00238737308142&bounds%5BnorthEast%5D%5Blat%5D=41.04173871590046&bounds%5BnorthEast%5D%5Blng%5D=-73.59040006839392" for ::1 at 2020-04-10 19:20:42 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.41734004330994", "lng"=>"-74.00238737308142"}, "northEast"=>{"lat"=>"41.04173871590046", "lng"=>"-73.59040006839392"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.41734004330994 AND latitude < 41.04173871590046) AND (longitude > -74.00238737308142 AND longitude < -73.59040006839392))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.3ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.44660891426494&bounds%5BsouthWest%5D%5Blng%5D=-74.07654508792517&bounds%5BnorthEast%5D%5Blat%5D=41.07073414549673&bounds%5BnorthEast%5D%5Blng%5D=-73.66455778323767" for ::1 at 2020-04-10 19:20:44 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.44660891426494", "lng"=>"-74.07654508792517"}, "northEast"=>{"lat"=>"41.07073414549673", "lng"=>"-73.66455778323767"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.44660891426494 AND latitude < 41.07073414549673) AND (longitude > -74.07654508792517 AND longitude < -73.66455778323767))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.6ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.4445187031104&bounds%5BsouthWest%5D%5Blng%5D=-74.13483554389919&bounds%5BnorthEast%5D%5Blat%5D=41.0686634672465&bounds%5BnorthEast%5D%5Blng%5D=-73.72284823921169" for ::1 at 2020-04-10 19:20:45 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.4445187031104", "lng"=>"-74.13483554389919"}, "northEast"=>{"lat"=>"41.0686634672465", "lng"=>"-73.72284823921169"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.4445187031104 AND latitude < 41.0686634672465) AND (longitude > -74.13483554389919 AND longitude < -73.72284823921169))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.8ms)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.56251369758468&bounds%5BsouthWest%5D%5Blng%5D=-74.04076510932887&bounds%5BnorthEast%5D%5Blat%5D=40.87476704035101&bounds%5BnorthEast%5D%5Blng%5D=-73.83477145698512" for ::1 at 2020-04-10 19:20:47 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.56251369758468", "lng"=>"-74.04076510932887"}, "northEast"=>{"lat"=>"40.87476704035101", "lng"=>"-73.83477145698512"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.56251369758468 AND latitude < 40.87476704035101) AND (longitude > -74.04076510932887 AND longitude < -73.83477145698512))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.0ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.61674252849171&bounds%5BsouthWest%5D%5Blng%5D=-73.9930432465359&bounds%5BnorthEast%5D%5Blat%5D=40.77292538048782&bounds%5BnorthEast%5D%5Blng%5D=-73.89004642036403" for ::1 at 2020-04-10 19:20:48 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.61674252849171", "lng"=>"-73.9930432465359"}, "northEast"=>{"lat"=>"40.77292538048782", "lng"=>"-73.89004642036403"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.61674252849171 AND latitude < 40.77292538048782) AND (longitude > -73.9930432465359 AND longitude < -73.89004642036403))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.9ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.64748740899926&bounds%5BsouthWest%5D%5Blng%5D=-73.96798068550075&bounds%5BnorthEast%5D%5Blat%5D=40.725588602907166&bounds%5BnorthEast%5D%5Blng%5D=-73.91648227241481" for ::1 at 2020-04-10 19:20:49 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.64748740899926", "lng"=>"-73.96798068550075"}, "northEast"=>{"lat"=>"40.725588602907166", "lng"=>"-73.91648227241481"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.64748740899926 AND latitude < 40.725588602907166) AND (longitude > -73.96798068550075 AND longitude < -73.91648227241481))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.0ms)
+Completed 200 OK in 20ms (Views: 12.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.662854540358914&bounds%5BsouthWest%5D%5Blng%5D=-73.95544940498317&bounds%5BnorthEast%5D%5Blat%5D=40.70190757862111&bounds%5BnorthEast%5D%5Blng%5D=-73.9297001984402" for ::1 at 2020-04-10 19:20:50 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.662854540358914", "lng"=>"-73.95544940498317"}, "northEast"=>{"lat"=>"40.70190757862111", "lng"=>"-73.9297001984402"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.662854540358914 AND latitude < 40.70190757862111) AND (longitude > -73.95544940498317 AND longitude < -73.9297001984402))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.2ms)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.66271235691632&bounds%5BsouthWest%5D%5Blng%5D=-73.95795427275257&bounds%5BnorthEast%5D%5Blat%5D=40.701765478460324&bounds%5BnorthEast%5D%5Blng%5D=-73.9322050662096" for ::1 at 2020-04-10 19:20:51 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.66271235691632", "lng"=>"-73.95795427275257"}, "northEast"=>{"lat"=>"40.701765478460324", "lng"=>"-73.9322050662096"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.66271235691632 AND latitude < 40.701765478460324) AND (longitude > -73.95795427275257 AND longitude < -73.9322050662096))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.9ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (15.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (7.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (25.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 38]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (2.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 39]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 40]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 41]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mLunch Load (0.9ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.7ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.6ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.5ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (1.3ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (1.7ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.9ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.7ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (1.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.8ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.7ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.9ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:11
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.5ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.5ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.5ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo_user@appacademy.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "G6aUI0OfBgQaJHrlv_lYCg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "demo_user@appacademy.io"], ["password_digest", "$2a$12$UBuMHwGxq483FXVTvoO2p.q5wPO67fGGz5p9/KnJVxa4sUuh8.x4a"], ["session_token", "G6aUI0OfBgQaJHrlv_lYCg"], ["created_at", "2020-04-10 23:29:35.764940"], ["updated_at", "2020-04-10 23:29:35.764940"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "App Academy Cafe"], ["address", "90 5th Ave"], ["latitude", 40.7352422], ["longitude", -73.9960728], ["created_at", "2020-04-10 23:29:35.770011"], ["updated_at", "2020-04-10 23:29:35.770011"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jos Crabshack"], ["address", "1804 3rd Ave, Apt. 3"], ["latitude", 40.7879917], ["longitude", -73.9496956], ["created_at", "2020-04-10 23:29:35.773348"], ["updated_at", "2020-04-10 23:29:35.773348"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lincoln Square Tavern"], ["address", "113 W 60th St"], ["latitude", 40.772826], ["longitude", -73.9869315], ["created_at", "2020-04-10 23:29:35.777757"], ["updated_at", "2020-04-10 23:29:35.777757"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Central Park Hideaway"], ["address", "Park Ave"], ["latitude", 40.774768], ["longitude", -73.97197], ["created_at", "2020-04-10 23:29:35.780575"], ["updated_at", "2020-04-10 23:29:35.780575"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Liberty Island Tacos"], ["address", "1 Main St"], ["latitude", 40.6983762], ["longitude", -74.0468981], ["created_at", "2020-04-10 23:29:35.784021"], ["updated_at", "2020-04-10 23:29:35.784021"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "World Trade Center Food Court"], ["address", "285 Fulton St"], ["latitude", 40.7115322], ["longitude", -74.0167379], ["created_at", "2020-04-10 23:29:35.787157"], ["updated_at", "2020-04-10 23:29:35.787157"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mRestaurant Create (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Peter Kim Korean BBQ Extraordinaire"], ["address", "229 W 28 St"], ["latitude", 40.748346], ["longitude", -73.9961638], ["created_at", "2020-04-10 23:29:35.789763"], ["updated_at", "2020-04-10 23:29:35.789763"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mRestaurant Create (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rams Deli"], ["address", "441 East Fordham Rd"], ["latitude", 40.8586227], ["longitude", -73.8880667], ["created_at", "2020-04-10 23:29:35.793254"], ["updated_at", "2020-04-10 23:29:35.793254"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rancho Estrella"], ["address", "616 E 187th St"], ["latitude", 40.8551323], ["longitude", -73.8892581], ["created_at", "2020-04-10 23:29:35.796503"], ["updated_at", "2020-04-10 23:29:35.796503"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Staten Island Soup Spot"], ["address", "34 Baker St"], ["latitude", 40.5737968], ["longitude", -74.1493022], ["created_at", "2020-04-10 23:29:35.800282"], ["updated_at", "2020-04-10 23:29:35.800282"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Bella"], ["address", "40 Queens Blvd"], ["latitude", 40.7442052], ["longitude", -73.9265901], ["created_at", "2020-04-10 23:29:35.802996"], ["updated_at", "2020-04-10 23:29:35.802996"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Risotto e Boccio"], ["address", "43 Queens Blvd"], ["latitude", 40.7433062], ["longitude", -73.9224616], ["created_at", "2020-04-10 23:29:35.805857"], ["updated_at", "2020-04-10 23:29:35.805857"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Checkmate in Queens"], ["address", "10 Utopia Pkwy"], ["latitude", 40.7255828], ["longitude", -73.7941393], ["created_at", "2020-04-10 23:29:35.808794"], ["updated_at", "2020-04-10 23:29:35.808794"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sweet Chick"], ["address", "10 Utopia Pkwy"], ["latitude", 40.67986932855128], ["longitude", -73.97645332888183], ["created_at", "2020-04-10 23:29:35.811306"], ["updated_at", "2020-04-10 23:29:35.811306"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mRestaurant Create (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Big Danny Brisket and Waffle House"], ["address", "1400 Fulton St"], ["latitude", 40.680317], ["longitude", -73.943119], ["created_at", "2020-04-10 23:29:35.814905"], ["updated_at", "2020-04-10 23:29:35.814905"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mLunch Create (0.7ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Fullstack Tears Soup"], ["description", "Soup that does not soothe the soul"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 25], ["created_at", "2020-04-10 23:29:35.844121"], ["updated_at", "2020-04-10 23:29:35.844121"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:35
+  [1m[36mLunch Create (0.6ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Seafood Medley"], ["description", "Yummy seafood"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 26], ["created_at", "2020-04-10 23:29:35.861850"], ["updated_at", "2020-04-10 23:29:35.861850"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Burger and Fries"], ["description", "Classic"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 27], ["created_at", "2020-04-10 23:29:35.868602"], ["updated_at", "2020-04-10 23:29:35.868602"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Leafy Salad"], ["description", "Healthy"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 28], ["created_at", "2020-04-10 23:29:35.875649"], ["updated_at", "2020-04-10 23:29:35.875649"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[36mRestaurant Load (1.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mLunch Create (0.5ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Fish Tacos"], ["description", "Crunchy"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 29], ["created_at", "2020-04-10 23:29:35.884148"], ["updated_at", "2020-04-10 23:29:35.884148"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mLunch Create (0.5ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sushi"], ["description", "BYOSoy sauce"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 30], ["created_at", "2020-04-10 23:29:35.890413"], ["updated_at", "2020-04-10 23:29:35.890413"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bulgogi Bowl"], ["description", "Pork and rice, what more?"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 31], ["created_at", "2020-04-10 23:29:35.897586"], ["updated_at", "2020-04-10 23:29:35.897586"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chicken Over Rice"], ["description", "White Sauce + Hot Sauce"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 32], ["created_at", "2020-04-10 23:29:35.910643"], ["updated_at", "2020-04-10 23:29:35.910643"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Al Pastor Tacos"], ["description", "Delicioso"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 33], ["created_at", "2020-04-10 23:29:35.915896"], ["updated_at", "2020-04-10 23:29:35.915896"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:43
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chicken Noodle Soup"], ["description", "Slurp Slurp"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 34], ["created_at", "2020-04-10 23:29:35.920939"], ["updated_at", "2020-04-10 23:29:35.920939"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:44
+  [1m[36mLunch Create (0.6ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Spaghetti Carbonara"], ["description", "Break a few eggs to make a winner"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 35], ["created_at", "2020-04-10 23:29:35.926600"], ["updated_at", "2020-04-10 23:29:35.926600"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mLunch Create (0.5ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sausage Rigatoni"], ["description", "Seasoned Perfectly"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 36], ["created_at", "2020-04-10 23:29:35.934386"], ["updated_at", "2020-04-10 23:29:35.934386"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chess Sandwich"], ["description", "Ham, eggs, and cheese"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 37], ["created_at", "2020-04-10 23:29:35.940114"], ["updated_at", "2020-04-10 23:29:35.940114"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chicken Sandwich"], ["description", "Spicy and good"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 38], ["created_at", "2020-04-10 23:29:35.945119"], ["updated_at", "2020-04-10 23:29:35.945119"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ db/seeds.rb:48
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Brisket and Waffle"], ["description", "Surprisingly good bedfellows"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 39], ["created_at", "2020-04-10 23:29:35.950255"], ["updated_at", "2020-04-10 23:29:35.950255"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+Started GET "/" for ::1 at 2020-04-10 19:29:46 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "zKYDT3WhtsdtoTMhqMnn3w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 2301ms (Views: 2294.6ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/api/users" for ::1 at 2020-04-10 19:30:00 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"sarjil", "password"=>"[FILTERED]", "location"=>"Brooklyn"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sarjil"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "euYPEXXKl3UV41pCPbflww"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "location", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "sarjil"], ["password_digest", "$2a$12$I.EiKVDcYkZ5jNIVtlmY5O1YOquFjdeddltIIXZ6w/DIC9qpoWmXi"], ["session_token", "euYPEXXKl3UV41pCPbflww"], ["location", "Brooklyn"], ["created_at", "2020-04-10 23:30:00.585183"], ["updated_at", "2020-04-10 23:30:00.585183"]]
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "sarjil"], ["id", 43], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "kxcaFIMbFsib9K92-4lm7A"], ["id", 43], ["LIMIT", 1]]
+  ↳ app/models/user.rb:48
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "kxcaFIMbFsib9K92-4lm7A"], ["updated_at", "2020-04-10 23:30:00.592120"], ["id", 43]]
+  ↳ app/models/user.rb:48
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:48
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (1.7ms)
+Completed 200 OK in 278ms (Views: 8.0ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 19:30:00 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.63913307056648&bounds%5BsouthWest%5D%5Blng%5D=-73.96994920654298&bounds%5BnorthEast%5D%5Blat%5D=40.717244048476594&bounds%5BnorthEast%5D%5Blng%5D=-73.91845079345704" for ::1 at 2020-04-10 19:30:00 -0400
+  [1m[36mLunch Load (9.4ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (41.5ms)
+Completed 200 OK in 115ms (Views: 74.5ms | ActiveRecord: 22.5ms)
+
+
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.63913307056648", "lng"=>"-73.96994920654298"}, "northEast"=>{"lat"=>"40.717244048476594", "lng"=>"-73.91845079345704"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (8.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.63913307056648 AND latitude < 40.717244048476594) AND (longitude > -73.96994920654298 AND longitude < -73.91845079345704))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (30.6ms)
+Completed 200 OK in 66ms (Views: 32.4ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.600043264940574&bounds%5BsouthWest%5D%5Blng%5D=-73.99569841308595&bounds%5BnorthEast%5D%5Blat%5D=40.756265211277096&bounds%5BnorthEast%5D%5Blng%5D=-73.89270158691407" for ::1 at 2020-04-10 19:30:03 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.600043264940574", "lng"=>"-73.99569841308595"}, "northEast"=>{"lat"=>"40.756265211277096", "lng"=>"-73.89270158691407"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.600043264940574 AND latitude < 40.756265211277096) AND (longitude > -73.99569841308595 AND longitude < -73.89270158691407))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.0ms)
+Completed 200 OK in 20ms (Views: 14.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.52179504439657&bounds%5BsouthWest%5D%5Blng%5D=-74.04719682617188&bounds%5BnorthEast%5D%5Blat%5D=40.83423886119893&bounds%5BnorthEast%5D%5Blng%5D=-73.84120317382813" for ::1 at 2020-04-10 19:30:04 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.52179504439657", "lng"=>"-74.04719682617188"}, "northEast"=>{"lat"=>"40.83423886119893", "lng"=>"-73.84120317382813"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.52179504439657 AND latitude < 40.83423886119893) AND (longitude > -74.04719682617188 AND longitude < -73.84120317382813))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.1ms)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.36502430368272&bounds%5BsouthWest%5D%5Blng%5D=-74.15019365234376&bounds%5BnorthEast%5D%5Blat%5D=40.98991133029696&bounds%5BnorthEast%5D%5Blng%5D=-73.73820634765626" for ::1 at 2020-04-10 19:30:06 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.36502430368272", "lng"=>"-74.15019365234376"}, "northEast"=>{"lat"=>"40.98991133029696", "lng"=>"-73.73820634765626"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (8.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.36502430368272 AND latitude < 40.98991133029696) AND (longitude > -74.15019365234376 AND longitude < -73.73820634765626))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (16.7ms)
+Completed 200 OK in 28ms (Views: 17.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.33886030682099&bounds%5BsouthWest%5D%5Blng%5D=-74.21395089067549&bounds%5BnorthEast%5D%5Blat%5D=40.96399137496318&bounds%5BnorthEast%5D%5Blng%5D=-73.80196358598799" for ::1 at 2020-04-10 19:30:08 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.33886030682099", "lng"=>"-74.21395089067549"}, "northEast"=>{"lat"=>"40.96399137496318", "lng"=>"-73.80196358598799"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.33886030682099 AND latitude < 40.96399137496318) AND (longitude > -74.21395089067549 AND longitude < -73.80196358598799))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (7.2ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.41473880150979&bounds%5BsouthWest%5D%5Blng%5D=-74.12673339467203&bounds%5BnorthEast%5D%5Blat%5D=41.03916176815617&bounds%5BnorthEast%5D%5Blng%5D=-73.71474608998453" for ::1 at 2020-04-10 19:30:10 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.41473880150979", "lng"=>"-74.12673339467203"}, "northEast"=>{"lat"=>"41.03916176815617", "lng"=>"-73.71474608998453"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.41473880150979 AND latitude < 41.03916176815617) AND (longitude > -74.12673339467203 AND longitude < -73.71474608998453))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.9ms)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.10033268723987&bounds%5BsouthWest%5D%5Blng%5D=-74.33272704701578&bounds%5BnorthEast%5D%5Blat%5D=41.34917382254875&bounds%5BnorthEast%5D%5Blng%5D=-73.50875243764078" for ::1 at 2020-04-10 19:30:13 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.10033268723987", "lng"=>"-74.33272704701578"}, "northEast"=>{"lat"=>"41.34917382254875", "lng"=>"-73.50875243764078"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.10033268723987 AND latitude < 41.34917382254875) AND (longitude > -74.33272704701578 AND longitude < -73.50875243764078))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.8ms)
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 19:45:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "kxcaFIMbFsib9K92-4lm7A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 241ms (Views: 233.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 19:45:02 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (26.8ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (36.8ms)
+Completed 200 OK in 56ms (Views: 24.7ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.63913307056648&bounds%5BsouthWest%5D%5Blng%5D=-73.96994920654298&bounds%5BnorthEast%5D%5Blat%5D=40.717244048476594&bounds%5BnorthEast%5D%5Blng%5D=-73.91845079345704" for ::1 at 2020-04-10 19:45:02 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.63913307056648", "lng"=>"-73.96994920654298"}, "northEast"=>{"lat"=>"40.717244048476594", "lng"=>"-73.91845079345704"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.63913307056648 AND latitude < 40.717244048476594) AND (longitude > -73.96994920654298 AND longitude < -73.91845079345704))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.6ms)
+Completed 200 OK in 27ms (Views: 18.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.600043264940574&bounds%5BsouthWest%5D%5Blng%5D=-73.99569841308595&bounds%5BnorthEast%5D%5Blat%5D=40.756265211277096&bounds%5BnorthEast%5D%5Blng%5D=-73.89270158691407" for ::1 at 2020-04-10 19:45:05 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.600043264940574", "lng"=>"-73.99569841308595"}, "northEast"=>{"lat"=>"40.756265211277096", "lng"=>"-73.89270158691407"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.600043264940574 AND latitude < 40.756265211277096) AND (longitude > -73.99569841308595 AND longitude < -73.89270158691407))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.1ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.52179504439657&bounds%5BsouthWest%5D%5Blng%5D=-74.04719682617188&bounds%5BnorthEast%5D%5Blat%5D=40.83423886119893&bounds%5BnorthEast%5D%5Blng%5D=-73.84120317382813" for ::1 at 2020-04-10 19:45:07 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.52179504439657", "lng"=>"-74.04719682617188"}, "northEast"=>{"lat"=>"40.83423886119893", "lng"=>"-73.84120317382813"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.52179504439657 AND latitude < 40.83423886119893) AND (longitude > -74.04719682617188 AND longitude < -73.84120317382813))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (8.0ms)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.57136187983733&bounds%5BsouthWest%5D%5Blng%5D=-74.08038382232742&bounds%5BnorthEast%5D%5Blat%5D=40.883573811791756&bounds%5BnorthEast%5D%5Blng%5D=-73.87439016998367" for ::1 at 2020-04-10 19:45:09 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.57136187983733", "lng"=>"-74.08038382232742"}, "northEast"=>{"lat"=>"40.883573811791756", "lng"=>"-73.87439016998367"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.57136187983733 AND latitude < 40.883573811791756) AND (longitude > -74.08038382232742 AND longitude < -73.87439016998367))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.6ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.68861299410776&bounds%5BsouthWest%5D%5Blng%5D=-74.00313620269851&bounds%5BnorthEast%5D%5Blat%5D=40.76666600051925&bounds%5BnorthEast%5D%5Blng%5D=-73.95163778961258" for ::1 at 2020-04-10 19:45:10 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.68861299410776", "lng"=>"-74.00313620269851"}, "northEast"=>{"lat"=>"40.76666600051925", "lng"=>"-73.95163778961258"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.68861299410776 AND latitude < 40.76666600051925) AND (longitude > -74.00313620269851 AND longitude < -73.95163778961258))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (18.2ms)
+Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.697548369690765&bounds%5BsouthWest%5D%5Blng%5D=-74.01331101327284&bounds%5BnorthEast%5D%5Blat%5D=40.77559090107259&bounds%5BnorthEast%5D%5Blng%5D=-73.9618126001869" for ::1 at 2020-04-10 19:45:11 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.697548369690765", "lng"=>"-74.01331101327284"}, "northEast"=>{"lat"=>"40.77559090107259", "lng"=>"-73.9618126001869"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.697548369690765 AND latitude < 40.77559090107259) AND (longitude > -74.01331101327284 AND longitude < -73.9618126001869))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.3ms)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.71706758524284&bounds%5BsouthWest%5D%5Blng%5D=-74.00043641000136&bounds%5BnorthEast%5D%5Blat%5D=40.75608885151804&bounds%5BnorthEast%5D%5Blng%5D=-73.97468720345839" for ::1 at 2020-04-10 19:45:24 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.71706758524284", "lng"=>"-74.00043641000136"}, "northEast"=>{"lat"=>"40.75608885151804", "lng"=>"-73.97468720345839"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.71706758524284 AND latitude < 40.75608885151804) AND (longitude > -74.00043641000136 AND longitude < -73.97468720345839))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.9ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.726825047525146&bounds%5BsouthWest%5D%5Blng%5D=-73.99399910836561&bounds%5BnorthEast%5D%5Blat%5D=40.74633568073577&bounds%5BnorthEast%5D%5Blng%5D=-73.98112450509413" for ::1 at 2020-04-10 19:45:26 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.726825047525146", "lng"=>"-73.99399910836561"}, "northEast"=>{"lat"=>"40.74633568073577", "lng"=>"-73.98112450509413"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.726825047525146 AND latitude < 40.74633568073577) AND (longitude > -73.99399910836561 AND longitude < -73.98112450509413))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.2ms)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.73119234803361&bounds%5BsouthWest%5D%5Blng%5D=-73.9981325419236&bounds%5BnorthEast%5D%5Blat%5D=40.75070170055099&bounds%5BnorthEast%5D%5Blng%5D=-73.98525793865211" for ::1 at 2020-04-10 19:45:27 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.73119234803361", "lng"=>"-73.9981325419236"}, "northEast"=>{"lat"=>"40.75070170055099", "lng"=>"-73.98525793865211"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.73119234803361 AND latitude < 40.75070170055099) AND (longitude > -73.9981325419236 AND longitude < -73.98525793865211))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.9ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.701917590993254&bounds%5BsouthWest%5D%5Blng%5D=-74.01744444683082&bounds%5BnorthEast%5D%5Blat%5D=40.77995499960369&bounds%5BnorthEast%5D%5Blng%5D=-73.96594603374488" for ::1 at 2020-04-10 19:45:29 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.701917590993254", "lng"=>"-74.01744444683082"}, "northEast"=>{"lat"=>"40.77995499960369", "lng"=>"-73.96594603374488"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.701917590993254 AND latitude < 40.77995499960369) AND (longitude > -74.01744444683082 AND longitude < -73.96594603374488))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.7ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.662864558599104&bounds%5BsouthWest%5D%5Blng%5D=-74.04319365337379&bounds%5BnorthEast%5D%5Blat%5D=40.818939366481715&bounds%5BnorthEast%5D%5Blng%5D=-73.94019682720192" for ::1 at 2020-04-10 19:45:30 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.662864558599104", "lng"=>"-74.04319365337379"}, "northEast"=>{"lat"=>"40.818939366481715", "lng"=>"-73.94019682720192"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.662864558599104 AND latitude < 40.818939366481715) AND (longitude > -74.04319365337379 AND longitude < -73.94019682720192))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.8ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.58468986131806&bounds%5BsouthWest%5D%5Blng%5D=-74.09469206645973&bounds%5BnorthEast%5D%5Blat%5D=40.896839402376344&bounds%5BnorthEast%5D%5Blng%5D=-73.88869841411598" for ::1 at 2020-04-10 19:45:31 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.58468986131806", "lng"=>"-74.09469206645973"}, "northEast"=>{"lat"=>"40.896839402376344", "lng"=>"-73.88869841411598"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.58468986131806 AND latitude < 40.896839402376344) AND (longitude > -74.09469206645973 AND longitude < -73.88869841411598))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.8ms)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-10 19:46:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "kxcaFIMbFsib9K92-4lm7A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 113ms (Views: 99.1ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-10 19:46:20 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (0.8ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  Rendered api/lunches/index.json.jbuilder (6.1ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.63913307056648&bounds%5BsouthWest%5D%5Blng%5D=-73.96994920654298&bounds%5BnorthEast%5D%5Blat%5D=40.717244048476594&bounds%5BnorthEast%5D%5Blng%5D=-73.91845079345704" for ::1 at 2020-04-10 19:46:22 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.63913307056648", "lng"=>"-73.96994920654298"}, "northEast"=>{"lat"=>"40.717244048476594", "lng"=>"-73.91845079345704"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.63913307056648 AND latitude < 40.717244048476594) AND (longitude > -73.96994920654298 AND longitude < -73.91845079345704))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (3.3ms)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.600043264940574&bounds%5BsouthWest%5D%5Blng%5D=-73.99569841308595&bounds%5BnorthEast%5D%5Blat%5D=40.756265211277096&bounds%5BnorthEast%5D%5Blng%5D=-73.89270158691407" for ::1 at 2020-04-10 19:46:27 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.600043264940574", "lng"=>"-73.99569841308595"}, "northEast"=>{"lat"=>"40.756265211277096", "lng"=>"-73.89270158691407"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.600043264940574 AND latitude < 40.756265211277096) AND (longitude > -73.99569841308595 AND longitude < -73.89270158691407))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (11.0ms)
+Completed 200 OK in 30ms (Views: 22.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.52179504439657&bounds%5BsouthWest%5D%5Blng%5D=-74.04719682617188&bounds%5BnorthEast%5D%5Blat%5D=40.83423886119893&bounds%5BnorthEast%5D%5Blng%5D=-73.84120317382813" for ::1 at 2020-04-10 19:46:28 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.52179504439657", "lng"=>"-74.04719682617188"}, "northEast"=>{"lat"=>"40.83423886119893", "lng"=>"-73.84120317382813"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.52179504439657 AND latitude < 40.83423886119893) AND (longitude > -74.04719682617188 AND longitude < -73.84120317382813))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.2ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.59613902632081&bounds%5BsouthWest%5D%5Blng%5D=-74.07887974473199&bounds%5BnorthEast%5D%5Blat%5D=40.90823495819905&bounds%5BnorthEast%5D%5Blng%5D=-73.87288609238824" for ::1 at 2020-04-10 21:36:30 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.59613902632081", "lng"=>"-74.07887974473199"}, "northEast"=>{"lat"=>"40.90823495819905", "lng"=>"-73.87288609238824"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (2.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.59613902632081 AND latitude < 40.90823495819905) AND (longitude > -74.07887974473199 AND longitude < -73.87288609238824))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (14.7ms)
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 2.0ms)
+
+
