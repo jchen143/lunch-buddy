@@ -18,6 +18,8 @@ class Lunch < ApplicationRecord
         foreign_key: :restaurant_id,
         class_name: :Restaurant 
 
+    has_one_attached :photo
+
      def self.in_bounds(bounds)
         
             min_lat = bounds["southWest"]["lat"].to_f

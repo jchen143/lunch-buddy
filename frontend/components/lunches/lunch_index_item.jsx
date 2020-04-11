@@ -7,12 +7,12 @@ const LunchIndexItem = (props) => {
     return (
         <li className="lunch-li" key={lunch.id}>
             <div className="item-header">Lunch</div>
+            <img src={lunch.photoUrl} />
             <p>{lunch.name}</p>
-            <p>{lunch.description}</p>
-            <p>{lunch.size}</p>
-            <p>{lunch.image_url}</p>
+            {/* <p>{lunch.description}</p> */}
             <p>{restaurant.name}</p>
             <p>{restaurant.address}</p>
+            {/* <p>{lunch.size}</p> */}
         </li>
     )
 
