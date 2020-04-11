@@ -34566,3 +34566,1302 @@ Processing by Api::RestaurantsController#index as JSON
 Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 1.3ms)
 
 
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (13.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 46]]
+  ↳ db/seeds.rb:9
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mLunch Load (0.7ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (11.2ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 56]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 56], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9] Performing ActiveStorage::PurgeJob (Job ID: 3f01783b-4727-4af0-9489-cf1c1bd67ab9) from Inline(default) with arguments: #<GlobalID:0x00007fe91dbf8ca0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/23>>
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   [1m[36mActiveStorage::Attachment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 23], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   [1m[36mActiveStorage::Blob Destroy (29.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 23]]
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 23], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9] [36m  S3 Storage (228.0ms) [0m[31mDeleted file from key: 1aSrxQwPNR1fcrAqoRKJyYhX[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9] [36m  S3 Storage (45.6ms) [0m[31mDeleted files by key prefix: variants/1aSrxQwPNR1fcrAqoRKJyYhX/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [3f01783b-4727-4af0-9489-cf1c1bd67ab9] Performed ActiveStorage::PurgeJob (Job ID: 3f01783b-4727-4af0-9489-cf1c1bd67ab9) from Inline(default) in 324.22ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 3f01783b-4727-4af0-9489-cf1c1bd67ab9) to Inline(default) with arguments: #<GlobalID:0x00007fe91da5fe20 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/23>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 57]]
+  ↳ db/seeds.rb:10
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 57], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:10
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb] Performing ActiveStorage::PurgeJob (Job ID: f5dd0a91-b94a-4221-8691-f48c9f1849cb) from Inline(default) with arguments: #<GlobalID:0x00007fe91da39d10 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/24>>
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   [1m[36mActiveStorage::Attachment Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 24], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   [1m[36mActiveStorage::Blob Destroy (0.8ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 24]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 24], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb] [36m  S3 Storage (66.2ms) [0m[31mDeleted file from key: 6jAXAPg6WqAYXacz365wTeKc[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb] [36m  S3 Storage (45.3ms) [0m[31mDeleted files by key prefix: variants/6jAXAPg6WqAYXacz365wTeKc/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f5dd0a91-b94a-4221-8691-f48c9f1849cb] Performed ActiveStorage::PurgeJob (Job ID: f5dd0a91-b94a-4221-8691-f48c9f1849cb) from Inline(default) in 119.27ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: f5dd0a91-b94a-4221-8691-f48c9f1849cb) to Inline(default) with arguments: #<GlobalID:0x00007fe91a87f1f8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/24>>
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 58]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 58], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843] Performing ActiveStorage::PurgeJob (Job ID: 732f4e23-469e-4c1d-b8bb-c36e57fba843) from Inline(default) with arguments: #<GlobalID:0x00007fe91a44f240 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/25>>
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   [1m[36mActiveStorage::Attachment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 25], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 25]]
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 25], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843] [36m  S3 Storage (47.0ms) [0m[31mDeleted file from key: uGuWYHRhJk3BmfNcvxyrT2ny[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843] [36m  S3 Storage (46.8ms) [0m[31mDeleted files by key prefix: variants/uGuWYHRhJk3BmfNcvxyrT2ny/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [732f4e23-469e-4c1d-b8bb-c36e57fba843] Performed ActiveStorage::PurgeJob (Job ID: 732f4e23-469e-4c1d-b8bb-c36e57fba843) from Inline(default) in 99.03ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 732f4e23-469e-4c1d-b8bb-c36e57fba843) to Inline(default) with arguments: #<GlobalID:0x00007fe91be4d1d8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/25>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 59]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 59], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b] Performing ActiveStorage::PurgeJob (Job ID: 5676d497-29fa-4b26-a930-a5bc37fad80b) from Inline(default) with arguments: #<GlobalID:0x00007fe91a249fe0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/26>>
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   [1m[36mActiveStorage::Attachment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 26], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   [1m[36mActiveStorage::Blob Destroy (0.6ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 26]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 26], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b] [36m  S3 Storage (50.0ms) [0m[31mDeleted file from key: Vzz7rp1tqL8RyyJXd5xgnuPg[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b] [36m  S3 Storage (42.6ms) [0m[31mDeleted files by key prefix: variants/Vzz7rp1tqL8RyyJXd5xgnuPg/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [5676d497-29fa-4b26-a930-a5bc37fad80b] Performed ActiveStorage::PurgeJob (Job ID: 5676d497-29fa-4b26-a930-a5bc37fad80b) from Inline(default) in 100.08ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 5676d497-29fa-4b26-a930-a5bc37fad80b) to Inline(default) with arguments: #<GlobalID:0x00007fe91a9f0960 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/26>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 60]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 60], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe] Performing ActiveStorage::PurgeJob (Job ID: 86ac0b5f-504e-43a7-a0d5-c6f123b19efe) from Inline(default) with arguments: #<GlobalID:0x00007fe91f8485b8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/27>>
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   [1m[36mActiveStorage::Attachment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 27], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 27]]
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 27], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe] [36m  S3 Storage (48.0ms) [0m[31mDeleted file from key: 44wFXW9pXYd7a5HbZRU3tPHN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe] [36m  S3 Storage (48.3ms) [0m[31mDeleted files by key prefix: variants/44wFXW9pXYd7a5HbZRU3tPHN/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [86ac0b5f-504e-43a7-a0d5-c6f123b19efe] Performed ActiveStorage::PurgeJob (Job ID: 86ac0b5f-504e-43a7-a0d5-c6f123b19efe) from Inline(default) in 103.21ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 86ac0b5f-504e-43a7-a0d5-c6f123b19efe) to Inline(default) with arguments: #<GlobalID:0x00007fe91df3f2d8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/27>>
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 61]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 61], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4] Performing ActiveStorage::PurgeJob (Job ID: a9cf9157-95d0-47cf-846f-28200e6c91d4) from Inline(default) with arguments: #<GlobalID:0x00007fe91df07a18 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/28>>
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   [1m[36mActiveStorage::Attachment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 28], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   [1m[36mActiveStorage::Blob Destroy (4.6ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 28]]
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 28], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4] [36m  S3 Storage (50.7ms) [0m[31mDeleted file from key: LoDojrEzrLSMEydL47e4amkC[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4] [36m  S3 Storage (41.3ms) [0m[31mDeleted files by key prefix: variants/LoDojrEzrLSMEydL47e4amkC/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [a9cf9157-95d0-47cf-846f-28200e6c91d4] Performed ActiveStorage::PurgeJob (Job ID: a9cf9157-95d0-47cf-846f-28200e6c91d4) from Inline(default) in 111.42ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: a9cf9157-95d0-47cf-846f-28200e6c91d4) to Inline(default) with arguments: #<GlobalID:0x00007fe91a9a2e90 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/28>>
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 62]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 62], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff] Performing ActiveStorage::PurgeJob (Job ID: 22801b84-cda2-45e9-9656-5d38ff26d7ff) from Inline(default) with arguments: #<GlobalID:0x00007fe91a9840a8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/29>>
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   [1m[36mActiveStorage::Attachment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 29], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   [1m[36mActiveStorage::Blob Destroy (0.6ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 29]]
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 29], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff] [36m  S3 Storage (97.6ms) [0m[31mDeleted file from key: bimKdK9ZuSGYeeNt3LExPgev[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff] [36m  S3 Storage (45.9ms) [0m[31mDeleted files by key prefix: variants/bimKdK9ZuSGYeeNt3LExPgev/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [22801b84-cda2-45e9-9656-5d38ff26d7ff] Performed ActiveStorage::PurgeJob (Job ID: 22801b84-cda2-45e9-9656-5d38ff26d7ff) from Inline(default) in 153.23ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 22801b84-cda2-45e9-9656-5d38ff26d7ff) to Inline(default) with arguments: #<GlobalID:0x00007fe91de5eeb8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/29>>
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 63]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 63], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4] Performing ActiveStorage::PurgeJob (Job ID: cc9ae87f-5c23-4072-b87e-7a48d1defdc4) from Inline(default) with arguments: #<GlobalID:0x00007fe91de4feb8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/30>>
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   [1m[36mActiveStorage::Attachment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 30], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 30]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 30], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4] [36m  S3 Storage (49.0ms) [0m[31mDeleted file from key: YgimkmHsN4vgMsVJ8hMZkN3v[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4] [36m  S3 Storage (43.0ms) [0m[31mDeleted files by key prefix: variants/YgimkmHsN4vgMsVJ8hMZkN3v/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cc9ae87f-5c23-4072-b87e-7a48d1defdc4] Performed ActiveStorage::PurgeJob (Job ID: cc9ae87f-5c23-4072-b87e-7a48d1defdc4) from Inline(default) in 98.01ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: cc9ae87f-5c23-4072-b87e-7a48d1defdc4) to Inline(default) with arguments: #<GlobalID:0x00007fe91a94f088 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/30>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 64]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 64], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6] Performing ActiveStorage::PurgeJob (Job ID: 20388cda-5b53-43ad-bed5-022d0b4182e6) from Inline(default) with arguments: #<GlobalID:0x00007fe91a7431e0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/31>>
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   [1m[36mActiveStorage::Attachment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 31], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 31]]
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 31], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6] [36m  S3 Storage (45.4ms) [0m[31mDeleted file from key: Mu9tD4fnrjXHMZLgyc9YFcwt[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6] [36m  S3 Storage (45.8ms) [0m[31mDeleted files by key prefix: variants/Mu9tD4fnrjXHMZLgyc9YFcwt/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [20388cda-5b53-43ad-bed5-022d0b4182e6] Performed ActiveStorage::PurgeJob (Job ID: 20388cda-5b53-43ad-bed5-022d0b4182e6) from Inline(default) in 96.47ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 20388cda-5b53-43ad-bed5-022d0b4182e6) to Inline(default) with arguments: #<GlobalID:0x00007fe91a8f5bf0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/31>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 65]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 65], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6] Performing ActiveStorage::PurgeJob (Job ID: 7f5a5da5-9d34-4c96-8382-e0fc2cad45e6) from Inline(default) with arguments: #<GlobalID:0x00007fe91dd1b380 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/32>>
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   [1m[36mActiveStorage::Attachment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 32], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 32]]
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 32], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6] [36m  S3 Storage (47.5ms) [0m[31mDeleted file from key: 1dXRxVvbzDwNCndGRBKxz89d[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6] [36m  S3 Storage (45.4ms) [0m[31mDeleted files by key prefix: variants/1dXRxVvbzDwNCndGRBKxz89d/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7f5a5da5-9d34-4c96-8382-e0fc2cad45e6] Performed ActiveStorage::PurgeJob (Job ID: 7f5a5da5-9d34-4c96-8382-e0fc2cad45e6) from Inline(default) in 98.31ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 7f5a5da5-9d34-4c96-8382-e0fc2cad45e6) to Inline(default) with arguments: #<GlobalID:0x00007fe91dc68258 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/32>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 66]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 66], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f] Performing ActiveStorage::PurgeJob (Job ID: 8615b96e-0d62-4d9b-a274-62352803c56f) from Inline(default) with arguments: #<GlobalID:0x00007fe91dc2f110 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/33>>
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   [1m[36mActiveStorage::Attachment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 33], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 33]]
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 33], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f] [36m  S3 Storage (49.4ms) [0m[31mDeleted file from key: fCqPoeTd2vmSdx3N8i3cwdPo[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f] [36m  S3 Storage (44.9ms) [0m[31mDeleted files by key prefix: variants/fCqPoeTd2vmSdx3N8i3cwdPo/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [8615b96e-0d62-4d9b-a274-62352803c56f] Performed ActiveStorage::PurgeJob (Job ID: 8615b96e-0d62-4d9b-a274-62352803c56f) from Inline(default) in 100.7ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 8615b96e-0d62-4d9b-a274-62352803c56f) to Inline(default) with arguments: #<GlobalID:0x00007fe91a5928f0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/33>>
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 67]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 67], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3] Performing ActiveStorage::PurgeJob (Job ID: c5e5618d-c5fb-414b-a474-069a4be588f3) from Inline(default) with arguments: #<GlobalID:0x00007fe91b213278 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/34>>
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   [1m[36mActiveStorage::Attachment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 34], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 34]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 34], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3] [36m  S3 Storage (49.4ms) [0m[31mDeleted file from key: sjs6YPRHEL8CrPWXR9dSrACD[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3] [36m  S3 Storage (40.7ms) [0m[31mDeleted files by key prefix: variants/sjs6YPRHEL8CrPWXR9dSrACD/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c5e5618d-c5fb-414b-a474-069a4be588f3] Performed ActiveStorage::PurgeJob (Job ID: c5e5618d-c5fb-414b-a474-069a4be588f3) from Inline(default) in 95.62ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: c5e5618d-c5fb-414b-a474-069a4be588f3) to Inline(default) with arguments: #<GlobalID:0x00007fe91a4e8328 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/34>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.3ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 68]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 68], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767] Performing ActiveStorage::PurgeJob (Job ID: cfc78eaf-8059-490e-b35b-7658d79a3767) from Inline(default) with arguments: #<GlobalID:0x00007fe91a50a018 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/35>>
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   [1m[36mActiveStorage::Attachment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 35], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   [1m[36mActiveStorage::Blob Destroy (0.6ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 35]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 35], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767] [36m  S3 Storage (46.8ms) [0m[31mDeleted file from key: k32y4TqZwRhDQGLHER3rKA3F[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767] [36m  S3 Storage (41.9ms) [0m[31mDeleted files by key prefix: variants/k32y4TqZwRhDQGLHER3rKA3F/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfc78eaf-8059-490e-b35b-7658d79a3767] Performed ActiveStorage::PurgeJob (Job ID: cfc78eaf-8059-490e-b35b-7658d79a3767) from Inline(default) in 94.73ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: cfc78eaf-8059-490e-b35b-7658d79a3767) to Inline(default) with arguments: #<GlobalID:0x00007fe91a87c750 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/35>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 69]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 69], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 36]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 36], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e] Performing ActiveStorage::PurgeJob (Job ID: 1086a1b2-aa0b-4463-b2f2-8712d2ceb82e) from Inline(default) with arguments: #<GlobalID:0x00007fe91a3f0178 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/36>>
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   [1m[36mActiveStorage::Attachment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 36], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 36]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 36], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e] [36m  S3 Storage (96.0ms) [0m[31mDeleted file from key: nE1eqTX349YEbVzpUWDvVyfw[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e] [36m  S3 Storage (42.2ms) [0m[31mDeleted files by key prefix: variants/nE1eqTX349YEbVzpUWDvVyfw/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1086a1b2-aa0b-4463-b2f2-8712d2ceb82e] Performed ActiveStorage::PurgeJob (Job ID: 1086a1b2-aa0b-4463-b2f2-8712d2ceb82e) from Inline(default) in 143.44ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 1086a1b2-aa0b-4463-b2f2-8712d2ceb82e) to Inline(default) with arguments: #<GlobalID:0x00007fe91be37d60 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/36>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mLunch Destroy (0.4ms)[0m  [1m[31mDELETE FROM "lunches" WHERE "lunches"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 70], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 37]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90] Performing ActiveStorage::PurgeJob (Job ID: 20f67e2c-3abe-491b-b629-8cec28984b90) from Inline(default) with arguments: #<GlobalID:0x00007fe91bcbc1c0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/37>>
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   [1m[36mActiveStorage::Attachment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 37], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   [1m[36mActiveStorage::Blob Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 37]]
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 37], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90] [36m  S3 Storage (42.9ms) [0m[31mDeleted file from key: PRtDm47mfAJgja9PaHfjgxSa[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90] [36m  S3 Storage (42.3ms) [0m[31mDeleted files by key prefix: variants/PRtDm47mfAJgja9PaHfjgxSa/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [20f67e2c-3abe-491b-b629-8cec28984b90] Performed ActiveStorage::PurgeJob (Job ID: 20f67e2c-3abe-491b-b629-8cec28984b90) from Inline(default) in 94.86ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 20f67e2c-3abe-491b-b629-8cec28984b90) to Inline(default) with arguments: #<GlobalID:0x00007fe920852648 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/37>>
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 70]]
+  ↳ db/seeds.rb:11
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 71]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.5ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 72]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 73]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 75]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 76]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.5ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 77]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 78]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 79]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 80]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.3ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.4ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mRestaurant Destroy (0.5ms)[0m  [1m[31mDELETE FROM "restaurants" WHERE "restaurants"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo_user@appacademy.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "mq6kd0oojgTbM7ZgRAuo1Q"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (4.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "demo_user@appacademy.io"], ["password_digest", "$2a$12$mHBUSBUQuOtRAYoI2z2LGeVUkA1mjWyx6oKyMh/.g4x11yU3AqMRu"], ["session_token", "mq6kd0oojgTbM7ZgRAuo1Q"], ["created_at", "2020-04-11 19:57:56.475142"], ["updated_at", "2020-04-11 19:57:56.475142"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mRestaurant Create (2.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "App Academy Cafe"], ["address", "90 5th Ave"], ["latitude", 40.7352422], ["longitude", -73.9960728], ["created_at", "2020-04-11 19:57:56.481393"], ["updated_at", "2020-04-11 19:57:56.481393"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Jos Crabshack"], ["address", "1804 3rd Ave, Apt. 3"], ["latitude", 40.7879917], ["longitude", -73.9496956], ["created_at", "2020-04-11 19:57:56.485562"], ["updated_at", "2020-04-11 19:57:56.485562"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lincoln Square Tavern"], ["address", "113 W 60th St"], ["latitude", 40.772826], ["longitude", -73.9869315], ["created_at", "2020-04-11 19:57:56.487692"], ["updated_at", "2020-04-11 19:57:56.487692"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Central Park Hideaway"], ["address", "Park Ave"], ["latitude", 40.774768], ["longitude", -73.97197], ["created_at", "2020-04-11 19:57:56.491651"], ["updated_at", "2020-04-11 19:57:56.491651"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Liberty Island Tacos"], ["address", "1 Main St"], ["latitude", 40.6983762], ["longitude", -74.0468981], ["created_at", "2020-04-11 19:57:56.494116"], ["updated_at", "2020-04-11 19:57:56.494116"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "World Trade Center Food Court"], ["address", "285 Fulton St"], ["latitude", 40.7115322], ["longitude", -74.0167379], ["created_at", "2020-04-11 19:57:56.496413"], ["updated_at", "2020-04-11 19:57:56.496413"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Peter Kim Korean BBQ Extraordinaire"], ["address", "229 W 28 St"], ["latitude", 40.748346], ["longitude", -73.9961638], ["created_at", "2020-04-11 19:57:56.498820"], ["updated_at", "2020-04-11 19:57:56.498820"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rams Deli"], ["address", "441 East Fordham Rd"], ["latitude", 40.8586227], ["longitude", -73.8880667], ["created_at", "2020-04-11 19:57:56.501608"], ["updated_at", "2020-04-11 19:57:56.501608"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rancho Estrella"], ["address", "616 E 187th St"], ["latitude", 40.8551323], ["longitude", -73.8892581], ["created_at", "2020-04-11 19:57:56.504169"], ["updated_at", "2020-04-11 19:57:56.504169"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mRestaurant Create (0.3ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Staten Island Soup Spot"], ["address", "34 Baker St"], ["latitude", 40.5737968], ["longitude", -74.1493022], ["created_at", "2020-04-11 19:57:56.506556"], ["updated_at", "2020-04-11 19:57:56.506556"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Bella"], ["address", "40 Queens Blvd"], ["latitude", 40.7442052], ["longitude", -73.9265901], ["created_at", "2020-04-11 19:57:56.509308"], ["updated_at", "2020-04-11 19:57:56.509308"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Risotto e Boccio"], ["address", "43 Queens Blvd"], ["latitude", 40.7433062], ["longitude", -73.9224616], ["created_at", "2020-04-11 19:57:56.512415"], ["updated_at", "2020-04-11 19:57:56.512415"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mRestaurant Create (0.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Checkmate in Queens"], ["address", "10 Utopia Pkwy"], ["latitude", 40.7255828], ["longitude", -73.7941393], ["created_at", "2020-04-11 19:57:56.514848"], ["updated_at", "2020-04-11 19:57:56.514848"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sweet Chick"], ["address", "10 Utopia Pkwy"], ["latitude", 40.67986932855128], ["longitude", -73.97645332888183], ["created_at", "2020-04-11 19:57:56.517572"], ["updated_at", "2020-04-11 19:57:56.517572"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "address", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Big Danny Brisket and Waffle House"], ["address", "1400 Fulton St"], ["latitude", 40.680317], ["longitude", -73.943119], ["created_at", "2020-04-11 19:57:56.520267"], ["updated_at", "2020-04-11 19:57:56.520267"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ db/seeds.rb:34
+  [1m[36mLunch Create (2.0ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Fullstack Pancakes"], ["description", "Breakfast for lunch!"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 85], ["created_at", "2020-04-11 19:57:56.527211"], ["updated_at", "2020-04-11 19:57:56.527211"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 71], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+[36m  S3 Storage (92.0ms) [0m[32mUploaded file to key: H75HE6yEZCyshHci3w9fAhp3 (checksum: 4FSI/b8zmUDeujTxghI4tQ==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mActiveStorage::Blob Create (2.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "H75HE6yEZCyshHci3w9fAhp3"], ["filename", "pancakes.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 7458], ["checksum", "4FSI/b8zmUDeujTxghI4tQ=="], ["created_at", "2020-04-11 19:57:56.831033"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mActiveStorage::Attachment Create (2.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 71], ["blob_id", 38], ["created_at", "2020-04-11 19:57:56.836689"]]
+  ↳ db/seeds.rb:36
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:57:56.839815"], ["id", 71]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:36
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee] Performing ActiveStorage::AnalyzeJob (Job ID: 1a4a13ab-ea05-428b-bc7c-d7d374d81eee) from Inline(default) with arguments: #<GlobalID:0x00007fe91dcf0928 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/38>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee] [36m  S3 Storage (75.7ms) [0m[34mDownloaded file from key: H75HE6yEZCyshHci3w9fAhp3[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee]   ↳ db/seeds.rb:36
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee]   [1m[36mActiveStorage::Blob Update (1.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 38]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee]   ↳ db/seeds.rb:36
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee]   [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee]   ↳ db/seeds.rb:36
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1a4a13ab-ea05-428b-bc7c-d7d374d81eee] Performed ActiveStorage::AnalyzeJob (Job ID: 1a4a13ab-ea05-428b-bc7c-d7d374d81eee) from Inline(default) in 94.11ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 1a4a13ab-ea05-428b-bc7c-d7d374d81eee) to Inline(default) with arguments: #<GlobalID:0x00007fe91a8e04d0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/38>>
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Seafood Medley"], ["description", "Yummy seafood"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 86], ["created_at", "2020-04-11 19:57:56.942118"], ["updated_at", "2020-04-11 19:57:56.942118"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 72], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+[36m  S3 Storage (87.7ms) [0m[32mUploaded file to key: M9HMYXv1GFCr47LStjm8dQ5Z (checksum: vL1vmDMjZINC0FNCsFY3/Q==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "M9HMYXv1GFCr47LStjm8dQ5Z"], ["filename", "seafood_medley.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 10934], ["checksum", "vL1vmDMjZINC0FNCsFY3/Q=="], ["created_at", "2020-04-11 19:57:57.226584"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 72], ["blob_id", 39], ["created_at", "2020-04-11 19:57:57.231126"]]
+  ↳ db/seeds.rb:40
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:57:57.232723"], ["id", 72]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:40
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c] Performing ActiveStorage::AnalyzeJob (Job ID: f83d6fac-89cd-4ece-9ee2-81a9a7cc548c) from Inline(default) with arguments: #<GlobalID:0x00007fe91b211bd0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/39>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c] [36m  S3 Storage (79.0ms) [0m[34mDownloaded file from key: M9HMYXv1GFCr47LStjm8dQ5Z[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c]   ↳ db/seeds.rb:40
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 39]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c]   ↳ db/seeds.rb:40
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c]   [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c]   ↳ db/seeds.rb:40
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f83d6fac-89cd-4ece-9ee2-81a9a7cc548c] Performed ActiveStorage::AnalyzeJob (Job ID: f83d6fac-89cd-4ece-9ee2-81a9a7cc548c) from Inline(default) in 92.93ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: f83d6fac-89cd-4ece-9ee2-81a9a7cc548c) to Inline(default) with arguments: #<GlobalID:0x00007fe91da388e8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/39>>
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  ↳ db/seeds.rb:42
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Burger and Fries"], ["description", "Classic"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 87], ["created_at", "2020-04-11 19:57:57.337535"], ["updated_at", "2020-04-11 19:57:57.337535"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 73], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:44
+[36m  S3 Storage (89.8ms) [0m[32mUploaded file to key: XL7MCzorH922MxkSqsc4R61F (checksum: caxb+XSbf9bE/FGnilzVeA==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "XL7MCzorH922MxkSqsc4R61F"], ["filename", "fries_burgers_yum.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 10682], ["checksum", "caxb+XSbf9bE/FGnilzVeA=="], ["created_at", "2020-04-11 19:57:57.667940"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 73], ["blob_id", 40], ["created_at", "2020-04-11 19:57:57.672276"]]
+  ↳ db/seeds.rb:44
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:57:57.673720"], ["id", 73]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:44
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9] Performing ActiveStorage::AnalyzeJob (Job ID: c3fb729a-5c16-473a-8295-2068923ed9a9) from Inline(default) with arguments: #<GlobalID:0x00007fe91d8efec8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/40>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9] [36m  S3 Storage (79.7ms) [0m[34mDownloaded file from key: XL7MCzorH922MxkSqsc4R61F[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9]   ↳ db/seeds.rb:44
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9]   [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 40]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9]   ↳ db/seeds.rb:44
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9]   [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9]   ↳ db/seeds.rb:44
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c3fb729a-5c16-473a-8295-2068923ed9a9] Performed ActiveStorage::AnalyzeJob (Job ID: c3fb729a-5c16-473a-8295-2068923ed9a9) from Inline(default) in 92.68ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: c3fb729a-5c16-473a-8295-2068923ed9a9) to Inline(default) with arguments: #<GlobalID:0x00007fe91be89638 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/40>>
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Leafy Salad"], ["description", "Healthy"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 88], ["created_at", "2020-04-11 19:57:57.774368"], ["updated_at", "2020-04-11 19:57:57.774368"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 74], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:48
+[36m  S3 Storage (109.1ms) [0m[32mUploaded file to key: mGEAH2RmPm4rBF7Et7G3z3po (checksum: G1porKx2gyzBcNVc9Kh4fg==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "mGEAH2RmPm4rBF7Et7G3z3po"], ["filename", "leaf_salad.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 10466], ["checksum", "G1porKx2gyzBcNVc9Kh4fg=="], ["created_at", "2020-04-11 19:57:58.075288"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 74], ["blob_id", 41], ["created_at", "2020-04-11 19:57:58.079190"]]
+  ↳ db/seeds.rb:48
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:57:58.080634"], ["id", 74]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:48
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518] Performing ActiveStorage::AnalyzeJob (Job ID: 2aebbb23-4627-4a01-bef5-b0d8b609a518) from Inline(default) with arguments: #<GlobalID:0x00007fe9208997a0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/41>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518] [36m  S3 Storage (111.5ms) [0m[34mDownloaded file from key: mGEAH2RmPm4rBF7Et7G3z3po[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518]   ↳ db/seeds.rb:48
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 41]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518]   ↳ db/seeds.rb:48
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518]   [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518]   ↳ db/seeds.rb:48
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2aebbb23-4627-4a01-bef5-b0d8b609a518] Performed ActiveStorage::AnalyzeJob (Job ID: 2aebbb23-4627-4a01-bef5-b0d8b609a518) from Inline(default) in 125.94ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 2aebbb23-4627-4a01-bef5-b0d8b609a518) to Inline(default) with arguments: #<GlobalID:0x00007fe91df8e6d0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/41>>
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:50
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ db/seeds.rb:50
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Fish Tacos"], ["description", "Crunchy"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 89], ["created_at", "2020-04-11 19:57:58.217888"], ["updated_at", "2020-04-11 19:57:58.217888"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:50
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 75], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+[36m  S3 Storage (141.8ms) [0m[32mUploaded file to key: 64LD7TRYr1dd23eRreg4UNdH (checksum: MrClOlm0uvN/Bq8EWIQw1A==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "64LD7TRYr1dd23eRreg4UNdH"], ["filename", "fish_tacos.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 8792], ["checksum", "MrClOlm0uvN/Bq8EWIQw1A=="], ["created_at", "2020-04-11 19:57:58.569264"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 75], ["blob_id", 42], ["created_at", "2020-04-11 19:57:58.573791"]]
+  ↳ db/seeds.rb:52
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:57:58.575229"], ["id", 75]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:52
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2] Performing ActiveStorage::AnalyzeJob (Job ID: 9eb9722b-e786-4a72-935e-0437eb5b79a2) from Inline(default) with arguments: #<GlobalID:0x00007fe91f8013e8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/42>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2] [36m  S3 Storage (82.6ms) [0m[34mDownloaded file from key: 64LD7TRYr1dd23eRreg4UNdH[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2]   ↳ db/seeds.rb:52
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 42]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2]   ↳ db/seeds.rb:52
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2]   [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2]   ↳ db/seeds.rb:52
+[ActiveJob] [ActiveStorage::AnalyzeJob] [9eb9722b-e786-4a72-935e-0437eb5b79a2] Performed ActiveStorage::AnalyzeJob (Job ID: 9eb9722b-e786-4a72-935e-0437eb5b79a2) from Inline(default) in 97.18ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 9eb9722b-e786-4a72-935e-0437eb5b79a2) to Inline(default) with arguments: #<GlobalID:0x00007fe91a971480 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/42>>
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:54
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sushi"], ["description", "BYOSoy sauce"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 90], ["created_at", "2020-04-11 19:57:58.681818"], ["updated_at", "2020-04-11 19:57:58.681818"]]
+  ↳ db/seeds.rb:54
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:54
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 76], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+[36m  S3 Storage (111.7ms) [0m[32mUploaded file to key: BVKyNEKndpYbBnwgDfNyw4gG (checksum: 3INsI7DUMNdwupzdoRr7bg==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "BVKyNEKndpYbBnwgDfNyw4gG"], ["filename", "sushi.jpeg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 9164], ["checksum", "3INsI7DUMNdwupzdoRr7bg=="], ["created_at", "2020-04-11 19:57:58.983972"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mActiveStorage::Attachment Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 76], ["blob_id", 43], ["created_at", "2020-04-11 19:57:58.988325"]]
+  ↳ db/seeds.rb:56
+  [1m[36mLunch Update (0.5ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:57:58.990226"], ["id", 76]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:56
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37] Performing ActiveStorage::AnalyzeJob (Job ID: 3dc2a018-12d5-4bcc-b769-9900d57def37) from Inline(default) with arguments: #<GlobalID:0x00007fe91a41be90 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/43>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37] [36m  S3 Storage (81.0ms) [0m[34mDownloaded file from key: BVKyNEKndpYbBnwgDfNyw4gG[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37]   [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37]   ↳ db/seeds.rb:56
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37]   [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 43]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37]   ↳ db/seeds.rb:56
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37]   [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37]   ↳ db/seeds.rb:56
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3dc2a018-12d5-4bcc-b769-9900d57def37] Performed ActiveStorage::AnalyzeJob (Job ID: 3dc2a018-12d5-4bcc-b769-9900d57def37) from Inline(default) in 100.46ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 3dc2a018-12d5-4bcc-b769-9900d57def37) to Inline(default) with arguments: #<GlobalID:0x00007fe91dd51ef8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/43>>
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (4.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:58
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mLunch Create (0.5ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bulgogi Bowl"], ["description", "Pork and rice, what more?"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 91], ["created_at", "2020-04-11 19:57:59.108333"], ["updated_at", "2020-04-11 19:57:59.108333"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:58
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 77], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:60
+[36m  S3 Storage (90.8ms) [0m[32mUploaded file to key: gTxBmUvXDDthycc5nHBjsiAE (checksum: Fd1tNmtip0baxuubRt/H1g==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "gTxBmUvXDDthycc5nHBjsiAE"], ["filename", "bulgogi.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 9563], ["checksum", "Fd1tNmtip0baxuubRt/H1g=="], ["created_at", "2020-04-11 19:57:59.415541"]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 77], ["blob_id", 44], ["created_at", "2020-04-11 19:57:59.420353"]]
+  ↳ db/seeds.rb:60
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:57:59.421828"], ["id", 77]]
+  ↳ db/seeds.rb:60
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:60
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d] Performing ActiveStorage::AnalyzeJob (Job ID: f04bdaba-95a0-4bc1-b132-5daec8c6949d) from Inline(default) with arguments: #<GlobalID:0x00007fe91dcc8400 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/44>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d] [36m  S3 Storage (86.0ms) [0m[34mDownloaded file from key: gTxBmUvXDDthycc5nHBjsiAE[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d]   ↳ db/seeds.rb:60
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 44]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d]   ↳ db/seeds.rb:60
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d]   [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d]   ↳ db/seeds.rb:60
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f04bdaba-95a0-4bc1-b132-5daec8c6949d] Performed ActiveStorage::AnalyzeJob (Job ID: f04bdaba-95a0-4bc1-b132-5daec8c6949d) from Inline(default) in 103.14ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: f04bdaba-95a0-4bc1-b132-5daec8c6949d) to Inline(default) with arguments: #<GlobalID:0x00007fe91a60ae18 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/44>>
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ db/seeds.rb:62
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Lamb Gyro"], ["description", "White Sauce + Hot Sauce"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 92], ["created_at", "2020-04-11 19:57:59.534458"], ["updated_at", "2020-04-11 19:57:59.534458"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 78], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+[36m  S3 Storage (248.1ms) [0m[32mUploaded file to key: yhGPhss3rm9rERewELRWoLGn (checksum: ptLfGm7Oox6z7EeZNDDphw==)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "yhGPhss3rm9rERewELRWoLGn"], ["filename", "gyro.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 115493], ["checksum", "ptLfGm7Oox6z7EeZNDDphw=="], ["created_at", "2020-04-11 19:58:00.074749"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mActiveStorage::Attachment Create (0.7ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 78], ["blob_id", 45], ["created_at", "2020-04-11 19:58:00.078881"]]
+  ↳ db/seeds.rb:64
+  [1m[36mLunch Update (0.9ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:58:00.080862"], ["id", 78]]
+  ↳ db/seeds.rb:64
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:64
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99] Performing ActiveStorage::AnalyzeJob (Job ID: 860db2e7-8bee-4448-bbf3-69aa834dcd99) from Inline(default) with arguments: #<GlobalID:0x00007fe91db5a398 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/45>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99] [36m  S3 Storage (148.3ms) [0m[34mDownloaded file from key: yhGPhss3rm9rERewELRWoLGn[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99]   [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99]   ↳ db/seeds.rb:64
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 45]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99]   ↳ db/seeds.rb:64
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99]   [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99]   ↳ db/seeds.rb:64
+[ActiveJob] [ActiveStorage::AnalyzeJob] [860db2e7-8bee-4448-bbf3-69aa834dcd99] Performed ActiveStorage::AnalyzeJob (Job ID: 860db2e7-8bee-4448-bbf3-69aa834dcd99) from Inline(default) in 174.88ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 860db2e7-8bee-4448-bbf3-69aa834dcd99) to Inline(default) with arguments: #<GlobalID:0x00007fe91d9cc170 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/45>>
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mLunch Create (0.7ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Al Pastor Tacos"], ["description", "Delicioso"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 93], ["created_at", "2020-04-11 19:58:00.270884"], ["updated_at", "2020-04-11 19:58:00.270884"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 79], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+[36m  S3 Storage (158.4ms) [0m[32mUploaded file to key: JwoPezdJ4F3k5cZ64sD8fDxm (checksum: rx1wwzwjzI1UAkSphmdSPg==)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mActiveStorage::Blob Create (1.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "JwoPezdJ4F3k5cZ64sD8fDxm"], ["filename", "al_pastor.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 16958], ["checksum", "rx1wwzwjzI1UAkSphmdSPg=="], ["created_at", "2020-04-11 19:58:00.604623"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 79], ["blob_id", 46], ["created_at", "2020-04-11 19:58:00.611135"]]
+  ↳ db/seeds.rb:68
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:58:00.612537"], ["id", 79]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:68
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958] Performing ActiveStorage::AnalyzeJob (Job ID: 0ef524c5-b568-42db-977d-b91eb7af5958) from Inline(default) with arguments: #<GlobalID:0x00007fe91a44ce78 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/46>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958] [36m  S3 Storage (103.6ms) [0m[34mDownloaded file from key: JwoPezdJ4F3k5cZ64sD8fDxm[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958]   ↳ db/seeds.rb:68
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958]   [1m[36mActiveStorage::Blob Update (1.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 46]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958]   ↳ db/seeds.rb:68
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958]   [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958]   ↳ db/seeds.rb:68
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0ef524c5-b568-42db-977d-b91eb7af5958] Performed ActiveStorage::AnalyzeJob (Job ID: 0ef524c5-b568-42db-977d-b91eb7af5958) from Inline(default) in 127.42ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 0ef524c5-b568-42db-977d-b91eb7af5958) to Inline(default) with arguments: #<GlobalID:0x00007fe91bcc43c0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/46>>
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[36mLunch Create (0.7ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chicken Noodle Soup"], ["description", "Slurp Slurp"], ["image_url", "placeholder"], ["size", "small"], ["restaurant_id", 94], ["created_at", "2020-04-11 19:58:00.749081"], ["updated_at", "2020-04-11 19:58:00.749081"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 80], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:72
+[36m  S3 Storage (111.9ms) [0m[32mUploaded file to key: FYr7rsTnyCPeUxkL3q5v6HLh (checksum: jrsJRw637i3tp+iGFrCbxw==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "FYr7rsTnyCPeUxkL3q5v6HLh"], ["filename", "chicken_noods.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 8599], ["checksum", "jrsJRw637i3tp+iGFrCbxw=="], ["created_at", "2020-04-11 19:58:01.079876"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:72
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 80], ["blob_id", 47], ["created_at", "2020-04-11 19:58:01.084558"]]
+  ↳ db/seeds.rb:72
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:58:01.086002"], ["id", 80]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:72
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:72
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc] Performing ActiveStorage::AnalyzeJob (Job ID: e14867b1-a44b-489f-9028-9f02f72faadc) from Inline(default) with arguments: #<GlobalID:0x00007fe920858228 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/47>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc] [36m  S3 Storage (83.7ms) [0m[34mDownloaded file from key: FYr7rsTnyCPeUxkL3q5v6HLh[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc]   ↳ db/seeds.rb:72
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc]   [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 47]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc]   ↳ db/seeds.rb:72
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc]   [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc]   ↳ db/seeds.rb:72
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e14867b1-a44b-489f-9028-9f02f72faadc] Performed ActiveStorage::AnalyzeJob (Job ID: e14867b1-a44b-489f-9028-9f02f72faadc) from Inline(default) in 99.76ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: e14867b1-a44b-489f-9028-9f02f72faadc) to Inline(default) with arguments: #<GlobalID:0x00007fe91df1f028 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/47>>
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ db/seeds.rb:74
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Spaghetti Carbonara"], ["description", "Break a few eggs to make a winner"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 95], ["created_at", "2020-04-11 19:58:01.194716"], ["updated_at", "2020-04-11 19:58:01.194716"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 81], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:76
+[36m  S3 Storage (89.6ms) [0m[32mUploaded file to key: 9KkEupqnTG7Ujm6H19pB1eAw (checksum: EbC+wutQGX1CgHVC42QytA==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "9KkEupqnTG7Ujm6H19pB1eAw"], ["filename", "carbonara.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 8338], ["checksum", "EbC+wutQGX1CgHVC42QytA=="], ["created_at", "2020-04-11 19:58:01.465619"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:76
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 81], ["blob_id", 48], ["created_at", "2020-04-11 19:58:01.471696"]]
+  ↳ db/seeds.rb:76
+  [1m[36mLunch Update (2.5ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:58:01.474496"], ["id", 81]]
+  ↳ db/seeds.rb:76
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:76
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:76
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e] Performing ActiveStorage::AnalyzeJob (Job ID: 1ab8548c-9da5-48ca-b398-90ab2d4a4f6e) from Inline(default) with arguments: #<GlobalID:0x00007fe91a9b87b8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/48>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e] [36m  S3 Storage (82.9ms) [0m[34mDownloaded file from key: 9KkEupqnTG7Ujm6H19pB1eAw[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e]   [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e]   ↳ db/seeds.rb:76
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e]   [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 48]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e]   ↳ db/seeds.rb:76
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e]   [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e]   ↳ db/seeds.rb:76
+[ActiveJob] [ActiveStorage::AnalyzeJob] [1ab8548c-9da5-48ca-b398-90ab2d4a4f6e] Performed ActiveStorage::AnalyzeJob (Job ID: 1ab8548c-9da5-48ca-b398-90ab2d4a4f6e) from Inline(default) in 113.56ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 1ab8548c-9da5-48ca-b398-90ab2d4a4f6e) to Inline(default) with arguments: #<GlobalID:0x00007fe91de6efe8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/48>>
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:78
+  [1m[36mRestaurant Load (4.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ db/seeds.rb:78
+  [1m[36mLunch Create (1.2ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sausage Rigatoni"], ["description", "Seasoned Perfectly"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 96], ["created_at", "2020-04-11 19:58:01.614665"], ["updated_at", "2020-04-11 19:58:01.614665"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:78
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 82], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:80
+[36m  S3 Storage (120.0ms) [0m[32mUploaded file to key: A5h7Q7fPvBL8D6AbpPSpaARp (checksum: ot0mk+VW081dDYRVK1SbYQ==)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mActiveStorage::Blob Create (0.8ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "A5h7Q7fPvBL8D6AbpPSpaARp"], ["filename", "sausage_rigatoni.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 10501], ["checksum", "ot0mk+VW081dDYRVK1SbYQ=="], ["created_at", "2020-04-11 19:58:01.935617"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 82], ["blob_id", 49], ["created_at", "2020-04-11 19:58:01.946906"]]
+  ↳ db/seeds.rb:80
+  [1m[36mLunch Update (0.6ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:58:01.948590"], ["id", 82]]
+  ↳ db/seeds.rb:80
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:80
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5] Performing ActiveStorage::AnalyzeJob (Job ID: 0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5) from Inline(default) with arguments: #<GlobalID:0x00007fe91a762590 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/49>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5] [36m  S3 Storage (87.9ms) [0m[34mDownloaded file from key: A5h7Q7fPvBL8D6AbpPSpaARp[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5]   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5]   ↳ db/seeds.rb:80
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5]   [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 49]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5]   ↳ db/seeds.rb:80
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5]   [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5]   ↳ db/seeds.rb:80
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5] Performed ActiveStorage::AnalyzeJob (Job ID: 0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5) from Inline(default) in 110.31ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 0f02246e-f93c-4ec8-8daa-b54a7f0fb8b5) to Inline(default) with arguments: #<GlobalID:0x00007fe91d81d798 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/49>>
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:82
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ db/seeds.rb:82
+  [1m[36mLunch Create (0.3ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chess Sandwich"], ["description", "Ham, eggs, and cheese"], ["image_url", "placeholder"], ["size", "medium"], ["restaurant_id", 97], ["created_at", "2020-04-11 19:58:02.071276"], ["updated_at", "2020-04-11 19:58:02.071276"]]
+  ↳ db/seeds.rb:82
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:82
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 83], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:84
+[36m  S3 Storage (102.3ms) [0m[32mUploaded file to key: rxNEGssNuSiWGjPFHi6GgEAd (checksum: OA6mFlZwi9pldeV4nKQP3g==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mActiveStorage::Blob Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "rxNEGssNuSiWGjPFHi6GgEAd"], ["filename", "ham_and_cheese.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 37698], ["checksum", "OA6mFlZwi9pldeV4nKQP3g=="], ["created_at", "2020-04-11 19:58:02.397860"]]
+  ↳ db/seeds.rb:84
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 83], ["blob_id", 50], ["created_at", "2020-04-11 19:58:02.402018"]]
+  ↳ db/seeds.rb:84
+  [1m[36mLunch Update (0.4ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:58:02.403570"], ["id", 83]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:84
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59] Performing ActiveStorage::AnalyzeJob (Job ID: f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59) from Inline(default) with arguments: #<GlobalID:0x00007fe91b1d8df8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/50>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59] [36m  S3 Storage (88.2ms) [0m[34mDownloaded file from key: rxNEGssNuSiWGjPFHi6GgEAd[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59]   ↳ db/seeds.rb:84
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59]   [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 50]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59]   ↳ db/seeds.rb:84
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59]   [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59]   ↳ db/seeds.rb:84
+[ActiveJob] [ActiveStorage::AnalyzeJob] [f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59] Performed ActiveStorage::AnalyzeJob (Job ID: f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59) from Inline(default) in 104.95ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: f57c6ea5-ff0b-4cb9-b848-15ca0ba7ad59) to Inline(default) with arguments: #<GlobalID:0x00007fe91a5723e8 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/50>>
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  ↳ db/seeds.rb:86
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chicken Sandwich"], ["description", "Spicy and good"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 98], ["created_at", "2020-04-11 19:58:02.518294"], ["updated_at", "2020-04-11 19:58:02.518294"]]
+  ↳ db/seeds.rb:86
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 84], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:88
+[36m  S3 Storage (107.8ms) [0m[32mUploaded file to key: P12uqTbHe8zVC6Y9JF9WHGP2 (checksum: zADLXBDdKHUVtT27oxOrEQ==)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mActiveStorage::Blob Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "P12uqTbHe8zVC6Y9JF9WHGP2"], ["filename", "fried-chicken-sandwich.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 17407], ["checksum", "zADLXBDdKHUVtT27oxOrEQ=="], ["created_at", "2020-04-11 19:58:02.813432"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 84], ["blob_id", 51], ["created_at", "2020-04-11 19:58:02.819302"]]
+  ↳ db/seeds.rb:88
+  [1m[36mLunch Update (0.5ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:58:02.822739"], ["id", 84]]
+  ↳ db/seeds.rb:88
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:88
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168] Performing ActiveStorage::AnalyzeJob (Job ID: 780d3024-4ac6-4d38-8abe-6a5a36c89168) from Inline(default) with arguments: #<GlobalID:0x00007fe91da9ca28 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/51>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168] [36m  S3 Storage (83.5ms) [0m[34mDownloaded file from key: P12uqTbHe8zVC6Y9JF9WHGP2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168]   ↳ db/seeds.rb:88
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168]   [1m[36mActiveStorage::Blob Update (2.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 51]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168]   ↳ db/seeds.rb:88
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168]   [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168]   ↳ db/seeds.rb:88
+[ActiveJob] [ActiveStorage::AnalyzeJob] [780d3024-4ac6-4d38-8abe-6a5a36c89168] Performed ActiveStorage::AnalyzeJob (Job ID: 780d3024-4ac6-4d38-8abe-6a5a36c89168) from Inline(default) in 107.87ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 780d3024-4ac6-4d38-8abe-6a5a36c89168) to Inline(default) with arguments: #<GlobalID:0x00007fe91d8faa80 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/51>>
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:90
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[36mLunch Create (0.4ms)[0m  [1m[32mINSERT INTO "lunches" ("name", "description", "image_url", "size", "restaurant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "BBQ Chicken"], ["description", "Scrumptious"], ["image_url", "placeholder"], ["size", "large"], ["restaurant_id", 99], ["created_at", "2020-04-11 19:58:02.945919"], ["updated_at", "2020-04-11 19:58:02.945919"]]
+  ↳ db/seeds.rb:90
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:90
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 85], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:92
+[36m  S3 Storage (122.9ms) [0m[32mUploaded file to key: vJk5pdJmL6xtmixf58NBNAmB (checksum: tbWFLcd6VjRk52jzi61RuA==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "vJk5pdJmL6xtmixf58NBNAmB"], ["filename", "bbq-chicken.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 8850], ["checksum", "tbWFLcd6VjRk52jzi61RuA=="], ["created_at", "2020-04-11 19:58:03.260774"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mActiveStorage::Attachment Create (0.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "photo"], ["record_type", "Lunch"], ["record_id", 85], ["blob_id", 52], ["created_at", "2020-04-11 19:58:03.267278"]]
+  ↳ db/seeds.rb:92
+  [1m[36mLunch Update (0.6ms)[0m  [1m[33mUPDATE "lunches" SET "updated_at" = $1 WHERE "lunches"."id" = $2[0m  [["updated_at", "2020-04-11 19:58:03.268852"], ["id", 85]]
+  ↳ db/seeds.rb:92
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:92
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3] Performing ActiveStorage::AnalyzeJob (Job ID: 02b7ddb8-35c1-4181-9fba-149a857764a3) from Inline(default) with arguments: #<GlobalID:0x00007fe91bfd9218 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/52>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3] [36m  S3 Storage (79.2ms) [0m[34mDownloaded file from key: vJk5pdJmL6xtmixf58NBNAmB[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3]   ↳ db/seeds.rb:92
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3]   [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 52]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3]   ↳ db/seeds.rb:92
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3]   [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3]   ↳ db/seeds.rb:92
+[ActiveJob] [ActiveStorage::AnalyzeJob] [02b7ddb8-35c1-4181-9fba-149a857764a3] Performed ActiveStorage::AnalyzeJob (Job ID: 02b7ddb8-35c1-4181-9fba-149a857764a3) from Inline(default) in 100.99ms
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 02b7ddb8-35c1-4181-9fba-149a857764a3) to Inline(default) with arguments: #<GlobalID:0x00007fe9208982b0 @uri=#<URI::GID gid://lunch-buddy/ActiveStorage::Blob/52>>

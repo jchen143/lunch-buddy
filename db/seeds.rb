@@ -31,9 +31,9 @@ Restaurant.create([{name: 'Sweet Chick', address: '10 Utopia Pkwy',latitude: 40.
 Restaurant.create([{name: 'Big Danny Brisket and Waffle House', address: '1400 Fulton St',latitude: 40.680317, longitude: -73.943119}])
 
 
-lunch_1 = Lunch.create(name: 'Fullstack Soup', description: 'Soup that does not soothe the soul', image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[0].id)
-file_1 = open('https://lunch-bud-seeds.s3.amazonaws.com/fullstack_soup.jpg')
-lunch_1.photo.attach(io: file_1, filename: 'fullstack_soup.jpg')
+lunch_1 = Lunch.create(name: 'Fullstack Pancakes', description: 'Breakfast for lunch!', image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[0].id)
+file_1 = open('https://lunch-bud-seeds.s3.amazonaws.com/pancakes.jpg')
+lunch_1.photo.attach(io: file_1, filename: 'pancakes.jpg')
 
 lunch_2 = Lunch.create(name: 'Seafood Medley', description: 'Yummy seafood',image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[1].id)
 file_2 = open('https://lunch-bud-seeds.s3.amazonaws.com/seafood_medley.jpg')
