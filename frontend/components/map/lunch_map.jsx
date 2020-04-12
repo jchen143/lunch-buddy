@@ -67,7 +67,9 @@ class LunchMap extends React.Component{
 
             let bounds = { southWest: { lat: southWestLat, lng: southWestLng }, northEast: { lat: northEastLat, lng: northEastLng } };
            
+            //debugger
             this.props.updateFilter('bounds', bounds);
+            //debugger
         })
        
     }

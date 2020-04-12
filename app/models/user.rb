@@ -9,6 +9,7 @@
 #  location        :string           default("Manhattan"), not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  remaining_meals :integer          default(30)
 #
 class User < ApplicationRecord 
      #FIGVAAPER
