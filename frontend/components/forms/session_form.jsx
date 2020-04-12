@@ -58,7 +58,7 @@ class SessionForm extends React.Component{
         let formClass = null;
         if (this.props.formType === 'Log In'){
             header = <h4 className="form-title">WELCOME BACK</h4>;
-            message = <p className="caption">Don't have a LunchBuddy Account?</p>;
+            message = <p className="caption">Don't have a LunchBud Account?</p>;
             link = <Link className="message" to='signup'>Sign up!</Link>;
             classname = "log-in-form-container";
             formClass = "log-in-form-box";

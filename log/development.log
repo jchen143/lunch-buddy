@@ -37026,3 +37026,452 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 1804ms (Views: 1800.7ms | ActiveRecord: 0.5ms)
 
 
+  [1m[36mReservation Load (3.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mLunch Load (0.9ms)[0m  [1m[34mSELECT  "lunches".* FROM "lunches" ORDER BY "lunches"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mLunch Load (0.4ms)[0m  [1m[34mSELECT  "lunches".* FROM "lunches" ORDER BY "lunches"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[36mLunch Load (1.1ms)[0m  [1m[34mSELECT  "lunches".* FROM "lunches" WHERE "lunches"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[36mReservation Create (1.8ms)[0m  [1m[32mINSERT INTO "reservations" ("diner_id", "lunch_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["diner_id", 47], ["lunch_id", 71], ["created_at", "2020-04-11 23:08:24.684350"], ["updated_at", "2020-04-11 23:08:24.684350"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" ORDER BY "reservations"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" ORDER BY "reservations"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mLunch Load (1.3ms)[0m  [1m[34mSELECT  "lunches".* FROM "lunches" ORDER BY "lunches"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[36mLunch Load (0.3ms)[0m  [1m[34mSELECT  "lunches".* FROM "lunches" WHERE "lunches"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[36mReservation Create (0.7ms)[0m  [1m[32mINSERT INTO "reservations" ("diner_id", "lunch_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["diner_id", 48], ["lunch_id", 72], ["created_at", "2020-04-11 23:09:24.330782"], ["updated_at", "2020-04-11 23:09:24.330782"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mReservation Load (0.3ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" ORDER BY "reservations"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mReservation Load (0.8ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+Started GET "/" for ::1 at 2020-04-11 22:05:38 -0400
+  [1m[35m (15.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "11Ppu8anAtVr2FYQW6h1HA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 1912ms (Views: 1897.9ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-11 22:05:40 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (2.0ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 71], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (6.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 72], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 73], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 74], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-73.99694920654295&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.94545079345701" for ::1 at 2020-04-11 22:05:41 -0400
+  [1m[36mActiveStorage::Blob Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 75], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 76], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 77], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (2.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 78], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-73.99694920654295"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.94545079345701"}}}
+  [1m[36mActiveStorage::Blob Load (25.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (17.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 79], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mRestaurant Load (4.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -73.99694920654295 AND longitude < -73.94545079345701))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (6.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 80], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 81], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 82], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (5.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  Rendered api/restaurants/index.json.jbuilder (101.2ms)
+Completed 200 OK in 150ms (Views: 70.0ms | ActiveRecord: 46.5ms)
+
+
+  [1m[36mActiveStorage::Attachment Load (31.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 83], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 84], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 85], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  Rendered api/lunches/index.json.jbuilder (509.1ms)
+Completed 200 OK in 546ms (Views: 349.4ms | ActiveRecord: 175.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--62dd2fddcc606bd9e0217dd8038618487efc0b6e/seafood_medley.jpg" for ::1 at 2020-04-11 22:05:41 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0bd0f8fb2789f5926d88ed9edae2290272fec63c/bulgogi.jpg" for ::1 at 2020-04-11 22:05:41 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ab37f970581a490da2115c6449fad0b800d91d13/leaf_salad.jpg" for ::1 at 2020-04-11 22:05:41 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--36374dbe7890034800342d475e3cf4926567460d/fries_burgers_yum.jpg" for ::1 at 2020-04-11 22:05:41 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--62dd2fddcc606bd9e0217dd8038618487efc0b6e", "filename"=>"seafood_medley"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0bd0f8fb2789f5926d88ed9edae2290272fec63c", "filename"=>"bulgogi"}
+  [1m[36mActiveStorage::Blob Load (6.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (10.2ms) [0m[34mGenerated URL for file at key: M9HMYXv1GFCr47LStjm8dQ5Z (https://lunch-bud-dev.s3.amazonaws.com/M9HMYXv1GFCr47LStjm8dQ5Z?response-content-disposition=inline%3B%20filename%3D%22seafood_medley.jpg%22%3B%20filename%2A%3DUTF-8%27%27seafood_medley.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020541Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=86a7fb76655d1247d5e8572effca90d64bfc41f09130583e5324af7973ad06f0)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/M9HMYXv1GFCr47LStjm8dQ5Z?response-content-disposition=inline%3B%20filename%3D%22seafood_medley.jpg%22%3B%20filename%2A%3DUTF-8%27%27seafood_medley.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020541Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=86a7fb76655d1247d5e8572effca90d64bfc41f09130583e5324af7973ad06f0
+Completed 302 Found in 28ms (ActiveRecord: 6.6ms)
+
+
+  [1m[36mActiveStorage::Blob Load (17.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.8ms) [0m[34mGenerated URL for file at key: gTxBmUvXDDthycc5nHBjsiAE (https://lunch-bud-dev.s3.amazonaws.com/gTxBmUvXDDthycc5nHBjsiAE?response-content-disposition=inline%3B%20filename%3D%22bulgogi.jpg%22%3B%20filename%2A%3DUTF-8%27%27bulgogi.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020541Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=10f1bce11d1179d88ee5db862f692031a5aeca7c24424d0a953ed9ca50c4897b)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/gTxBmUvXDDthycc5nHBjsiAE?response-content-disposition=inline%3B%20filename%3D%22bulgogi.jpg%22%3B%20filename%2A%3DUTF-8%27%27bulgogi.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020541Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=10f1bce11d1179d88ee5db862f692031a5aeca7c24424d0a953ed9ca50c4897b
+Processing by ActiveStorage::BlobsController#show as JPEG
+Completed 302 Found in 42ms (ActiveRecord: 17.7ms)
+
+
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ab37f970581a490da2115c6449fad0b800d91d13", "filename"=>"leaf_salad"}
+  [1m[36mActiveStorage::Blob Load (5.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (4.8ms) [0m[34mGenerated URL for file at key: mGEAH2RmPm4rBF7Et7G3z3po (https://lunch-bud-dev.s3.amazonaws.com/mGEAH2RmPm4rBF7Et7G3z3po?response-content-disposition=inline%3B%20filename%3D%22leaf_salad.jpg%22%3B%20filename%2A%3DUTF-8%27%27leaf_salad.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020541Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=32da82e7d206d141f0209ae165426a4d1246468aeaa65667a321f979c68a0869)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/mGEAH2RmPm4rBF7Et7G3z3po?response-content-disposition=inline%3B%20filename%3D%22leaf_salad.jpg%22%3B%20filename%2A%3DUTF-8%27%27leaf_salad.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020541Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=32da82e7d206d141f0209ae165426a4d1246468aeaa65667a321f979c68a0869
+Completed 302 Found in 25ms (ActiveRecord: 7.1ms)
+
+
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--36374dbe7890034800342d475e3cf4926567460d", "filename"=>"fries_burgers_yum"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (8.4ms) [0m[34mGenerated URL for file at key: XL7MCzorH922MxkSqsc4R61F (https://lunch-bud-dev.s3.amazonaws.com/XL7MCzorH922MxkSqsc4R61F?response-content-disposition=inline%3B%20filename%3D%22fries_burgers_yum.jpg%22%3B%20filename%2A%3DUTF-8%27%27fries_burgers_yum.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020541Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=574e2648fb6d680b212c0f3ab119f80821245d714e6ca4685bc28a6eae2651c0)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/XL7MCzorH922MxkSqsc4R61F?response-content-disposition=inline%3B%20filename%3D%22fries_burgers_yum.jpg%22%3B%20filename%2A%3DUTF-8%27%27fries_burgers_yum.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020541Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=574e2648fb6d680b212c0f3ab119f80821245d714e6ca4685bc28a6eae2651c0
+Completed 302 Found in 17ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.70506628341098&bounds%5BsouthWest%5D%5Blng%5D=-74.02269841308592&bounds%5BnorthEast%5D%5Blat%5D=40.861042142475185&bounds%5BnorthEast%5D%5Blng%5D=-73.91970158691404" for ::1 at 2020-04-11 22:05:43 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.70506628341098", "lng"=>"-74.02269841308592"}, "northEast"=>{"lat"=>"40.861042142475185", "lng"=>"-73.91970158691404"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (7.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.70506628341098 AND latitude < 40.861042142475185) AND (longitude > -74.02269841308592 AND longitude < -73.91970158691404))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (16.3ms)
+Completed 200 OK in 35ms (Views: 22.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBLdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0033ef1ba5fb193cbc209b2b7a491a8ea0828d7f/pancakes.jpg" for ::1 at 2020-04-11 22:05:43 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBLdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0033ef1ba5fb193cbc209b2b7a491a8ea0828d7f", "filename"=>"pancakes"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fb9ba89e485aaf60f862f22467d6031655c447dc/sausage_rigatoni.jpg" for ::1 at 2020-04-11 22:05:43 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8c59c2bf77da1e1f94a62b55ee41f54de8f6e2e4/sushi.jpeg" for ::1 at 2020-04-11 22:05:43 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b30ff95fac137ff4d3b928527815d292d617462d/carbonara.jpg" for ::1 at 2020-04-11 22:05:43 -0400
+  [1m[36mActiveStorage::Blob Load (12.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.8ms) [0m[34mGenerated URL for file at key: H75HE6yEZCyshHci3w9fAhp3 (https://lunch-bud-dev.s3.amazonaws.com/H75HE6yEZCyshHci3w9fAhp3?response-content-disposition=inline%3B%20filename%3D%22pancakes.jpg%22%3B%20filename%2A%3DUTF-8%27%27pancakes.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020543Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0fb2178488c07603bd0b7586de29db0dae7f7f9e932d52097550c70d89be74db)[0m
+Processing by ActiveStorage::BlobsController#show as JPEG
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/H75HE6yEZCyshHci3w9fAhp3?response-content-disposition=inline%3B%20filename%3D%22pancakes.jpg%22%3B%20filename%2A%3DUTF-8%27%27pancakes.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020543Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0fb2178488c07603bd0b7586de29db0dae7f7f9e932d52097550c70d89be74db
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fb9ba89e485aaf60f862f22467d6031655c447dc", "filename"=>"sausage_rigatoni"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+Completed 302 Found in 31ms (ActiveRecord: 12.8ms)
+
+
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--b30ff95fac137ff4d3b928527815d292d617462d", "filename"=>"carbonara"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8c59c2bf77da1e1f94a62b55ee41f54de8f6e2e4", "filename"=>"sushi"}
+  [1m[36mActiveStorage::Blob Load (6.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (3.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+[36m  S3 Storage (4.3ms) [0m[34mGenerated URL for file at key: 9KkEupqnTG7Ujm6H19pB1eAw (https://lunch-bud-dev.s3.amazonaws.com/9KkEupqnTG7Ujm6H19pB1eAw?response-content-disposition=inline%3B%20filename%3D%22carbonara.jpg%22%3B%20filename%2A%3DUTF-8%27%27carbonara.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020543Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=133f8ce9e21a00d10d60ce171bcb25458d2d600ee9017bd2fa44d0817eb6968e)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/9KkEupqnTG7Ujm6H19pB1eAw?response-content-disposition=inline%3B%20filename%3D%22carbonara.jpg%22%3B%20filename%2A%3DUTF-8%27%27carbonara.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020543Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=133f8ce9e21a00d10d60ce171bcb25458d2d600ee9017bd2fa44d0817eb6968e
+[36m  S3 Storage (3.5ms) [0m[34mGenerated URL for file at key: A5h7Q7fPvBL8D6AbpPSpaARp (https://lunch-bud-dev.s3.amazonaws.com/A5h7Q7fPvBL8D6AbpPSpaARp?response-content-disposition=inline%3B%20filename%3D%22sausage_rigatoni.jpg%22%3B%20filename%2A%3DUTF-8%27%27sausage_rigatoni.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020543Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=57117365b00866a971f2d8786638bb61371bf388eaf2dd719714174afc750e1e)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/A5h7Q7fPvBL8D6AbpPSpaARp?response-content-disposition=inline%3B%20filename%3D%22sausage_rigatoni.jpg%22%3B%20filename%2A%3DUTF-8%27%27sausage_rigatoni.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020543Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=57117365b00866a971f2d8786638bb61371bf388eaf2dd719714174afc750e1e
+Completed 302 Found in 16ms (ActiveRecord: 3.0ms)
+
+
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.6ms) [0m[34mGenerated URL for file at key: BVKyNEKndpYbBnwgDfNyw4gG (https://lunch-bud-dev.s3.amazonaws.com/BVKyNEKndpYbBnwgDfNyw4gG?response-content-disposition=inline%3B%20filename%3D%22sushi.jpeg%22%3B%20filename%2A%3DUTF-8%27%27sushi.jpeg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020543Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d18b68c9a81a4592c8d6a676f9d129f4926a8a9d4bd600a5409ee76e266db5a3)[0m
+Completed 302 Found in 23ms (ActiveRecord: 6.2ms)
+
+
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/BVKyNEKndpYbBnwgDfNyw4gG?response-content-disposition=inline%3B%20filename%3D%22sushi.jpeg%22%3B%20filename%2A%3DUTF-8%27%27sushi.jpeg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020543Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d18b68c9a81a4592c8d6a676f9d129f4926a8a9d4bd600a5409ee76e266db5a3
+Completed 302 Found in 21ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.62694103003211&bounds%5BsouthWest%5D%5Blng%5D=-74.07419682617186&bounds%5BnorthEast%5D%5Blat%5D=40.9388926742345&bounds%5BnorthEast%5D%5Blng%5D=-73.8682031738281" for ::1 at 2020-04-11 22:05:44 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.62694103003211", "lng"=>"-74.07419682617186"}, "northEast"=>{"lat"=>"40.9388926742345", "lng"=>"-73.8682031738281"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (1.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.62694103003211 AND latitude < 40.9388926742345) AND (longitude > -74.07419682617186 AND longitude < -73.8682031738281))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (9.7ms)
+Completed 200 OK in 25ms (Views: 19.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a0989180f139ba1d541750c5f381ab3e85772816/fish_tacos.jpg" for ::1 at 2020-04-11 22:05:44 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a0989180f139ba1d541750c5f381ab3e85772816", "filename"=>"fish_tacos"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f28cf7bc4697d4cd8db6310c5fd42a08d4425eb4/bbq-chicken.jpg" for ::1 at 2020-04-11 22:05:44 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--535b07f0c2e50cce87b8ebc205aad5682414841b/fried-chicken-sandwich.jpg" for ::1 at 2020-04-11 22:05:44 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8f81b1280775d79111bc735e3e58cca64e89efc/al_pastor.jpg" for ::1 at 2020-04-11 22:05:44 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--838c6d5372687cc9e145a73dc0962119e7fbd6f7/gyro.jpg" for ::1 at 2020-04-11 22:05:44 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f28cf7bc4697d4cd8db6310c5fd42a08d4425eb4", "filename"=>"bbq-chicken"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  [1m[36mActiveStorage::Blob Load (15.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--535b07f0c2e50cce87b8ebc205aad5682414841b", "filename"=>"fried-chicken-sandwich"}
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (2.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a8f81b1280775d79111bc735e3e58cca64e89efc", "filename"=>"al_pastor"}
+[36m  S3 Storage (4.3ms) [0m[34mGenerated URL for file at key: 64LD7TRYr1dd23eRreg4UNdH (https://lunch-bud-dev.s3.amazonaws.com/64LD7TRYr1dd23eRreg4UNdH?response-content-disposition=inline%3B%20filename%3D%22fish_tacos.jpg%22%3B%20filename%2A%3DUTF-8%27%27fish_tacos.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020544Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=72a6f67464076570882f0d84ddaf83224c29a251899cd263bf08a3bed8767ddd)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/64LD7TRYr1dd23eRreg4UNdH?response-content-disposition=inline%3B%20filename%3D%22fish_tacos.jpg%22%3B%20filename%2A%3DUTF-8%27%27fish_tacos.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020544Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=72a6f67464076570882f0d84ddaf83224c29a251899cd263bf08a3bed8767ddd
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (9.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (8.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.0ms) [0m[34mGenerated URL for file at key: JwoPezdJ4F3k5cZ64sD8fDxm (https://lunch-bud-dev.s3.amazonaws.com/JwoPezdJ4F3k5cZ64sD8fDxm?response-content-disposition=inline%3B%20filename%3D%22al_pastor.jpg%22%3B%20filename%2A%3DUTF-8%27%27al_pastor.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020544Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1abbb5118e20dca87a9df07a66abec92999be36a5a9cf4463dc1ab885f60bfde)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/JwoPezdJ4F3k5cZ64sD8fDxm?response-content-disposition=inline%3B%20filename%3D%22al_pastor.jpg%22%3B%20filename%2A%3DUTF-8%27%27al_pastor.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020544Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1abbb5118e20dca87a9df07a66abec92999be36a5a9cf4463dc1ab885f60bfde
+Completed 302 Found in 32ms (ActiveRecord: 15.9ms)
+
+
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.1ms) [0m[34mGenerated URL for file at key: P12uqTbHe8zVC6Y9JF9WHGP2 (https://lunch-bud-dev.s3.amazonaws.com/P12uqTbHe8zVC6Y9JF9WHGP2?response-content-disposition=inline%3B%20filename%3D%22fried-chicken-sandwich.jpg%22%3B%20filename%2A%3DUTF-8%27%27fried-chicken-sandwich.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020544Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ee61e1f6c58a3678749d3163e64687f7379b4273da5b99402b5cb2ffcc06b97d)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/P12uqTbHe8zVC6Y9JF9WHGP2?response-content-disposition=inline%3B%20filename%3D%22fried-chicken-sandwich.jpg%22%3B%20filename%2A%3DUTF-8%27%27fried-chicken-sandwich.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020544Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ee61e1f6c58a3678749d3163e64687f7379b4273da5b99402b5cb2ffcc06b97d
+[36m  S3 Storage (5.4ms) [0m[34mGenerated URL for file at key: vJk5pdJmL6xtmixf58NBNAmB (https://lunch-bud-dev.s3.amazonaws.com/vJk5pdJmL6xtmixf58NBNAmB?response-content-disposition=inline%3B%20filename%3D%22bbq-chicken.jpg%22%3B%20filename%2A%3DUTF-8%27%27bbq-chicken.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020544Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=11557d2a3552cd2cdff43bc0f7647b5ef45356b551e1fbf12d63532c806ba0d0)[0m
+Completed 302 Found in 27ms (ActiveRecord: 9.2ms)
+
+
+Completed 302 Found in 14ms (ActiveRecord: 8.6ms)
+
+
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/vJk5pdJmL6xtmixf58NBNAmB?response-content-disposition=inline%3B%20filename%3D%22bbq-chicken.jpg%22%3B%20filename%2A%3DUTF-8%27%27bbq-chicken.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020544Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=11557d2a3552cd2cdff43bc0f7647b5ef45356b551e1fbf12d63532c806ba0d0
+Completed 302 Found in 34ms (ActiveRecord: 2.4ms)
+
+
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--838c6d5372687cc9e145a73dc0962119e7fbd6f7", "filename"=>"gyro"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.7ms) [0m[34mGenerated URL for file at key: yhGPhss3rm9rERewELRWoLGn (https://lunch-bud-dev.s3.amazonaws.com/yhGPhss3rm9rERewELRWoLGn?response-content-disposition=inline%3B%20filename%3D%22gyro.jpg%22%3B%20filename%2A%3DUTF-8%27%27gyro.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020545Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4c5ff17b6a5d6938c1149dd6a8e69200d28d7762e670c1698a22e0e0d1248969)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/yhGPhss3rm9rERewELRWoLGn?response-content-disposition=inline%3B%20filename%3D%22gyro.jpg%22%3B%20filename%2A%3DUTF-8%27%27gyro.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020545Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4c5ff17b6a5d6938c1149dd6a8e69200d28d7762e670c1698a22e0e0d1248969
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.722761949877984&bounds%5BsouthWest%5D%5Blng%5D=-73.98965531659857&bounds%5BnorthEast%5D%5Blat%5D=41.034264162142804&bounds%5BnorthEast%5D%5Blng%5D=-73.78366166425482" for ::1 at 2020-04-11 22:05:47 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.722761949877984", "lng"=>"-73.98965531659857"}, "northEast"=>{"lat"=>"41.034264162142804", "lng"=>"-73.78366166425482"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (6.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.722761949877984 AND latitude < 41.034264162142804) AND (longitude > -73.98965531659857 AND longitude < -73.78366166425482))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (11.1ms)
+Completed 200 OK in 24ms (Views: 13.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f9d3dd91614e30098e420388af80d73c204e35a8/ham_and_cheese.jpg" for ::1 at 2020-04-11 22:05:47 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f9d3dd91614e30098e420388af80d73c204e35a8", "filename"=>"ham_and_cheese"}
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ /Users/jochen/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (6.5ms) [0m[34mGenerated URL for file at key: rxNEGssNuSiWGjPFHi6GgEAd (https://lunch-bud-dev.s3.amazonaws.com/rxNEGssNuSiWGjPFHi6GgEAd?response-content-disposition=inline%3B%20filename%3D%22ham_and_cheese.jpg%22%3B%20filename%2A%3DUTF-8%27%27ham_and_cheese.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020547Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6153ffe622c51d75d096d4016b974f4946aaa4f9aebefd340a4c6a9e9dd4ae62)[0m
+Redirected to https://lunch-bud-dev.s3.amazonaws.com/rxNEGssNuSiWGjPFHi6GgEAd?response-content-disposition=inline%3B%20filename%3D%22ham_and_cheese.jpg%22%3B%20filename%2A%3DUTF-8%27%27ham_and_cheese.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARPYTG3DBWMVXI77G%2F20200412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200412T020547Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6153ffe622c51d75d096d4016b974f4946aaa4f9aebefd340a4c6a9e9dd4ae62
+Completed 302 Found in 15ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.83974705329754&bounds%5BsouthWest%5D%5Blng%5D=-73.91240769696967&bounds%5BnorthEast%5D%5Blat%5D=40.917622628912994&bounds%5BnorthEast%5D%5Blng%5D=-73.86090928388373" for ::1 at 2020-04-11 22:05:48 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.83974705329754", "lng"=>"-73.91240769696967"}, "northEast"=>{"lat"=>"40.917622628912994", "lng"=>"-73.86090928388373"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.83974705329754 AND latitude < 40.917622628912994) AND (longitude > -73.91240769696967 AND longitude < -73.86090928388373))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.2ms)
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.8252641515988&bounds%5BsouthWest%5D%5Blng%5D=-73.91324957503916&bounds%5BnorthEast%5D%5Blat%5D=40.90315675353695&bounds%5BnorthEast%5D%5Blng%5D=-73.86175116195322" for ::1 at 2020-04-11 22:05:49 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.8252641515988", "lng"=>"-73.91324957503916"}, "northEast"=>{"lat"=>"40.90315675353695", "lng"=>"-73.86175116195322"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.8252641515988 AND latitude < 40.90315675353695) AND (longitude > -73.91324957503916 AND longitude < -73.86175116195322))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.2ms)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.854484612958025&bounds%5BsouthWest%5D%5Blng%5D=-73.89393767013193&bounds%5BnorthEast%5D%5Blat%5D=40.873957763796184&bounds%5BnorthEast%5D%5Blng%5D=-73.88106306686045" for ::1 at 2020-04-11 22:05:51 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.854484612958025", "lng"=>"-73.89393767013193"}, "northEast"=>{"lat"=>"40.873957763796184", "lng"=>"-73.88106306686045"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.854484612958025 AND latitude < 40.873957763796184) AND (longitude > -73.89393767013193 AND longitude < -73.88106306686045))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (4.8ms)
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.849100033623&bounds%5BsouthWest%5D%5Blng%5D=-73.89365389959124&bounds%5BnorthEast%5D%5Blat%5D=40.868574767391166&bounds%5BnorthEast%5D%5Blng%5D=-73.88077929631976" for ::1 at 2020-04-11 22:05:52 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.849100033623", "lng"=>"-73.89365389959124"}, "northEast"=>{"lat"=>"40.868574767391166", "lng"=>"-73.88077929631976"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.849100033623 AND latitude < 40.868574767391166) AND (longitude > -73.89365389959124 AND longitude < -73.88077929631976))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (1.8ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.8539692538365&bounds%5BsouthWest%5D%5Blng%5D=-73.89043524877337&bounds%5BnorthEast%5D%5Blat%5D=40.86370662072942&bounds%5BnorthEast%5D%5Blng%5D=-73.88399794713763" for ::1 at 2020-04-11 22:05:53 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.8539692538365", "lng"=>"-73.89043524877337"}, "northEast"=>{"lat"=>"40.86370662072942", "lng"=>"-73.88399794713763"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.8539692538365 AND latitude < 40.86370662072942) AND (longitude > -73.89043524877337 AND longitude < -73.88399794713763))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.0ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.85640372975314&bounds%5BsouthWest%5D%5Blng%5D=-73.88882592336444&bounds%5BnorthEast%5D%5Blat%5D=40.861272413200716&bounds%5BnorthEast%5D%5Blng%5D=-73.88560727254657" for ::1 at 2020-04-11 22:05:54 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.85640372975314", "lng"=>"-73.88882592336444"}, "northEast"=>{"lat"=>"40.861272413200716", "lng"=>"-73.88560727254657"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (3.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.85640372975314 AND latitude < 40.861272413200716) AND (longitude > -73.88882592336444 AND longitude < -73.88560727254657))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (6.6ms)
+Completed 200 OK in 20ms (Views: 12.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.85553544360654&bounds%5BsouthWest%5D%5Blng%5D=-73.88881519452838&bounds%5BnorthEast%5D%5Blat%5D=40.86040419087065&bounds%5BnorthEast%5D%5Blng%5D=-73.8855965437105" for ::1 at 2020-04-11 22:06:15 -0400
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.85553544360654", "lng"=>"-73.88881519452838"}, "northEast"=>{"lat"=>"40.86040419087065", "lng"=>"-73.8855965437105"}}}
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.85553544360654 AND latitude < 40.86040419087065) AND (longitude > -73.88881519452838 AND longitude < -73.8855965437105))[0m
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (2.7ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/lunches" for ::1 at 2020-04-11 22:06:25 -0400
+Processing by Api::LunchesController#index as JSON
+  Rendering api/lunches/index.json.jbuilder
+  [1m[36mLunch Load (4.0ms)[0m  [1m[34mSELECT "lunches".* FROM "lunches"[0m
+  ↳ app/views/api/lunches/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 71], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 72], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 73], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 74], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 75], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 76], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 77], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+Started GET "/api/restaurants?bounds%5BsouthWest%5D%5Blat%5D=40.744094586153906&bounds%5BsouthWest%5D%5Blng%5D=-73.99694920654295&bounds%5BnorthEast%5D%5Blat%5D=40.822082520306346&bounds%5BnorthEast%5D%5Blng%5D=-73.94545079345701" for ::1 at 2020-04-11 22:06:25 -0400
+  [1m[36mActiveStorage::Blob Load (4.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 78], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+Processing by Api::RestaurantsController#index as JSON
+  Parameters: {"bounds"=>{"southWest"=>{"lat"=>"40.744094586153906", "lng"=>"-73.99694920654295"}, "northEast"=>{"lat"=>"40.822082520306346", "lng"=>"-73.94545079345701"}}}
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  Rendering api/restaurants/index.json.jbuilder
+  [1m[36mActiveStorage::Blob Load (5.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mRestaurant Load (2.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE ((latitude > 40.744094586153906 AND latitude < 40.822082520306346) AND (longitude > -73.99694920654295 AND longitude < -73.94545079345701))[0m
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 79], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  ↳ app/views/api/restaurants/index.json.jbuilder:1
+  Rendered api/restaurants/index.json.jbuilder (5.0ms)
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 2.1ms)
+
+
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 80], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 81], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 82], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 83], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 84], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 85], ["record_type", "Lunch"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/views/api/lunches/index.json.jbuilder:4
+  Rendered api/lunches/index.json.jbuilder (147.3ms)
+Completed 200 OK in 164ms (Views: 117.7ms | ActiveRecord: 41.8ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-04-11 22:06:42 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "11Ppu8anAtVr2FYQW6h1HA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:52
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demo_user@appacademy.io"], ["id", 47], ["LIMIT", 1]]
+  ↳ app/models/user.rb:52
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "sqIQXmXJv1kg0N3SR9kzsg"], ["id", 47], ["LIMIT", 1]]
+  ↳ app/models/user.rb:52
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "sqIQXmXJv1kg0N3SR9kzsg"], ["updated_at", "2020-04-12 02:06:42.105946"], ["id", 47]]
+  ↳ app/models/user.rb:52
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:52
+No template found for Api::SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 99ms (ActiveRecord: 8.9ms)
+
+

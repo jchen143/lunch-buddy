@@ -20,6 +20,10 @@ class Lunch < ApplicationRecord
 
     has_one_attached :photo
 
+    has_many :reservations,
+        foreign_key: :lunch_id,
+        class_name: :Reservation 
+
      def self.in_bounds(bounds)
         
             min_lat = bounds["southWest"]["lat"].to_f

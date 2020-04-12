@@ -9,5 +9,11 @@
 #  updated_at :datetime         not null
 #
 class Reservation < ApplicationRecord 
+    belongs_to :user, 
+        foreign_key: :diner_id,
+        class_name: :User 
 
+    belongs_to :lunch,
+        foreign_key: :lunch_id,
+        class_name: :Lunch 
 end 
