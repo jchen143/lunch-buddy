@@ -22,7 +22,7 @@ tmp/
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
-log/
+/log/
 /node_modules
 /yarn-error.log
 log/development.log
