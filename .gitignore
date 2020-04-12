@@ -25,8 +25,10 @@ tmp/
 /log/
 /node_modules
 /yarn-error.log
-log/development.log
+/log/development.log
+log/developoment.log
 
+/config/credentials.yml.enc
 /public/assets
 .byebug_history
 
