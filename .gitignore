@@ -25,6 +25,7 @@ tmp/
 log/
 /node_modules
 /yarn-error.log
+log/development.log
 
 /public/assets
 .byebug_history
