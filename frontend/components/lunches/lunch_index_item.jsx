@@ -8,7 +8,9 @@ const LunchIndexItem = (props) => {
         <li className="lunch-li" key={lunch.id}>
             <ReservationForm currentUserId={props.currentUserId}
                 createReservation={props.createReservation}
-                lunch={lunch} errors={props.errors} />
+                lunch={lunch} errors={props.errors} 
+                openModal ={props.openModal} 
+                deleteReservationErrors={props.deleteReservationErrors}/>
 
             <div className="ken-ting-solution">
                 <div className="item-header">Lunch</div>

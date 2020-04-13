@@ -55,11 +55,11 @@ lunch_6 = Lunch.create(name: 'Sushi', description: 'BYOSoy sauce',image_url: 'pl
 file_6 = open('https://lunch-bud-seeds.s3.amazonaws.com/sushi.jpeg')
 lunch_6.photo.attach(io: file_6, filename: 'sushi.jpeg')
 
-lunch_7 = Lunch.create(name: 'Bulgogi Bowl', description: 'Pork and rice, what more?', image_url: 'placeholder', size: 'large', restaurant_id: Restaurant.all[6].id)
+lunch_7 = Lunch.create(name: 'Bulgogi Bowl', description: 'Pork and rice!', image_url: 'placeholder', size: 'large', restaurant_id: Restaurant.all[6].id)
 file_7 = open('https://lunch-bud-seeds.s3.amazonaws.com/bulgogi.jpg')
 lunch_7.photo.attach(io: file_7, filename: 'bulgogi.jpg')
 
-lunch_8 = Lunch.create(name: 'Lamb Gyro', description: 'White Sauce + Hot Sauce', image_url: 'placeholder', size: 'large', restaurant_id: Restaurant.all[7].id)
+lunch_8 = Lunch.create(name: 'Lamb Gyro', description: 'White Sauce/Hot Sauce', image_url: 'placeholder', size: 'large', restaurant_id: Restaurant.all[7].id)
 file_8 = open('https://lunch-bud-seeds.s3.amazonaws.com/gyro.jpg')
 lunch_8.photo.attach(io: file_8, filename: 'gyro.jpg')
 
@@ -67,11 +67,11 @@ lunch_9 = Lunch.create(name: 'Al Pastor Tacos', description: 'Delicioso',image_u
 file_9 = open('https://lunch-bud-seeds.s3.amazonaws.com/al_pastor.jpg')
 lunch_9.photo.attach(io: file_9, filename: 'al_pastor.jpg')
 
-lunch_10 = Lunch.create(name: 'Chicken Noodle Soup', description: 'Slurp Slurp',image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[9].id)
+lunch_10 = Lunch.create(name: 'Noodle Soup', description: 'Slurp Slurp',image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[9].id)
 file_10 = open('https://lunch-bud-seeds.s3.amazonaws.com/chicken_noods.jpg')
 lunch_10.photo.attach(io: file_10, filename: 'chicken_noods.jpg')
 
-lunch_11 = Lunch.create(name: 'Spaghetti Carbonara', description: 'Break a few eggs to make a winner',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[10].id)
+lunch_11 = Lunch.create(name: 'Carbonara', description: 'Made with love',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[10].id)
 file_11 = open('https://lunch-bud-seeds.s3.amazonaws.com/carbonara.jpg')
 lunch_11.photo.attach(io: file_11, filename: 'carbonara.jpg')
 
