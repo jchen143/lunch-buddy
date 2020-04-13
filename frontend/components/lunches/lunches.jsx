@@ -28,7 +28,7 @@ class Lunches extends React.Component {
                     
                 
                     <div className="lunches-content">
-                        <LunchesIndex lunches={this.props.lunches} restaurants={this.props.restaurants} />  
+                        <LunchesIndex lunches={this.props.lunches} restaurants={this.props.restaurants} currentUserId={this.props.currentUser} createReservation={this.props.createReservation} errors={this.props.errors}/>  
                         <LunchMap location={this.props.location} restaurants={this.props.restaurants} updateFilter={this.props.updateFilter}/> 
                     </div>
                 </div>

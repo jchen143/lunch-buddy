@@ -13,3 +13,17 @@ export const cancelReservation = (reservationId) => {
     })
 
 }
+
+export const fetchReservations = () => {
+    return $.ajax({
+        method: "GET", 
+        url: '/api/reservations'
+    })
+}
+
+export const fetchReservation = (reservationId) => {
+    return $.ajax({
+        method: "GET", 
+        url: `/api/reservations/${reservationId}`
+    })
+}

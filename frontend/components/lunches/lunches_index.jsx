@@ -9,11 +9,13 @@ class LunchesIndex extends React.Component{
     
     render(){
         let restaurants = this.props.restaurants
+        let that = this;
         let lunches = this.props.lunches.map(lunch => {
             //debugger
             if (Object.keys(restaurants).includes((lunch.restaurant_id).toString())){
                 //return <li key={lunch.id}>{lunch.name} {lunch.description}</li>
-                return <LunchIndexItem lunch={lunch} restaurant= {restaurants[lunch.restaurant_id.toString()]}/> 
+                //debugger
+                return <LunchIndexItem lunch={lunch} restaurant={restaurants[lunch.restaurant_id.toString()]} currentUserId={that.props.currentUserId} createReservation={that.props.createReservation} errors={that.props.errors}/> 
             }
         })
        
