@@ -91,6 +91,10 @@ border-radius: 5px 5px 0 0;
   height: 100%;
   z-index: 2; 
   
+  background-color: hsla(0,0%,100%,.8);
+  background: linear-gradient(180,hsla(0,0%,100%,.99), hsla(0,0%,100%,.5));
+  color: #4a4a4a;
+ 
 }
 .ken-ting-solution{
   position: absolute; 
@@ -112,16 +116,40 @@ border-radius: 5px 5px 0 0;
 }
 
 .reservation-form button{
+  
       background-color: #430098;
+      align-self: center;
     border-radius: 0;
     color: #fff;
     letter-spacing: 0;
-    margin-top: 10px;
-    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 9px 0 12px;
     text-transform: uppercase;
+    font-weight: 500;
+    height: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-weight: 700;
-    width: 100%;
     border: 1px solid #430098;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+}
+
+.reservation-form .name-and-description{
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+.reservation-form .name-and-description .hover-name{
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  padding-right: 25px;
+}
+
+.reservation-form .name-and-description .hover-description{
+  display: inline-block; 
 }

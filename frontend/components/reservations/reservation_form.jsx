@@ -31,8 +31,8 @@ class ReservationForm extends React.Component {
         return(
             <div className="reservation-form">
                 <div className="name-and-description" >
-                    <div>{this.props.lunch.name}</div>
-                    <div>{this.props.lunch.description}</div>
+                    <div className="hover-name">{this.props.lunch.name}</div>
+                    <div className="hover-description">{this.props.lunch.description}</div>
                 </div>
                 <button onClick={this.handleClick}>Reserve</button>
             </div>
