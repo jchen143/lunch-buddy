@@ -24,7 +24,7 @@ class SuccessReservation extends React.Component {
                     </div>
                 </div>
 
-                <img src={window.red_bag} />
+                <img className="bag-logo" src={window.red_bag} />
 
                 <div className="success-modal-message">
                     Get ready to lunch, bud!

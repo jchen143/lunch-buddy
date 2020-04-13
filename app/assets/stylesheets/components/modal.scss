@@ -18,14 +18,12 @@
     border-radius: 10px;
     width: 690px;
     min-height: 420px;
+    max-height: 420px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   
-}
-
-.modal-form {
-  height: 420px;
-  width: 690px;
-  padding: 25px 35px;
-  border: 10px solid green;
 }
 
 .modal-close-x p {
@@ -37,18 +35,28 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-right: 30px; 
+    z-index: 20; 
 }
 
 .success-modal-header{
   width: 100% ;
-
-
   display: flex;
+  align-items: center;
   justify-content: space-between;
    background-color: #430098;
+   min-height: 70px;
+   text-transform: uppercase;
+   color: white; 
+
    
 }
 
 .modal-title{
   padding-top: 4px; 
+}
+
+.bag-logo{
+  width: 250px;
+  height: 250px; 
 }
