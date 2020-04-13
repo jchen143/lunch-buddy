@@ -9,7 +9,7 @@ import {cancelReservation, createReservation} from './util/reservation_api_util'
 
 document.addEventListener("DOMContentLoaded", () => {
     //TESTING
-       
+       window.cancelReservation = cancelReservation
         window.fetchRestaurants = fetchRestaurants
     //TESTING
    

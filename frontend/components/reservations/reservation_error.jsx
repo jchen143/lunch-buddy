@@ -12,9 +12,9 @@ class ReservationError extends React.Component{
 
 
     render(){
-        debugger
+       // debugger
         return (<> 
-            <div onClick={this.handleClick}>Modal Test</div>
+            <div onClick={this.handleClick}>Daily Limit Modal</div>
         
         </>)
     }

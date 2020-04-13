@@ -9,21 +9,20 @@ class ReservationForm extends React.Component {
     }
 
     handleClick(e){
-        this.props.createReservation(this.state)
+        
+        this.props.createReservation(this.state).then(() => this.props.openModal('successful_reservation'))
         
     }
-
     
-
 
     render(){
         let reservation = {diner_id: this.props.currentUserId, lunch_id: this.props.lunch.id}
         
         //let errors = null;
         if (this.props.errors.length > 0) {
-            
+            //debugger
             if (this.props.errors.includes("Daily limit You can only reserve one meal per day ")){
-                debugger
+                //debugger
                 this.props.openModal('daily_limit')
             }
 
@@ -31,9 +30,10 @@ class ReservationForm extends React.Component {
                 this.props.openModal('zero_meals')
             }
             this.props.deleteReservationErrors(); 
-        } else{
-            this.props.openModal('successful_reservation')
-        }
+        } 
+        // else{
+        //     // this.props.openModal('successful_reservation')
+        // }
 
 
         //if errors = only 1 reservation every 24 hours, generate the you're out of reservations generate the other modal
