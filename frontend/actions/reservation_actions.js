@@ -40,6 +40,7 @@ export const fetchReservation = (reservationId) => (dispatch) => {
 }
 
 export const createReservation = (reservation) => (dispatch) => {
+    //debugger
     return ReservationApiUtil.createReservation(reservation).then(reservation => dispatch(receiveReservation(reservation)), err => dispatch(receiveReservationErrors(err)))
 }
 

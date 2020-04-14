@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import {closeModal, openModal} from '../../actions/modal_actions'
-import {fetchReservations, cancelReservation, createReservation} from '../../actions/reservation_actions'
+import {fetchReservations, cancelReservation, createReservation, deleteReservationerrors} from '../../actions/reservation_actions'
 import ReservationError from './reservation_error'
 import {lastReservationId} from '../../selectors/last_reservation_selector'
 
@@ -20,7 +20,8 @@ const mdp = (dispatch) => {
         fetchReservations: () => dispatch(fetchReservations()),
         cancelReservation: (id) => dispatch(cancelReservation(id)),
         openModal: (type) => dispatch(openModal(type)),
-        createReservation: (reservation) => dispatch(createReservation(reservation))
+        createReservation: (reservation) => dispatch(createReservation(reservation)),
+        deleteReservationerrors: () => dispatch(deleteReservationerrors())
 
         //PROP TO FETCH ALL RESERVATIONS AND THEN FIND THE LAST RESERVATION, EXTRACT ITS INFO TO CANCEL. 
         //Maybe add the lunch ID to the action, pass it in as a key  and pass it in through modal.jsx to the component 

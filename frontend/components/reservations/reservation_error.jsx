@@ -11,19 +11,21 @@ class ReservationError extends React.Component{
         let current_user_id = parseInt(this.props.currentUserId); 
         let temp_lunch_id = parseInt(this.props.tempLunchId)
 
-        this.props.cancelReservation(res_id)
-        //
-        this.props.createReservation({ diner_id: current_user_id, lunch_id: temp_lunch_id }).then(() => this.props.openModal('successful_reservation'))
+        //debugger 
+
+        this.props.cancelReservation(res_id).then(() => this.props.createReservation({ diner_id: current_user_id, lunch_id: temp_lunch_id }).then(() => this.props.openModal('successful_reservation')))
+        
+        //this.props.createReservation({ diner_id: current_user_id, lunch_id: temp_lunch_id }).then(() => this.props.openModal('successful_reservation') )
         //debugger
         //will need to change logic if you don't have enough remaining meals ... maybe make into a .then(successModal, no remaining meals)
         //this.props.openModal('successful_reservation')
-       
+       //debugger
         this.props.closeModal()
     }
     
     componentDidMount(){
         this.props.fetchReservations(); 
-       // debugger
+        debugger
     }
 
     render(){
@@ -41,11 +43,11 @@ class ReservationError extends React.Component{
                 Peas-confirm!
             </div>
             <p className="daily-limit-warning">
-                You already have a meal reserved. Continue to cancel your meal and reserve this meal.
+                You already have a lunch reserved. Continue to cancel your past reservation and reserve this new lunch.
             </p>
 
             <div className="continue">
-                <p onClick={this.handleClick}>Continue to reserve meal</p>
+                <p onClick={this.handleClick}>Continue to make reservation</p>
             </div>
         
         </>)
