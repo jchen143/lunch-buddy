@@ -35,7 +35,8 @@ class Lunches extends React.Component {
                         createReservation={this.props.createReservation} 
                         errors={this.props.errors} 
                         openModal ={this.props.openModal}
-                        deleteReservationErrors={this.props.deleteReservationErrors}/>  
+                        deleteReservationErrors={this.props.deleteReservationErrors}
+                        receiveTempLunchId = {this.props.receiveTempLunchId}/>  
                         <LunchMap location={this.props.location} restaurants={this.props.restaurants} updateFilter={this.props.updateFilter}/> 
                     </div>
                 </div>

@@ -3,6 +3,7 @@ export const LOGOUT_CURRENT_USER = "LOGOUT_CURRENT_USER"
 export const RECEIVE_SESSION_ERRORS = "RECEIVE_ERRORS"
 export const RECEIVE_TEMP_EMAIL = "RECEIVE_TEMP_EMAIL"
 export const DELETE_SESSION_ERRORS= "DELETE_SESSION_ERRORS"
+export const RECEIVE_TEMP_LUNCH_ID = "RECEIVE_TEMP_LUNCH_ID"
 
 import * as SessionApiUtil from '../util/session_api_util'
 
@@ -20,6 +21,12 @@ const receiveSessionErrors = (errors) => ({ //errors is an array
     errors
 })
 
+export const receiveTempLunchId = (lunchId) => {
+    return {
+        type: RECEIVE_TEMP_LUNCH_ID,
+        lunchId 
+    }
+}
 export const receiveTempEmail = (email) => {
     return {
         type: RECEIVE_TEMP_EMAIL,

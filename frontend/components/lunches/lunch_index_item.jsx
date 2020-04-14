@@ -10,7 +10,8 @@ const LunchIndexItem = (props) => {
                 createReservation={props.createReservation}
                 lunch={lunch} errors={props.errors} 
                 openModal ={props.openModal} 
-                deleteReservationErrors={props.deleteReservationErrors}/>
+                deleteReservationErrors={props.deleteReservationErrors}
+                receiveTempLunchId={props.receiveTempLunchId}/>
 
             <div className="ken-ting-solution">
                 <div className="item-header">Lunch</div>

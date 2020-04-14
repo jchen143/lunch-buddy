@@ -9,7 +9,9 @@ class ReservationForm extends React.Component {
     }
 
     handleClick(e){
-        
+       //
+        this.props.receiveTempLunchId(this.props.lunch.id)
+       // debugger
         this.props.createReservation(this.state).then(() => this.props.openModal('successful_reservation'))
         
     }

@@ -1,4 +1,4 @@
-import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER, RECEIVE_TEMP_EMAIL } from '../actions/session_actions'
+import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER, RECEIVE_TEMP_EMAIL, RECEIVE_TEMP_LUNCH_ID } from '../actions/session_actions'
 
 const _nullSession = {
     currentUserId: null
@@ -12,6 +12,8 @@ const sessionReducer = (state = _nullSession, action) => {
             return _nullSession;
         case RECEIVE_TEMP_EMAIL: 
             return Object.assign({}, {tempEmail: action.email})
+        case RECEIVE_TEMP_LUNCH_ID:
+            return Object.assign({}, state, {tempLunchId: action.lunchId})
         default:
             return state;
     }

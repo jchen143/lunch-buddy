@@ -16,7 +16,8 @@ class LunchesIndex extends React.Component{
                 //return <li key={lunch.id}>{lunch.name} {lunch.description}</li>
                 //debugger
                 return <LunchIndexItem lunch={lunch} restaurant={restaurants[lunch.restaurant_id.toString()]} currentUserId={that.props.currentUserId} createReservation={that.props.createReservation} errors={that.props.errors} openModal ={that.props.openModal}
-                deleteReservationErrors={that.props.deleteReservationErrors}/> 
+                deleteReservationErrors={that.props.deleteReservationErrors}
+                    receiveTempLunchId={that.props.receiveTempLunchId}/> 
             }
         })
        

@@ -7,9 +7,14 @@ class ReservationError extends React.Component{
     }
 
     handleClick(e){
-        
-        this.props.cancelReservation(this.props.reservationId).then(() => this.props.openModal('successful_reservation'))
-        
+        let res_id = parseInt(this.props.reservationId);
+        let current_user_id = parseInt(this.props.currentUserId); 
+        let temp_lunch_id = parseInt(this.props.tempLunchId)
+
+        this.props.cancelReservation(res_id)
+        //
+        this.props.createReservation({ diner_id: current_user_id, lunch_id: temp_lunch_id }).then(() => this.props.openModal('successful_reservation'))
+        //debugger
         //will need to change logic if you don't have enough remaining meals ... maybe make into a .then(successModal, no remaining meals)
         //this.props.openModal('successful_reservation')
        
@@ -18,6 +23,7 @@ class ReservationError extends React.Component{
     
     componentDidMount(){
         this.props.fetchReservations(); 
+       // debugger
     }
 
     render(){
