@@ -14,7 +14,24 @@ class ReservationError extends React.Component{
     render(){
        // debugger
         return (<> 
-            <div onClick={this.handleClick}>Daily Limit Modal</div>
+            <div className="daily-limit-reached-modal-header">
+                <div className="modal-close-x-error">
+                    <p onClick={this.props.closeModal}>X</p>
+                </div>
+            </div>
+
+            <img className="peas" src={window.peas} />
+
+            <div className="daily-limit-modal-message">
+                Peas-confirm!
+            </div>
+            <p className="daily-limit-warning">
+                You already have a meal reserved. Continue to cancel your meal and reserve this meal.
+            </p>
+
+            <div className="continue">
+                <p onClick={this.props.closeModal}>Continue to reserve meal</p>
+            </div>
         
         </>)
     }

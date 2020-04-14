@@ -18,6 +18,7 @@ class SuccessReservation extends React.Component {
             <>
                 <div className="success-modal-header">
                     <div className="sneaky"></div>
+                   
                     <div className="modal-title">Lunch Reserved!</div>
                     <div className="modal-close-x">
                         <p onClick={this.props.closeModal}>X</p>

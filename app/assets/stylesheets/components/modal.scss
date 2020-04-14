@@ -29,10 +29,10 @@
 .modal-close-x p {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    opacity: .5;
     font-size: 25px;
     color: white; 
     display: flex;
+    font-weight: 700; 
     flex-direction: column;
     justify-content: flex-start;
     padding-right: 30px; 
@@ -47,6 +47,7 @@
    background-color: #430098;
    min-height: 70px;
    text-transform: uppercase;
+   font-weight: 500;
    color: white; 
 
    
@@ -54,10 +55,90 @@
 
 .modal-title{
   padding-top: 4px; 
-  margin: 40px; 
+ 
 }
 
 .bag-logo{
-  width: 250px;
-  height: 250px; 
+  width: 150px;
+  height: 150px; 
+}
+
+.sounds-good{
+      background-color: #FE4239;
+    color: #FFF !important;
+        line-height: 36px;
+  
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    font-size: 18px;
+    width: 40%;
+    height: 55px;
+    letter-spacing: 1px;
+    line-height: 55px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; 
+}
+
+.peas {
+  height: 110px;
+  width: 110px; 
+}
+
+.daily-limit-modal-message {
+  font-size: 31.2px;
+    line-height: 1.21;
+}
+
+.daily-limit-warning{
+  color: #4a4a4a;
+    font-size: 20px;
+    line-height: 1.25;
+  max-width: 320px; 
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.continue{
+    background-color: #FE4239;
+    color: #FFF !important;
+    line-height: 36px;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    font-size: 12px;
+    width: 40%;
+    height: 55px;
+    letter-spacing: 1px;
+    line-height: 55px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; 
+}
+
+.modal-close-x-error p {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 25px;
+    color: gray;
+    display: flex;
+    font-weight: 700; 
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid red; 
+    padding-right: 30px; 
+    z-index: 20; 
 }
