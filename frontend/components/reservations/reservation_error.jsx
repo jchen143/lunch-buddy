@@ -7,9 +7,18 @@ class ReservationError extends React.Component{
     }
 
     handleClick(e){
-        this.props.closeModal(); 
+        
+        this.props.cancelReservation(this.props.reservationId).then(() => this.props.openModal('successful_reservation'))
+        
+        //will need to change logic if you don't have enough remaining meals ... maybe make into a .then(successModal, no remaining meals)
+        //this.props.openModal('successful_reservation')
+       
+        this.props.closeModal()
     }
-
+    
+    componentDidMount(){
+        this.props.fetchReservations(); 
+    }
 
     render(){
        // debugger
@@ -30,7 +39,7 @@ class ReservationError extends React.Component{
             </p>
 
             <div className="continue">
-                <p onClick={this.props.closeModal}>Continue to reserve meal</p>
+                <p onClick={this.handleClick}>Continue to reserve meal</p>
             </div>
         
         </>)

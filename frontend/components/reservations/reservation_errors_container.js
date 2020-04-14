@@ -1,10 +1,13 @@
 import {connect} from 'react-redux'
-import {closeModal} from '../../actions/modal_actions'
+import {closeModal, openModal} from '../../actions/modal_actions'
+import {fetchReservations, cancelReservation} from '../../actions/reservation_actions'
 import ReservationError from './reservation_error'
+import {lastReservationId} from '../../selectors/last_reservation_selector'
 
 const msp = (state, ownProps) => {
     return{
         currentUserId: state.session.currentUserId,
+        reservationId: lastReservationId(state)
         //lunch = use ownprops to take in lunch so I can have lunchId to go through with reservaiton
         //OR maybe take 
     }
@@ -12,7 +15,11 @@ const msp = (state, ownProps) => {
 
 const mdp = (dispatch) => {
     return{
-        closeModal: () => dispatch(closeModal())
+        closeModal: () => dispatch(closeModal()), 
+        fetchReservations: () => dispatch(fetchReservations()),
+        cancelReservation: (id) => dispatch(cancelReservation(id)),
+        openModal: (type) => dispatch(openModal(type))
+
         //PROP TO FETCH ALL RESERVATIONS AND THEN FIND THE LAST RESERVATION, EXTRACT ITS INFO TO CANCEL. 
         //Maybe add the lunch ID to the action, pass it in as a key  and pass it in through modal.jsx to the component 
     }
