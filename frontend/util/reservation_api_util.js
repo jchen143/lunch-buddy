@@ -7,6 +7,7 @@ export const createReservation = (reservation) => {
 }
 
 export const cancelReservation = (reservationId) => {
+
     return $.ajax({
         method: "DELETE", 
         url: `/api/reservations/${reservationId}`

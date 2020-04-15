@@ -23,13 +23,13 @@ class ReservationIndex extends React.Component{
         //if the created_at matches up set a variable to the li. Otherwise it's the default sorry we missed you)   
         this.today = new Date();
 
-        this.handleClick = this.handleClick.bind(this); 
+        this.handleTheClick = this.handleTheClick.bind(this); 
         
     }
     //get today's date. 
-   handleClick(reservation){
-       debugger
-       this.props.cancelReservation(reservation)
+   handleTheClick(e){
+       e.preventDefault(); 
+       this.props.cancelReservation(this.currentResId)
    }
     componentDidMount(){
     
@@ -61,7 +61,7 @@ class ReservationIndex extends React.Component{
             }
             
             Object.values(this.props.reservations).forEach(reservation => {
-    
+                this.currentResId = reservation.id;
                 //debugger
                let res_date = new Date(reservation.created_at);
                if(day.getFullYear() === res_date.getFullYear() && day.getMonth() === res_date.getMonth() && day.getDate() === res_date.getDate()){
@@ -69,11 +69,11 @@ class ReservationIndex extends React.Component{
                     let restaurant = reservation.restaurant; 
                    let day_of_reservation = days[res_date.getDay()]; 
 
-                   let cancel;
-                    //debugger
+                   let cancel = null;
+                    debugger
                    if (res_date.getFullYear() === this.today.getFullYear() && res_date.getDay() === this.today.getDay() && res_date.getMonth() === this.today.getMonth()) {
-                       //debugger
-                       cancel = <button onClick={that.handleClick(reservation)}>Cancel</button>
+                       debugger
+                       cancel = <p onClick={that.handleTheClick}>Cancel</p>
                    } else {
                        cancel = <p>Hope you enjoyed!</p>
                    }
