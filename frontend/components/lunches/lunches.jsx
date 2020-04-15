@@ -26,9 +26,9 @@ class Lunches extends React.Component {
                         <Nav/>
                     </div>
 
-                    <div className="reservation-index">
+                    {/* <div className="reservation-index">
                         <ReservationIndexContainer lunches={this.props.lunches} restaurants={this.props.restaurants}/> 
-                    </div>
+                    </div> */}
 
                     
                 

@@ -20,6 +20,10 @@ class Reservation < ApplicationRecord
     belongs_to :lunch,
         foreign_key: :lunch_id,
         class_name: :Lunch 
+    
+    has_one :restaurant,
+        through: :lunch,
+        source: :restaurant 
 
     #we have to make sure that the reservation is valid by passsing in current user to see if they have enough meals left,
     # do they 

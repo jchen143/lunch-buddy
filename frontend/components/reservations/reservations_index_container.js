@@ -7,8 +7,8 @@ const msp = (state, ownProps) => {
     debugger
     return {
         reservations: state.entities.reservations, 
-        lunches: state.entities.lunches,
-        restaurants: state.entities.restaurants 
+        lunches: ownProps.lunches,
+        restaurants: ownProps.restaurants 
     } 
 }
 

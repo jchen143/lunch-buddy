@@ -6,6 +6,7 @@ import LoginFormContainer from './forms/login_container'
 import SignupFormContainer from './forms/signup_container'
 import LunchesContainer from './lunches/lunches_container'
 import Modal from './modal/modal'
+import AccountContainer from './account/account_container'
 //import the Lunches Container
 
 const App = () => (
@@ -15,6 +16,7 @@ const App = () => (
         <AuthRoute path="/login" component={LoginFormContainer} />
         <AuthRoute path="/signup" component={SignupFormContainer} />
         <ProtectedRoute path = '/lunches' component={LunchesContainer} /> 
+        <ProtectedRoute path ='/my-account' component={AccountContainer} /> 
     </div>
 );
 
