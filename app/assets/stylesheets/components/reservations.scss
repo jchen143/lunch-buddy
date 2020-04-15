@@ -1,0 +1,54 @@
+// Reservation Index on Home Page
+.current-res-toolbar{
+    display: flex; 
+    justify-content: center;
+}
+
+.current-res-toolbar li{
+height: 200px;
+  position: relative;
+  min-width: 190px;
+  max-width: 190px;
+  border: 1px solid #dfd9d8;
+  margin: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+   text-overflow: ellipsis;
+    overflow: hidden;
+  white-space: nowrap;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.current-res-toolbar li button{
+    height: 10px; 
+    font-size: small; 
+}
+
+.res-info{
+    
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    background-size: auto; 
+    background-position: top;
+    margin: 0 auto;
+    padding: 56px 0;
+    width: 100%; 
+    border: solid 1px black; 
+    box-sizing: border-box; 
+    height: 150px; 
+
+}
+
+.res-info p{
+    position: relative; 
+}
+
+.current-res-title {
+    padding: 0px; 
+    margin: 0; 
+    height: 20px;  
+}

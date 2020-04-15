@@ -1,16 +1,17 @@
 import {connect} from 'react-redux'
 import Account from './account'
+import {fetchReservations} from '../../actions/reservation_actions'
 
 const msp = (state) => {
+    debugger
     return {
-        lunches: state.entities.lunches, 
-        restaurants: state.entities.restaurants 
+        reservations: state.entities.reservations, 
     }
 }
 
 const mdp = (dispatch) => {
     return {
-        
+        fetchReservations: () => dispatch(fetchReservations())
     }
 }
 
