@@ -2,6 +2,7 @@
 .current-res-toolbar{
     display: flex; 
     justify-content: center;
+    align-content: center;
     border-bottom: 1px solid #C9C9C9
 }
 
@@ -34,16 +35,23 @@ height: 200px;
     //background-attachment: fixed;
     background-repeat: no-repeat;
     //background-size: cover;
-    background-size: auto; 
+    //
+   
+    margin-bottom: 0; 
+    //background-size: auto; 
     background-position: top;
     //margin: 0 auto;
     //padding: 56px 0;
     width: 100%; 
     box-sizing: border-box; 
-    height: 150px; 
+
+   
+    height: 190px; 
     display: flex; 
     flex-direction: column; 
-    justify-content: flex-end;
+    justify-content: space-between;
+
+    padding-top: 10px;
 
     
 }
@@ -74,8 +82,44 @@ height: 200px;
 .current-res-title {
     padding: 0px; 
     margin: 0; 
-    height: 20px;  
     color: #938E8D; 
     font-weight: 500; 
 }
 
+
+.miss-you-image{
+    height: 140px;
+    width: 100%; 
+    
+}
+
+
+.sorry-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0; 
+    height: 100%;
+}
+
+.missin-you{
+    position: relative; 
+    align-self: flex-end; 
+    height: 20px; 
+    width: 100%;
+    color: #938E8D;
+    font-size: 13px; 
+    align-content: center;
+    display: flex; 
+    justify-content: center;
+
+}
+
+.res-info .cancel-what{
+     color: gray; 
+     font-weight: 500; 
+     font-family: 'Montserrat', sans-serif;
+     height: 30px; 
+  
+}

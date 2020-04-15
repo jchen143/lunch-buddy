@@ -45,7 +45,10 @@ class ReservationIndex extends React.Component{
             let default_li = (
                 <li className="no-lunch-res-li">
                     <div className="current-res-title">{days[day.getDay()]}'s Lunch!</div>
-                    <div>We missed you at lunch today!</div>
+                    <div className='sorry-message'>
+                        <img className='miss-you-image' src={window.white_logo}/>
+                        <p className='missin-you'>We missed you at lunch today!</p>
+                    </div>
                 </li>
             )
 
@@ -73,20 +76,25 @@ class ReservationIndex extends React.Component{
                     debugger
                    if (res_date.getFullYear() === this.today.getFullYear() && res_date.getDay() === this.today.getDay() && res_date.getMonth() === this.today.getMonth()) {
                        debugger
-                       cancel = <p onClick={that.handleTheClick}>Cancel</p>
+                       cancel = <p className="cancel-what" onClick={that.handleTheClick}>Cancel</p>
                    } else {
-                       cancel = <p>Hope you enjoyed!</p>
+                       cancel = <p className="cancel-what">Hope you enjoyed!</p>
                    }
                    default_li = (<li className="current-res-li">
                        <div className="current-res-title">{day_of_reservation}'s Lunch!</div>
 
                        <div className="res-info" style={{ backgroundImage: `url(${lunch.photoUrl})` }}>
-                           {/* <img src={lunch.photoUrl} />  */}
-                           <p className="res-lunch-name">{lunch.name}</p>
-                           <p className="res-restaurant-name">{restaurant.name}</p>
-                           <p className="res-restaurant-address">{restaurant.address}</p>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div>
+                                <p className="res-lunch-name">{lunch.name}</p>
+                                <p className="res-restaurant-name">{restaurant.name}</p>
+                                <p className="res-restaurant-address">{restaurant.address}</p>
+                           </div>
+                           {cancel}
                        </div>
-                       {cancel}
+                       
                    </li>
 
 
