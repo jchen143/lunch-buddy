@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../nav_bar/nav_bar_container'
 import LunchesIndex from './lunches_index'
 import LunchMap from '../map/lunch_map'
+import ReservationIndexContainer from '../reservations/reservations_index_container'
 
 class Lunches extends React.Component {
 
@@ -25,8 +26,8 @@ class Lunches extends React.Component {
                         <Nav/>
                     </div>
 
-                    <div className="this-weeks-lunches">
-
+                    <div className="reservation-index">
+                        <ReservationIndexContainer lunches={this.props.lunches} restaurants={this.props.restaurants}/> 
                     </div>
 
                     
