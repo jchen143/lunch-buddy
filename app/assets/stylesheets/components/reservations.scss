@@ -1,0 +1,125 @@
+// Reservation Index on Home Page
+.current-res-toolbar{
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    border-bottom: 1px solid #C9C9C9
+}
+
+.current-res-toolbar li{
+height: 200px;
+  position: relative;
+  min-width: 190px;
+  max-width: 190px;
+  border: 1px solid #938E8D;
+  margin: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+   text-overflow: ellipsis;
+    overflow: hidden;
+  white-space: nowrap;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.current-res-toolbar li button, .current-res-toolbar li > p{
+    height: 10px; 
+    font-size: small; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.res-info{
+    
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    //
+   
+    margin-bottom: 0; 
+    //background-size: auto; 
+    background-position: top;
+    //margin: 0 auto;
+    //padding: 56px 0;
+    width: 100%; 
+    box-sizing: border-box; 
+
+   
+    height: 190px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+
+    padding-top: 10px;
+
+    
+}
+
+.res-info .res-restaurant-name{
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+.res-info p{
+    display: flex; 
+    justify-content: center;
+    color: whitesmoke;
+   
+    //margin: 1px;
+    overflow: hidden;
+    //padding: 0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.res-lunch-name, .res-restaurant-address{
+    font-size: 14px; 
+    
+}
+
+.current-res-title {
+    padding: 0px; 
+    margin: 0; 
+    color: #938E8D; 
+    font-weight: 500; 
+}
+
+
+.miss-you-image{
+    height: 140px;
+    width: 100%; 
+    
+}
+
+
+.sorry-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0; 
+    height: 100%;
+}
+
+.missin-you{
+    position: relative; 
+    align-self: flex-end; 
+    height: 20px; 
+    width: 100%;
+    color: #938E8D;
+    font-size: 13px; 
+    align-content: center;
+    display: flex; 
+    justify-content: center;
+
+}
+
+.res-info .cancel-what{
+     color: gray; 
+     font-weight: 500; 
+     font-family: 'Montserrat', sans-serif;
+     height: 30px; 
+  
+}

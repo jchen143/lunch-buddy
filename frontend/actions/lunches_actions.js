@@ -9,5 +9,6 @@ const receiveLunches = (lunches) =>{
 }
 
 export const fetchLunches = () => dispatch => {
+    
     return LunchApiUtil.fetchLunches().then(lunches => dispatch(receiveLunches(lunches)))
 }

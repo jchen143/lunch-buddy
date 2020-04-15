@@ -45,12 +45,12 @@ class Nav extends React.Component {
                             <img src={window.menuLogout}/>
                             <p>Logout</p>
                         </li>
-                        <li className="li-clickable" onClick={this.handleLogout}>
+                        {/* <li className="li-clickable" onClick={this.handleLogout}>
                             Lunch
                         </li>
                         <li className="li-clickable" onClick={this.handleLogout}>
                             My Account
-                        </li>
+                        </li> */}
 
                     </ul>
                 
