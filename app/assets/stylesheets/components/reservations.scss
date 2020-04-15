@@ -2,6 +2,7 @@
 .current-res-toolbar{
     display: flex; 
     justify-content: center;
+    border-bottom: 1px solid #C9C9C9
 }
 
 .current-res-toolbar li{
@@ -9,7 +10,7 @@ height: 200px;
   position: relative;
   min-width: 190px;
   max-width: 190px;
-  border: 1px solid #dfd9d8;
+  border: 1px solid #938E8D;
   margin: 10px;
   border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
@@ -22,9 +23,10 @@ height: 200px;
   flex-direction: column;
 
 }
-.current-res-toolbar li button{
+.current-res-toolbar li button, .current-res-toolbar li > p{
     height: 10px; 
     font-size: small; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .res-info{
@@ -34,21 +36,46 @@ height: 200px;
     //background-size: cover;
     background-size: auto; 
     background-position: top;
-    margin: 0 auto;
-    padding: 56px 0;
+    //margin: 0 auto;
+    //padding: 56px 0;
     width: 100%; 
-    border: solid 1px black; 
     box-sizing: border-box; 
     height: 150px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end;
 
+    
+}
+
+.res-info .res-restaurant-name{
+    font-weight: bold; 
+    font-size: 16px; 
 }
 
 .res-info p{
-    position: relative; 
+    display: flex; 
+    justify-content: center;
+    color: whitesmoke;
+   
+    //margin: 1px;
+    overflow: hidden;
+    //padding: 0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.res-lunch-name, .res-restaurant-address{
+    font-size: 14px; 
+    
 }
 
 .current-res-title {
     padding: 0px; 
     margin: 0; 
     height: 20px;  
+    color: #938E8D; 
+    font-weight: 500; 
 }
+

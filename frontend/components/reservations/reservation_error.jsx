@@ -25,7 +25,7 @@ class ReservationError extends React.Component{
     
     componentDidMount(){
         this.props.fetchReservations(); 
-        debugger
+        
     }
 
     render(){

@@ -3,7 +3,7 @@ import Account from './account'
 import {fetchReservations} from '../../actions/reservation_actions'
 
 const msp = (state) => {
-    debugger
+    
     return {
         reservations: state.entities.reservations, 
     }

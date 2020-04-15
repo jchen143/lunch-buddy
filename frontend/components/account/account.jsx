@@ -7,11 +7,11 @@ class Account extends React.Component {
 
     componentDidMount(){
         this.props.fetchReservations();
-        debugger
+        
     }
 
     render(){
-        debugger
+        
         let lis = Object.values(this.props.reservations).map(reservation => {
             let lunch = reservation.lunch; 
             let restaurant = reservation.restaurant; 

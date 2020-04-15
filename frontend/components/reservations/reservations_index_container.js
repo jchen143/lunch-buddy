@@ -1,10 +1,10 @@
 import {connect} from 'react-redux'
 import ReservationIndex from './reservations_index'
-import {fetchReservations} from '../../actions/reservation_actions'
+import {fetchReservations, cancelReservation} from '../../actions/reservation_actions'
 import {fetchLunches} from '../../actions/lunches_actions'
 
 const msp = (state, ownProps) => {
-    debugger
+    
     return {
         reservations: state.entities.reservations, 
         lunches: ownProps.lunches,
@@ -16,6 +16,7 @@ const mdp = (dispatch) => {
     return{
         fetchReservations: () => dispatch(fetchReservations()), 
         fetchLunches: () => dispatch(fetchLunches()),
+       cancelReservation: (res) => dispatch(cancelReservation(res))
     }
 }
 
