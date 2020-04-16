@@ -9,6 +9,9 @@ class Lunches extends React.Component {
 
     constructor(props){
         super(props)
+        let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        let today= new Date (); 
+        this.current_day = days[today.getDay()]
         
     }
     componentDidMount(){
@@ -27,11 +30,16 @@ class Lunches extends React.Component {
                     <div className="header-container">
                         <Nav/>
                     </div>
+                    
 
                     <div className="reservation-index">
                         <ReservationIndexContainer lunches={this.props.lunches} restaurants={this.props.restaurants}/> 
                     </div>
 
+                    <div className="main-weekday">
+                        {this.current_day}
+                    </div>
+                    
                     <div className="search-container">
                         <SearchContainer /> 
                     </div>
