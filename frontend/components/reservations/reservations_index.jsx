@@ -57,7 +57,7 @@ class ReservationIndex extends React.Component{
                 default_li = (
                     <li className="no-lunch-res-li">
                         <div className="current-res-title">{days[day.getDay()]}'s Lunch!</div>
-                        <div>Let's go to lunch, bud!</div>
+                        <img className="try-new" src={window.try_new}/>
                     </li>
 
                 )

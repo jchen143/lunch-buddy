@@ -1,0 +1,12 @@
+<svg viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1185.000000, -194.000000)" fill="#FFB3AF">
+            <g transform="translate(11.000000, -4.000000)">
+                <g transform="translate(1174.000000, 198.000000)">
+                    <polygon points="12 18.1610447 16.5497123 16.626826 18.1150066 12 20.3766268 16.626826 25 18.1610447 20.3766268 19.8817176 18.5 24.0654272 16.5497123 19.8817176"></polygon>
+                    <polygon points="0 5.21319168 3.84975653 3.91500664 5.17423639 -5.32907052e-14 7.08791501 3.91500664 11 5.21319168 7.08791501 6.66914564 5.5 10.2092076 3.84975653 6.66914564"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
