@@ -6,11 +6,13 @@ import {fetchLunches} from './util/lunch_util'
 import {fetchRestaurants} from './util/restaurant_util'
 //import {signup, login, logout} from "./util/session_api_util"
 import {cancelReservation, createReservation} from './util/reservation_api_util'
+import {searchLunches} from './util/lunch_util'
 
 document.addEventListener("DOMContentLoaded", () => {
     //TESTING
        window.cancelReservation = cancelReservation
         window.fetchRestaurants = fetchRestaurants
+        window.searchLunches = searchLunches 
     //TESTING
    
 

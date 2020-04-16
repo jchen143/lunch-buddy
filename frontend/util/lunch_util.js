@@ -7,3 +7,11 @@ export const fetchLunches = () => {
     })
 
 }
+
+export const searchLunches = (search) => {
+    return $.ajax({
+        method: "GET", 
+        url: '/api/lunches',
+        data: {search}
+    })
+}
