@@ -37,10 +37,11 @@ class Restaurant < ApplicationRecord
     end
 
      def self.search(query)
+        #debugger
 
         #self.where("")
         records_array = self.where("lower(lunches.name) LIKE ? OR lower(lunches.description) LIKE ? OR lower(restaurants.name) LIKE ? OR lower(restaurants.address) LIKE ?", "%#{query.downcase}%" , "%#{query.downcase}%", "%#{query.downcase}%", "%#{query.downcase}%")
-     
+        #debugger
 
         return records_array
     end 

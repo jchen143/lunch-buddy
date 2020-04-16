@@ -23,18 +23,33 @@ class LunchesIndex extends React.Component{
         })
 
         let isUndefined = (currentValue) => currentValue === undefined; 
+        let return_value;
+        let className; 
 
         if(lunches.every(isUndefined)){
-            lunches = <li>No Results Found</li>
+            lunches = ( <div className="no-meals-messaging">
+                <div className="to-center">
+                    <div className="sorry-message-index">Sorry, no meals found.</div>
+                    <p className="please-try">Please try the following:</p> 
+                    <ul className="no-meals-ul-search"> 
+                            <li>Zoom out the map</li>
+                            <li>Search for something else</li>
+                    </ul> 
+                </div>
+            </div>)
+            className="no-meals-found"
+        }else{
+            className="lunch-index-ul"
         }
        
         debugger
         
         return(
-            <ul className="lunch-index-ul">
+            <ul className={className}>
                 {lunches}
             </ul>
-
+          
+           
         )
     }
 }

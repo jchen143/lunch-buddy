@@ -18,7 +18,7 @@ class Search extends React.Component{
 
     handleSubmit(e){
         e.preventDefault(); 
-       // debugger
+        //debugger
         this.props.searchRestaurants(this.state, this.props.bounds); 
         this.setState({query: ''}); 
        // debugger
@@ -30,9 +30,10 @@ class Search extends React.Component{
 
         return(
             <>
-            <form onSubmit={this.handleSubmit}>
+           
+            <form className="restaurant-lunch-search" onSubmit={this.handleSubmit}>
                 <input type="text" value={this.state.query} onChange={this.handleChange('query')} placeholder="Search by restaurant or meal"/>
-                <button>Submit</button> 
+                <button><img src={window.search}/></button> 
             </form>
 
             </>

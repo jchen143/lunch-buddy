@@ -1,0 +1,75 @@
+.no-meals-messaging{
+    
+    width: 900px;
+    display:flex;
+    justify-content: center; 
+    height: 100%; 
+   
+}
+.to-center{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px; 
+}
+.sorry-message-index{
+    color: #747474;
+    font-size: 18px;
+    font-weight: bold;
+    height: 18px;
+    padding: 18px; 
+    background-color: white;
+}
+
+.please-try{
+    color: #FE4239;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+}
+
+ul.no-meals-ul-search{
+    list-style-type: disc; 
+    color: #747474;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+    line-height: 1.42857143;
+}
+
+.search-container{
+    height: 70px; 
+    width: 100%; 
+    background-color: #F0F0F0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container .restaurant-lunch-search input {
+    height: 35px;
+    width: 255px; 
+    border-radius: 7px; 
+    font-size: 12px; 
+}
+
+.search-container form{
+    position: relative; 
+}
+.search-container .restaurant-lunch-search button {
+    top: 38px; 
+    left: 255px; 
+    position: absolute; 
+    margin: -35px; 
+   
+     
+}
+
+.search-container .restaurant-lunch-search button img{
+    position: absolute; 
+    height: 30px;
+    width: 30px;    
+}

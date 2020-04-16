@@ -4,6 +4,7 @@ class Api::RestaurantsController < ApplicationController
         #debugger
         if params[:search]
             #debugger
+            #debugger
             @restaurants = Restaurant.in_bounds(params[:bounds]).joins(:lunches).search(params[:search][:query])
             #debugger
 
