@@ -73,9 +73,9 @@ class ReservationIndex extends React.Component{
                    let day_of_reservation = days[res_date.getDay()]; 
 
                    let cancel = null;
-                    debugger
+                    
                    if (res_date.getFullYear() === this.today.getFullYear() && res_date.getDay() === this.today.getDay() && res_date.getMonth() === this.today.getMonth()) {
-                       debugger
+                       //debugger
                        cancel = <p className="cancel-what" onClick={that.handleTheClick}>Cancel</p>
                    } else {
                        cancel = <p className="cancel-what">Hope you enjoyed!</p>

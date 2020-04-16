@@ -12,3 +12,7 @@ const receiveAllRestaurants = (restaurants) => {
 export const fetchRestaurants = (bounds) => (dispatch) => {
     return RestaurantApiUtil.fetchRestaurants(bounds).then(restaurants => dispatch(receiveAllRestaurants(restaurants)))
 }
+
+export const searchRestaurants = (search, bounds) => (dispatch) => {
+    return RestaurantApiUtil.searchRestaurants(search, bounds).then(restaurants => dispatch(receiveAllRestaurants(restaurants)))
+}

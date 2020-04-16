@@ -12,3 +12,7 @@ export const fetchLunches = () => dispatch => {
     
     return LunchApiUtil.fetchLunches().then(lunches => dispatch(receiveLunches(lunches)))
 }
+
+export const searchLunches = (search) => dispatch => {
+    return LunchApiUtil.searchLunches(search).then(lunches => dispatch(receiveLunches(lunches)))
+}

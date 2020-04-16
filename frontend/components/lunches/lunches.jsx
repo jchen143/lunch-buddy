@@ -3,6 +3,7 @@ import Nav from '../nav_bar/nav_bar_container'
 import LunchesIndex from './lunches_index'
 import LunchMap from '../map/lunch_map'
 import ReservationIndexContainer from '../reservations/reservations_index_container'
+import SearchContainer from '../search/search_container'
 
 class Lunches extends React.Component {
 
@@ -11,6 +12,7 @@ class Lunches extends React.Component {
         
     }
     componentDidMount(){
+      
         this.props.fetchLunches();
         //this.props.fetchRestaurants({ southWest: { lat: 40.767971, lng: -73.981991 }, northEast: { lat: 40.799565, lng: -73.935342 } }); 
         //this.props.fetchRestaurants({ southWest: { lat: 40.7352421, lng: -73.9960729 }, northEast: { lat: 40.7352423, lng: -73.9960727} });
@@ -28,6 +30,10 @@ class Lunches extends React.Component {
 
                     <div className="reservation-index">
                         <ReservationIndexContainer lunches={this.props.lunches} restaurants={this.props.restaurants}/> 
+                    </div>
+
+                    <div className="search-container">
+                        <SearchContainer /> 
                     </div>
 
                     

@@ -10,6 +10,7 @@ class LunchesIndex extends React.Component{
     render(){
         let restaurants = this.props.restaurants
         let that = this;
+        debugger
         let lunches = this.props.lunches.map(lunch => {
             //debugger
             if (Object.keys(restaurants).includes((lunch.restaurant_id).toString())){
@@ -20,7 +21,14 @@ class LunchesIndex extends React.Component{
                     receiveTempLunchId={that.props.receiveTempLunchId}/> 
             }
         })
+
+        let isUndefined = (currentValue) => currentValue === undefined; 
+
+        if(lunches.every(isUndefined)){
+            lunches = <li>No Results Found</li>
+        }
        
+        debugger
         
         return(
             <ul className="lunch-index-ul">

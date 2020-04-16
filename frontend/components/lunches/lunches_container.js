@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Lunches from './lunches'
-import {fetchLunches} from '../../actions/lunches_actions'
+import {fetchLunches, searchLunches} from '../../actions/lunches_actions'
 import {currentLocation} from '../../selectors/user_location_selector'
 import {fetchRestaurants} from '../../actions/restaurants_actions'
 import {updateFilter} from '../../actions/filter_actions'
@@ -28,7 +28,8 @@ const mdp = (dispatch) => {
         createReservation: (reservation) => dispatch(createReservation(reservation)),
         openModal: (errorType) => dispatch(openModal(errorType)), 
         deleteReservationErrors: () => dispatch(deleteReservationerrors()), 
-        receiveTempLunchId: (id) => dispatch(receiveTempLunchId(id))
+        receiveTempLunchId: (id) => dispatch(receiveTempLunchId(id)),
+        searchLunches: (search) => dispatch(searchLunches(search))
     }
 }
 
