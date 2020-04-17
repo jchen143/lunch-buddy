@@ -17,7 +17,11 @@
 
 
 ## Future Direction: 
-* 
+* Filter by size
+* My account page showing meals left in your subscription plan
+* Lunch index item shows on hover over map marker
+* Map marker pops out when hovering over a lunch index item
+* Favoriting system 
 
 
 
