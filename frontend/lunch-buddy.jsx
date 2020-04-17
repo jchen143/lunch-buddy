@@ -7,12 +7,14 @@ import {fetchRestaurants} from './util/restaurant_util'
 //import {signup, login, logout} from "./util/session_api_util"
 import {cancelReservation, createReservation} from './util/reservation_api_util'
 import {searchRestaurants} from './util/restaurant_util'
+import {updateUser} from './util/user_util'
 
 document.addEventListener("DOMContentLoaded", () => {
     //TESTING
        window.cancelReservation = cancelReservation
         window.fetchRestaurants = fetchRestaurants
         window.searchRestaurants = searchRestaurants
+       window.updateUser = updateUser 
     //TESTING
    
 

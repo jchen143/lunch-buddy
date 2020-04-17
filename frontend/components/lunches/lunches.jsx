@@ -11,8 +11,14 @@ class Lunches extends React.Component {
         super(props)
         let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         let today= new Date (); 
+        this.reRender = this.reRender.bind(this);
         this.current_day = days[today.getDay()]
         
+    }
+
+    reRender() {
+        //debugger
+        this.forceUpdate();
     }
     componentDidMount(){
       
@@ -20,6 +26,8 @@ class Lunches extends React.Component {
         //this.props.fetchRestaurants({ southWest: { lat: 40.767971, lng: -73.981991 }, northEast: { lat: 40.799565, lng: -73.935342 } }); 
         //this.props.fetchRestaurants({ southWest: { lat: 40.7352421, lng: -73.9960729 }, northEast: { lat: 40.7352423, lng: -73.9960727} });
     }
+    
+    
 
     render(){
        
@@ -41,7 +49,7 @@ class Lunches extends React.Component {
                     </div>
                     
                     <div className="search-container">
-                        <SearchContainer /> 
+                        <SearchContainer reRender={this.reRender} history={this.props.history}/> 
                     </div>
 
                     

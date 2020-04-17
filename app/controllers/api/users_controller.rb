@@ -20,6 +20,17 @@ class Api::UsersController < ApplicationController
         end 
     end 
 
+    def update
+        @user = current_user 
+        #debugger
+        if @user.update(user_params)
+            #debugger
+            render :show
+        else 
+            render json: ["Invalid Update"]
+        end 
+    end 
+
 
     private 
     def user_params
