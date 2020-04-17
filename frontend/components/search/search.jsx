@@ -1,4 +1,5 @@
 import React from 'react'
+import LunchMap from '../map/lunch_map'
 
 const burough_bounds = {
     staten: {
@@ -26,13 +27,23 @@ class Search extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.onSelect = this.onSelect.bind(this); 
+        this.buttonCheat = this.buttonCheat.bind(this); 
         this.state = {query: ''}; 
     }
 
-    onSelect(e){
+    buttonCheat(e){
         e.preventDefault(); 
-        this.props.updateFilter("bounds", burough_bounds[e.currentTarget.value])
+        
     }
+    onSelect(e){
+        
+        
+        this.props.updateUser({location: e.currentTarget.value}).then(() => this.props.history.push("/")) 
+        
+
+    }
+
+    
 
     handleChange(key){
     
@@ -53,20 +64,25 @@ class Search extends React.Component{
 
         return(
             <>
-                {/* <select className="search-select" onChange={this.onSelect}>
+                <div className="select-wrapper">
+                <select className="search-select" id="searchSelector"onChange={this.onSelect}>
+                    
                     <option value="" disabled selected>Select your neighborhood</option>
-                    <option value="manhattan">Manhattan</option>
-                    <option value="bronx">Bronx</option>
-                    <option value="brooklyn">Brooklyn</option>
-                    <option value="queens">Queens</option>
-                    <option value="staten">Staten Island</option>
-                </select> */}
+                    <option value="Manhattan">Manhattan</option>
+                    <option value="Bronx">Bronx</option>
+                    <option value="Brooklyn">Brooklyn</option>
+                    <option value="Queens">Queens</option>
+                    <option value="Staten Island">Staten Island</option>
+                    
+                </select>
+                    <button onClick={this.buttonCheat}><img src={window.dropdown} alt="" /></button>
+                </div>
 
             <form className="restaurant-lunch-search" onSubmit={this.handleSubmit}>
                 <input type="text" value={this.state.query} onChange={this.handleChange('query')} placeholder="Search by restaurant or meal"/>
                 <button><img src={window.search}/></button> 
             </form>
-
+            <div></div>
             </>
         )
     }

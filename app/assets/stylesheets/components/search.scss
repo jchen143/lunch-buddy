@@ -45,7 +45,7 @@ ul.no-meals-ul-search{
     width: 100%; 
     background-color: #F0F0F0;
     display: flex; 
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -72,4 +72,41 @@ ul.no-meals-ul-search{
     position: absolute; 
     height: 30px;
     width: 30px;    
+}
+
+.search-select{
+    margin-left: 20px; 
+    width: 400px;
+    height: 35px;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #757575; 
+    background-color: #FFFFFF; 
+    //-webkit-appearance: none;
+	// -moz-appearance: none;
+	// -ms-appearance: none;
+	//  -o-appearance: none;
+    // 	appearance: none;
+    
+  
+}
+
+.select-wrapper{
+    position: relative; 
+}
+
+
+.select-wrapper img {
+    position: absolute; 
+    height: 30px;
+    top: 2px; 
+     left: 388px; 
+    
+    
+}
+
+.search-select option{
+    font-size: 14px;
+    color: #757575; 
+    background-color: #FFFFFF; 
 }

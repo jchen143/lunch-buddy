@@ -16,7 +16,8 @@ const msp = (state) => {
         restaurants: state.entities.restaurants,
         location: currentLocation(state), 
         currentUser: state.session.currentUserId,
-        errors: state.errors.reservationForm
+        errors: state.errors.reservationForm, 
+
     }
 }
 

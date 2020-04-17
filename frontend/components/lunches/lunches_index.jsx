@@ -10,7 +10,7 @@ class LunchesIndex extends React.Component{
     render(){
         let restaurants = this.props.restaurants
         let that = this;
-        debugger
+        //debugger
         let lunches = this.props.lunches.map(lunch => {
             //debugger
             if (Object.keys(restaurants).includes((lunch.restaurant_id).toString())){
@@ -42,7 +42,7 @@ class LunchesIndex extends React.Component{
             className="lunch-index-ul"
         }
        
-        debugger
+        //debugger
         
         return(
             <ul className={className}>

@@ -11,7 +11,9 @@ class Api::ReservationsController < ApplicationController
     def create
         @reservation = Reservation.new(reservation_params) #remember to pass up the current user ID when you you do this on frontend
         #debugger
+       # debugger
         if @reservation.save
+            #debugger
             #debugger 
             num = current_user.remaining_meals - 1
             current_user.update!(remaining_meals: num)
