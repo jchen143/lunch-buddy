@@ -15,6 +15,11 @@
 
 ## Notable Features and Challenges: 
 
+### Filtered search within map bounds: 
+
+### Custom one-per-day validation: 
+
+### Lunch Index change upon moving map
 
 ## Future Direction: 
 * Filter by size
