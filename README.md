@@ -1,24 +1,6 @@
-# README
+# LunchBud
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[LunchBud](https://lunchbud.herokuapp.com/#/), a clone of [MealPal](https://mealpal.com/), is a subscription-based service where users get access to a bevy of lunchtime meal options from participating restaurants. It is built with Ruby on Rails, a PostgreSQL Database, Javascript, React, and Redux.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
