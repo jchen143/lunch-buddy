@@ -21,7 +21,6 @@ export default class MarkerManager {
     }
 
     createMarkerFromRestaurant(restaurant){
-            //debugger
             let myLatLng = new google.maps.LatLng(restaurant.latitude, restaurant.longitude);
             let marker = new google.maps.Marker({
                 id: restaurant.id,
@@ -29,7 +28,7 @@ export default class MarkerManager {
                 title: restaurant.name,
                 map: this.map
             })
-            //marker.setMap(this.map)
+            
             this.markers[restaurant.id] = marker;   
         
     }

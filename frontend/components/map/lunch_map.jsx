@@ -34,7 +34,6 @@ class LunchMap extends React.Component{
             zoom: 13
         };
 
-        // wrap this.mapNode in a Google Map
         this.map = new google.maps.Map(this.mapNode, mapOptions);
         
        
@@ -45,8 +44,6 @@ class LunchMap extends React.Component{
     }
 
     componentDidMount() {
-        // set the map to show SF
-       //debugger
         this.initMap();
         this.registerListeners(); 
         this.MarkerManager.updateMarkers(this.props.restaurants);
@@ -55,7 +52,6 @@ class LunchMap extends React.Component{
     }
 
     registerListeners() {
-        //
         this.map.addListener('idle', () => {
             let latLongBnds = this.map.getBounds();
             let northEastLat = latLongBnds.getNorthEast().lat();
@@ -67,17 +63,17 @@ class LunchMap extends React.Component{
 
             let bounds = { southWest: { lat: southWestLat, lng: southWestLng }, northEast: { lat: northEastLat, lng: northEastLng } };
            
-            //debugger
+          
             this.props.updateFilter('bounds', bounds);
-            //debugger
+   
         })
        
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        //debugger
+      
         if (this.props.restaurants != prevProps.restaurants) {
-            //this.initMap(); 
+           
             this.MarkerManager.updateMarkers(this.props.restaurants);
         }
 

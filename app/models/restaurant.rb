@@ -18,12 +18,7 @@ class Restaurant < ApplicationRecord
         class_name: :Lunch 
 
     def self.in_bounds(bounds)
-        # google map bounds will be in the following format:
-            # {
-            #   "northEast"=> {"lat"=>"37.80971", "lng"=>"-122.39208"},
-            #   "southWest"=> {"lat"=>"37.74187", "lng"=>"-122.47791"}
-            # }
-            #... query logic goes here
+        
             
             min_lat = bounds["southWest"]["lat"].to_f
             max_lat = bounds["northEast"]["lat"].to_f
@@ -37,11 +32,9 @@ class Restaurant < ApplicationRecord
     end
 
      def self.search(query)
-        #debugger
-
-        #self.where("")
+        
         records_array = self.where("lower(lunches.name) LIKE ? OR lower(lunches.description) LIKE ? OR lower(restaurants.name) LIKE ? OR lower(restaurants.address) LIKE ?", "%#{query.downcase}%" , "%#{query.downcase}%", "%#{query.downcase}%", "%#{query.downcase}%")
-        #debugger
+       
 
         return records_array
     end 

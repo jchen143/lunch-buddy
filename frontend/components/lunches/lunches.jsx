@@ -17,14 +17,11 @@ class Lunches extends React.Component {
     }
 
     reRender() {
-        //debugger
         this.forceUpdate();
     }
+
     componentDidMount(){
-      
         this.props.fetchLunches();
-        //this.props.fetchRestaurants({ southWest: { lat: 40.767971, lng: -73.981991 }, northEast: { lat: 40.799565, lng: -73.935342 } }); 
-        //this.props.fetchRestaurants({ southWest: { lat: 40.7352421, lng: -73.9960729 }, northEast: { lat: 40.7352423, lng: -73.9960727} });
     }
     
     
@@ -64,6 +61,8 @@ class Lunches extends React.Component {
                         openModal ={this.props.openModal}
                         deleteReservationErrors={this.props.deleteReservationErrors}
                         receiveTempLunchId = {this.props.receiveTempLunchId}/>  
+
+                        
                         <LunchMap location={this.props.location} restaurants={this.props.restaurants} updateFilter={this.props.updateFilter}/> 
                     </div>
                 </div>
