@@ -7,6 +7,8 @@
      href="<%= image_url('favicon.png')%>">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    
     <meta property="og:image" content="<%=image_url('lunch_bud_sc.JPG')%>" />
 
   <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.google[:api_key]}" %>
