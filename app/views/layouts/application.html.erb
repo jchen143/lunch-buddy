@@ -8,8 +8,12 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    
-    <meta property="og:image" content="<%=image_url('lunch_bud_sc.JPG')%>" />
+
+    <meta property="og:title" content="LunchBud" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://lunchbud.herokuapp.com/" />
+    <meta property="og:image" content='<%= image_url asset_path('lunch_bud_sc.JPG') %>'/>
+    <meta property="og:description" content="Let's Lunch!" />
 
   <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.google[:api_key]}" %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
