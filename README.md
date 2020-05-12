@@ -18,7 +18,7 @@
 ### Filtered search within map bounds: 
 
 ### Custom one-per-day validation: 
-A user is only allowed to reserve a meal once per day. In order to prevent conflicting reservations, I wrote a custom validation in the reservation model: 
+A user is only allowed to reserve a meal once per day. In order to prevent conflicting reservations, I wrote a custom validation in the Reservation model: 
  ``` Ruby
  def ensure_one_per_day
         user = User.find(diner_id)
@@ -26,9 +26,24 @@ A user is only allowed to reserve a meal once per day. In order to prevent confl
         if !(user.reservations.empty? || Time.now.utc.strftime("%A, %d/%m/%Y") != user.reservations.last.created_at.strftime("%A, %d/%m/%Y"))
             errors.add(:daily_limit, "You can only reserve one meal per day ")
         end 
+end 
+```
+On the frontend, I was able to use the custom error message to display the illegal request to the user, but give them the option to continue on with their new reservation and cancel their old one: 
+![LunchBudLogo](https://github.com/jchen143/lunch-buddy/blob/master/app/assets/images/cancel_modal.JPG)
 
+To accomplish this, I added a click handler to the modal button you see above (temp_lunch_id refers to the new lunch the user is trying to reserve): 
 
-    end 
+``` Javascript
+     handleClick(e){
+        let res_id = parseInt(this.props.reservationId);
+        let current_user_id = parseInt(this.props.currentUserId); 
+        let temp_lunch_id = parseInt(this.props.tempLunchId)
+
+        this.props.cancelReservation(res_id).then(() => this.props.createReservation({ diner_id: current_user_id, lunch_id: temp_lunch_id }).then(() => this.props.openModal('successful_reservation')))
+        
+        this.props.closeModal()
+    }
+
 ```
 
 ### Lunch Index change upon moving map
