@@ -52,10 +52,9 @@ class Search extends React.Component{
 
     handleSubmit(e){
         e.preventDefault(); 
-        //debugger
         this.props.searchRestaurants(this.state, this.props.bounds); 
         this.setState({query: ''}); 
-       // debugger
+       
 
 
     }

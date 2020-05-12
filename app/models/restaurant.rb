@@ -20,10 +20,10 @@ class Restaurant < ApplicationRecord
     def self.in_bounds(bounds)
         
             
-            min_lat = bounds["southWest"]["lat"].to_f
-            max_lat = bounds["northEast"]["lat"].to_f
-            min_long= bounds["southWest"]["lng"].to_f
-            max_long = bounds["northEast"]["lng"].to_f
+        min_lat = bounds["southWest"]["lat"].to_f
+        max_lat = bounds["northEast"]["lat"].to_f
+        min_long= bounds["southWest"]["lng"].to_f
+        max_long = bounds["northEast"]["lng"].to_f
            
         records_array = self.where("(latitude > ? AND latitude < ?) AND (longitude > ? AND longitude < ?)" , min_lat, max_lat, min_long, max_long)
   

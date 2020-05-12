@@ -24,7 +24,7 @@ class Api::UsersController < ApplicationController
         @user = current_user 
         #debugger
         if @user.update(user_params)
-            #debugger
+            
             render :show
         else 
             render json: ["Invalid Update"]
