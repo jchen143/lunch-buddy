@@ -34,7 +34,7 @@ On the frontend, I was able to use the custom error message to display the illeg
 To accomplish this, I added a click handler to the modal button you see above (temp_lunch_id refers to the new lunch the user is trying to reserve): 
 
 ``` Javascript
-     handleClick(e){
+handleClick(e){
         let res_id = parseInt(this.props.reservationId);
         let current_user_id = parseInt(this.props.currentUserId); 
         let temp_lunch_id = parseInt(this.props.tempLunchId)
@@ -42,7 +42,7 @@ To accomplish this, I added a click handler to the modal button you see above (t
         this.props.cancelReservation(res_id).then(() => this.props.createReservation({ diner_id: current_user_id, lunch_id: temp_lunch_id }).then(() => this.props.openModal('successful_reservation')))
         
         this.props.closeModal()
-    }
+}
 
 ```
 
