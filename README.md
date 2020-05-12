@@ -21,12 +21,13 @@ A user can search for meals based on keywords that match a meal's description, n
 In order to achieve this functionality, LunchBud stores the current bounds of the map in a slice of state, and passes that information along with every search query. 
 
 ```Ruby
+#Restaurants Controller 
 def index
        
        if params[:search]
-        @restaurants = Restaurant.in_bounds(params[:bounds]).joins(:lunches).search(params[:search][:query])
+              @restaurants = Restaurant.in_bounds(params[:bounds]).joins(:lunches).search(params[:search][:query])
        else 
-        @restaurants = Restaurant.in_bounds(params[:bounds])
+              @restaurants = Restaurant.in_bounds(params[:bounds])
        end 
 end 
 ```
@@ -35,6 +36,7 @@ end
 ### Custom one-per-day validation: 
 A user is only allowed to reserve a meal once per day. In order to prevent conflicting reservations, I wrote a custom validation in the Reservation model: 
  ``` Ruby
+ #Reservation Model
  def ensure_one_per_day
         user = User.find(diner_id)
 
@@ -49,6 +51,7 @@ On the frontend, I was able to use the custom error message to display the illeg
 To accomplish this, I added a click handler to the modal button you see above (temp_lunch_id refers to the new lunch the user is trying to reserve). Once the user confirms cancellation of his/her old reservation, the new reservation is executed as a part of the success callback of the cancellation action: 
 
 ``` Javascript
+//Unsuccessful Reservation Modal Component 
 handleClick(e){
         let res_id = parseInt(this.props.reservationId);
         let current_user_id = parseInt(this.props.currentUserId); 
