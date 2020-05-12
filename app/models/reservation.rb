@@ -39,15 +39,10 @@ class Reservation < ApplicationRecord
     
     def ensure_one_per_day
         user = User.find(diner_id)
-        #debugger
 
         if !(user.reservations.empty? || Time.now.utc.strftime("%A, %d/%m/%Y") != user.reservations.last.created_at.strftime("%A, %d/%m/%Y"))
             errors.add(:daily_limit, "You can only reserve one meal per day ")
         end 
-
-        # if !(user.reservations.empty? || Time.now.utc.strftime - user.reservations.last.created_at > 1800) #this is for 30 min reservations.
-        #     errors.add(:daily_limit, "You can only reserve one meal per day ")
-        # end 
 
 
     end 
