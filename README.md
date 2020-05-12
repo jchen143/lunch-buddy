@@ -31,7 +31,7 @@ end
 On the frontend, I was able to use the custom error message to display the illegal request to the user, but give them the option to continue on with their new reservation and cancel their old one: 
 ![LunchBudLogo](https://github.com/jchen143/lunch-buddy/blob/master/app/assets/images/cancel_modal.JPG)
 
-To accomplish this, I added a click handler to the modal button you see above (temp_lunch_id refers to the new lunch the user is trying to reserve): 
+To accomplish this, I added a click handler to the modal button you see above (temp_lunch_id refers to the new lunch the user is trying to reserve). Once the user confirms cancellation of his/her old reservation, the new reservation is executed as a part of the success callback of the cancellation action: 
 
 ``` Javascript
 handleClick(e){
