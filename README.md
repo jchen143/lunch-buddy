@@ -8,7 +8,7 @@
 * PostgreSQl 
 * React 
 * Redux 
-* Vanilla Javascript 
+* Google Maps API 
 * AJAX
 * CSS 
 * Heroku
