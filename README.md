@@ -18,6 +18,18 @@
 ### Filtered search within map bounds: 
 
 ### Custom one-per-day validation: 
+A user is only allowed to reserve a meal once per day. In order to prevent conflicting reservations, I wrote a custom validation in the reservation model: 
+ ``` Ruby
+ def ensure_one_per_day
+        user = User.find(diner_id)
+
+        if !(user.reservations.empty? || Time.now.utc.strftime("%A, %d/%m/%Y") != user.reservations.last.created_at.strftime("%A, %d/%m/%Y"))
+            errors.add(:daily_limit, "You can only reserve one meal per day ")
+        end 
+
+
+    end 
+```
 
 ### Lunch Index change upon moving map
 
