@@ -16,6 +16,23 @@
 ## Notable Features and Challenges: 
 
 ### Filtered search within map bounds: 
+A user can search for meals based on keywords that match a meal's description, name, or restaurant name. However, the search is limited only to restaurants that are currently in bounds on the map. 
+
+In order to achieve this functionality, LunchBud stores the current bounds of the map in a slice of state, and passes that information along with every search query. 
+
+```Ruby
+    def index
+       
+        if params[:search]
+
+            @restaurants = Restaurant.in_bounds(params[:bounds]).joins(:lunches).search(params[:search][:query])
+
+        else 
+            @restaurants = Restaurant.in_bounds(params[:bounds])
+        end 
+    end 
+```
+
 
 ### Custom one-per-day validation: 
 A user is only allowed to reserve a meal once per day. In order to prevent conflicting reservations, I wrote a custom validation in the Reservation model: 
@@ -45,8 +62,6 @@ handleClick(e){
 }
 
 ```
-
-### Lunch Index change upon moving map
 
 ## Future Direction: 
 * Filter by size
