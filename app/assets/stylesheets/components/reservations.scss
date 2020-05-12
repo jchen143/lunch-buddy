@@ -32,16 +32,12 @@ height: 200px;
 
 .res-info{
     
-    //background-attachment: fixed;
+    
     background-repeat: no-repeat;
-    //background-size: cover;
-    //
+   
    
     margin-bottom: 0; 
-    //background-size: auto; 
     background-position: top;
-    //margin: 0 auto;
-    //padding: 56px 0;
     width: 100%; 
     box-sizing: border-box; 
 
@@ -52,7 +48,7 @@ height: 200px;
     justify-content: space-between;
 
     padding-top: 10px;
-
+    
     
 }
 
@@ -76,7 +72,7 @@ height: 200px;
 
 .res-lunch-name, .res-restaurant-address{
     font-size: 14px; 
-    
+
 }
 
 .current-res-title {
@@ -130,4 +126,8 @@ height: 200px;
 .try-new{
     height: 180px;
     width: 190px; 
+}
+
+.res-lunch-name, .res-restaurant-address, .res-restaurant-name{
+    text-shadow: 2px 1px 1px black; 
 }

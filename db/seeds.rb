@@ -29,6 +29,8 @@ Restaurant.create([{name: 'Risotto e Boccio', address: '43 Queens Blvd',latitude
 Restaurant.create([{name: 'Checkmate in Queens', address: '10 Utopia Pkwy',latitude: 40.7255828, longitude: -73.7941393}])
 Restaurant.create([{name: 'Sweet Chick', address: '10 Utopia Pkwy',latitude: 40.67986932855128, longitude: -73.97645332888183}])
 Restaurant.create([{name: "Big Danny's", address: '1400 Fulton St',latitude: 40.680317, longitude: -73.943119}])
+Restaurant.create([{name: "Moftah", address: '413 E 84 St',latitude: 40.7752853, longitude: -73.9496612}])
+
 
 
 lunch_1 = Lunch.create(name: 'Fullstack Pancakes', description: 'Breakfast for lunch!', image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[0].id)
@@ -90,3 +92,7 @@ lunch_14.photo.attach(io: file_14, filename: 'fried-chicken-sandwich.jpg')
 lunch_15 = Lunch.create(name: 'BBQ Chicken', description: 'Scrumptious',image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[14].id)
 file_15 = open('https://lunch-bud-seeds.s3.amazonaws.com/bbq-chicken.jpg')
 lunch_15.photo.attach(io: file_15, filename: 'bbq-chicken.jpg')
+
+lunch_16 = Lunch.create(name: 'Shwarma', description: 'HOT sauce',image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[15].id)
+file_16 = open('https://lunch-bud-seeds.s3.amazonaws.com/shwarma.jpg')
+lunch_16.photo.attach(io: file_16, filename: 'shwarma.jpg')
