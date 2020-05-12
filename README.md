@@ -18,6 +18,8 @@
 ### Filtered search within map bounds: 
 A user can search for meals based on keywords that match a meal's name, description, or restaurant name. However, the search is limited only to restaurants that are currently in bounds on the map. 
 
+![Search](https://github.com/jchen143/lunch-buddy/blob/master/app/assets/images/search_demo.JPG)
+
 In order to achieve this functionality, LunchBud stores the current bounds of the map in a slice of state, and passes that information along with every search query. 
 
 ```Ruby
