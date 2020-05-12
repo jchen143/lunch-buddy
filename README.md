@@ -21,16 +21,14 @@ A user can search for meals based on keywords that match a meal's description, n
 In order to achieve this functionality, LunchBud stores the current bounds of the map in a slice of state, and passes that information along with every search query. 
 
 ```Ruby
-    def index
+def index
        
-        if params[:search]
-
-            @restaurants = Restaurant.in_bounds(params[:bounds]).joins(:lunches).search(params[:search][:query])
-
-        else 
-            @restaurants = Restaurant.in_bounds(params[:bounds])
-        end 
-    end 
+       if params[:search]
+        @restaurants = Restaurant.in_bounds(params[:bounds]).joins(:lunches).search(params[:search][:query])
+       else 
+        @restaurants = Restaurant.in_bounds(params[:bounds])
+       end 
+end 
 ```
 
 
