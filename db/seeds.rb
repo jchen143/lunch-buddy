@@ -40,7 +40,12 @@ Restaurant.create([{name: "Church Grill", address: '1 Church St.',latitude: 40.8
 Restaurant.create([{name: "Joseph's", address: '311 East 60th St',latitude: 40.761600, longitude: -73.962350}])
 Restaurant.create([{name: "STK by Sarjil", address: '1114 6th Ave',latitude: 40.754226, longitude: -73.980916}])
 Restaurant.create([{name: "JaeSong", address: '1430 Broadway',latitude: 40.754024, longitude: -73.986274}])
-Restaurant.create([{name: "JaeSong", address: '1430 Broadway',latitude: 40.754024, longitude: -73.986274}])
+Restaurant.create([{name: "Thai Guy", address: '135 Delancey St',latitude: 40.717608, longitude: -73.986999}])
+Restaurant.create([{name: "Feng Ling", address: '615 W 173rd St',latitude: 40.844865, longitude: -73.938445}])
+Restaurant.create([{name: "Pizza Party", address: '137 W 141st St',latitude: 40.818795, longitude: -73.940028}])
+Restaurant.create([{name: "Taste of Delhi", address: '12 Rhinelander Ave',latitude: 40.851133, longitude: -73.855595}])
+Restaurant.create([{name: "Not McDonald's", address: '11 White Plains Ln',latitude: 40.832355, longitude: -73.862331}])
+Restaurant.create([{name: "Mamadeaux", address: '19 Sand Plains Ln',latitude: 40.844100, longitude: -73.848814}])
 
 lunch_1 = Lunch.create(name: 'Fullstack Pancakes', description: 'Breakfast for lunch!', image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[0].id)
 file_1 = open('https://lunch-bud-seeds.s3.amazonaws.com/pancakes.jpg')
@@ -145,4 +150,30 @@ lunch_25.photo.attach(io: file_25, filename: 'steak.jpeg')
 lunch_26 = Lunch.create(name: 'Soundcloud Salmon', description: 'Night Night',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[25].id)
 file_26 = open('https://lunch-bud-seeds.s3.amazonaws.com/salmon.jpeg')
 lunch_26.photo.attach(io: file_26, filename: 'salmon.jpeg')
+
+lunch_27 = Lunch.create(name: 'Pad Thai', description: 'Spices on the side',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[26].id)
+file_27 = open('https://lunch-bud-seeds.s3.amazonaws.com/pad_thai.jpeg')
+lunch_27.photo.attach(io: file_27, filename: 'pad_thai.jpeg')
+
+lunch_28 = Lunch.create(name: 'Dim Sum', description: 'Shrimp Galore',image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[27].id)
+file_28 = open('https://lunch-bud-seeds.s3.amazonaws.com/dimsum.jpeg')
+lunch_28.photo.attach(io: file_28, filename: 'dimsum.jpeg')
+
+lunch_29 = Lunch.create(name: 'Hawaiian Pizza', description: "Sweet and Salty",image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[28].id)
+file_29 = open('https://lunch-bud-seeds.s3.amazonaws.com/hawaiian.jpeg')
+lunch_29.photo.attach(io: file_29, filename: 'hawaiian.jpeg')
+
+lunch_30 = Lunch.create(name: 'Chicken Tandoori', description: "Classic Indian Fare",image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[29].id)
+file_30 = open('https://lunch-bud-seeds.s3.amazonaws.com/tandoori.jpeg')
+lunch_30.photo.attach(io: file_30, filename: 'tandoori.jpeg')
+
+lunch_31 = Lunch.create(name: 'Chicken MacNuggets', description: "Copyright Infringement?",image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[30].id)
+file_31 = open('https://lunch-bud-seeds.s3.amazonaws.com/mcnuggets.jpeg')
+lunch_31.photo.attach(io: file_31, filename: 'mcnuggets.jpeg')
+
+lunch_32 = Lunch.create(name: 'Crawfish Etouffee', description: "Cajun Seafood",image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[31].id)
+file_32 = open('https://lunch-bud-seeds.s3.amazonaws.com/etouffee.jpeg')
+lunch_32.photo.attach(io: file_32, filename: 'etouffee.jpeg')
+
+
 
