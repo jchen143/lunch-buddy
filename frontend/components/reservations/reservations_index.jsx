@@ -83,7 +83,7 @@ class ReservationIndex extends React.Component{
                    default_li = (<li className="current-res-li">
                        <div className="current-res-title">{day_of_reservation}'s Lunch!</div>
 
-                       <div className="res-info" style={{ backgroundImage: `url(${lunch.photoUrl})` }}>
+                       <div className="res-info" style={{ backgroundImage: `url(${lunch.photoUrl})`}}>
                            <div></div>
                            <div></div>
                            <div></div>

@@ -30,8 +30,17 @@ Restaurant.create([{name: 'Checkmate in Queens', address: '10 Utopia Pkwy',latit
 Restaurant.create([{name: 'Sweet Chick', address: '10 Utopia Pkwy',latitude: 40.67986932855128, longitude: -73.97645332888183}])
 Restaurant.create([{name: "Big Danny's", address: '1400 Fulton St',latitude: 40.680317, longitude: -73.943119}])
 Restaurant.create([{name: "Moftah", address: '413 E 84 St',latitude: 40.7752853, longitude: -73.9496612}])
-
-
+Restaurant.create([{name: "Camila's", address: '2450 Broadway',latitude: 40.7910963, longitude: -73.9739914}])
+Restaurant.create([{name: "Levi's", address: '167 W 74th St',latitude: 40.7790603, longitude: -73.9883463}])
+Restaurant.create([{name: "Museum Dining", address: '200 Central Park W',latitude: 40.781018, longitude: -73.9760527}])
+Restaurant.create([{name: "The Diner", address: '391 Amsterdam Ave',latitude: 40.7805188, longitude: -73.9783785}])
+Restaurant.create([{name: "The Waterfront", address: '180 Riverside Dr',latitude: 40.774992, longitude: -73.944829}])
+Restaurant.create([{name: "Jiro's", address: '1586 1st Ave',latitude: 40.7745479, longitude: -73.9529392}])
+Restaurant.create([{name: "Church Grill", address: '1 Church St.',latitude: 40.804316, longitude: -73.953448}])
+Restaurant.create([{name: "Joseph's", address: '311 East 60th St',latitude: 40.761600, longitude: -73.962350}])
+Restaurant.create([{name: "STK by Sarjil", address: '1114 6th Ave',latitude: 40.754226, longitude: -73.980916}])
+Restaurant.create([{name: "JaeSong", address: '1430 Broadway',latitude: 40.754024, longitude: -73.986274}])
+Restaurant.create([{name: "JaeSong", address: '1430 Broadway',latitude: 40.754024, longitude: -73.986274}])
 
 lunch_1 = Lunch.create(name: 'Fullstack Pancakes', description: 'Breakfast for lunch!', image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[0].id)
 file_1 = open('https://lunch-bud-seeds.s3.amazonaws.com/pancakes.jpg')
@@ -96,3 +105,44 @@ lunch_15.photo.attach(io: file_15, filename: 'bbq-chicken.jpg')
 lunch_16 = Lunch.create(name: 'Shwarma', description: 'HOT sauce',image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[15].id)
 file_16 = open('https://lunch-bud-seeds.s3.amazonaws.com/shwarma.jpg')
 lunch_16.photo.attach(io: file_16, filename: 'shwarma.jpg')
+
+lunch_17 = Lunch.create(name: 'Ziti', description: 'Perfection',image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[16].id)
+file_17 = open('https://lunch-bud-seeds.s3.amazonaws.com/ziti.jpg')
+lunch_17.photo.attach(io: file_17, filename: 'ziti.jpg')
+
+lunch_18 = Lunch.create(name: 'Lox Bagel', description: 'Toasted',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[17].id)
+file_18 = open('https://lunch-bud-seeds.s3.amazonaws.com/lox.jpeg')
+lunch_18.photo.attach(io: file_18, filename: 'lox.jpeg')
+
+lunch_19 = Lunch.create(name: 'Dinosaur Bones', description: 'Ancient',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[18].id)
+file_19 = open('https://lunch-bud-seeds.s3.amazonaws.com/dino.jpg')
+lunch_19.photo.attach(io: file_19, filename: 'dinosaur.jpg')
+
+lunch_20 = Lunch.create(name: 'Steak & Eggs', description: 'Protein filled!',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[19].id)
+file_20 = open('https://lunch-bud-seeds.s3.amazonaws.com/steak_eggs.jpg')
+lunch_20.photo.attach(io: file_20, filename: 'bacon.jpg')
+
+lunch_21 = Lunch.create(name: 'Cod', description: 'Cheerio',image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[20].id)
+file_21 = open('https://lunch-bud-seeds.s3.amazonaws.com/cod.jpeg')
+lunch_21.photo.attach(io: file_21, filename: 'fish_chips.jpg')
+
+lunch_22 = Lunch.create(name: 'Omakase', description: 'Takeout Omakase',image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[21].id)
+file_22 = open('https://lunch-bud-seeds.s3.amazonaws.com/omakase.jpg')
+lunch_22.photo.attach(io: file_22, filename: 'omakase.jpg')
+
+lunch_23 = Lunch.create(name: 'Mini Hamburgers (3)', description: 'Best in town',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[22].id)
+file_23 = open('https://lunch-bud-seeds.s3.amazonaws.com/mini_burger.jpeg')
+lunch_23.photo.attach(io: file_23, filename: 'mini_burger.jpeg')
+
+lunch_24 = Lunch.create(name: 'A Ton of Beer', description: 'Are you ok?',image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[23].id)
+file_24 = open('https://lunch-bud-seeds.s3.amazonaws.com/beer.jpg')
+lunch_24.photo.attach(io: file_24, filename: 'beer.jpg')
+
+lunch_25 = Lunch.create(name: 'Filet Mignon', description: 'Medium Rare',image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[24].id)
+file_25 = open('https://lunch-bud-seeds.s3.amazonaws.com/steak.jpeg')
+lunch_25.photo.attach(io: file_25, filename: 'steak.jpeg')
+
+lunch_26 = Lunch.create(name: 'Soundcloud Salmon', description: 'Night Night',image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[25].id)
+file_26 = open('https://lunch-bud-seeds.s3.amazonaws.com/salmon.jpeg')
+lunch_26.photo.attach(io: file_26, filename: 'salmon.jpeg')
+
