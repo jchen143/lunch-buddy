@@ -67,6 +67,13 @@ class LunchMap extends React.Component{
             this.props.updateFilter('bounds', bounds);
    
         })
+
+        let scope_windows = this.MarkerManager.infoWindows ;
+        this.map.addListener('click' , () => {
+            for(let key in scope_windows){
+                scope_windows[key].close();
+            }
+        })
        
     }
 

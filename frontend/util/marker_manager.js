@@ -2,7 +2,8 @@ export default class MarkerManager {
     constructor(map){
         this.map = map;
         this.markers = {}; 
-        debugger
+        this.infoWindows = {}; 
+        
     }
 
     updateMarkers(restaurants){
@@ -23,30 +24,51 @@ export default class MarkerManager {
     createMarkerFromRestaurant(restaurant){
             let myLatLng = new google.maps.LatLng(restaurant.latitude, restaurant.longitude);
 
+            let meal_info = document.createElement('div'); 
+            
+            let food_pic_url = restaurant.lunch_url; 
+            let food_pic = document.createElement('img'); 
+            
+            food_pic.src = food_pic_url; 
+
+            meal_info.appendChild(food_pic); 
            
-            let marker = new MarkerWithLabel({
+        let infoWindow = new google.maps.InfoWindow({
+            content: meal_info
+        });
+
+        this.infoWindows[restaurant.id] = infoWindow; 
+       
+            let marker = new google.maps.Marker({
                 id: restaurant.id,
                 position: myLatLng,
                 title: restaurant.name,
                 map: this.map, 
                 labelContent: restaurant.name, 
-                labelClass: `the-marker marker-label-${restaurant.id}`,
-                labelVisible: false
-                
+                labelClass: `marker-label-${restaurant.id}`
             })
-            // let marker = new google.maps.Marker({
-            //     id: restaurant.id,
-            //     position: myLatLng,
-            //     title: restaurant.name,
-            //     map: this.map, 
-            //     labelContent: restaurant.name, 
-            //     labelClass: `marker-label-${restaurant.id}`
-            // })
             
             this.markers[restaurant.id] = marker;   
+        
+        
+
+        let scope_info_windows = this.infoWindows; 
         debugger
-        marker.addListener('mouseover', () => this.handleHoverOn(marker));
-        marker.addListener('mouseout', () => this.handleHoverOff(marker));
+        marker.addListener('mouseover', function() {
+            infoWindow.open(this.map, marker);
+          
+            for(let key in scope_info_windows){
+                debugger
+                if(key != marker.id){
+                    scope_info_windows[key].close(); 
+                }
+            }
+        });
+
+        
+
+    
+       // marker.addListener('mouseout', () => this.handleHoverOff(marker));
 
         let lunchItem = document.getElementById(`lunch-${marker.id.toString()}`);
 
@@ -60,6 +82,7 @@ export default class MarkerManager {
     handleHoverOn(marker){
         let the_label = document.getElementsByClassName(`marker-label-${marker.id}`)[0];
         the_label.style.display = 'block'; 
+        //infoWindow.open()
     }
 
     handleHoverOff(marker){
