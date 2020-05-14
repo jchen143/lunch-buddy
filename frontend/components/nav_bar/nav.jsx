@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-//MAKE THE NAV VARIABLE BASED ON IF LOGGED IN OR NOT CONTAINER TAKES IN SESSION ID
+
 
 class Nav extends React.Component {
     constructor(props){
@@ -26,34 +26,59 @@ class Nav extends React.Component {
 
     render(){
 
+        let contact = 
+        <div className="contact-info"> 
+                <a href="https://jchen143.github.io">
+                    <img src={window.personal_site} alt="linkedin" />
+                    <p>Personal Site</p>
+                </a>
+            <a href="https://www.linkedin.com/in/jchen143/">
+                <img src={window.linkedin} alt="linkedin" />
+                <p>Linkedin</p>
+            </a>
+                <a href="https://github.com/jchen143">
+                    <img src={window.github} alt="github" />
+                    <p>Github</p>
+            </a>
+            <a href="https://github.com/jchen143">
+                    <img src={window.angellist} alt="angellist" />
+                    <p>Angel List</p>
+            </a>
+        </div>
         let navRight;
         
         if (!this.props.loggedIn){
-            navRight = <Link className="home-login-container" to='/login'>Log In</Link>
+            navRight = 
+            <div className="navRight">
+                {contact}
+                <Link className="home-login-container" to='/login'>Log In</Link>
+            </div>
         }else{
             navRight = (
+                <div className="navRight">
+                    {contact}
+                    <div className="dropdown-trigger">
 
-                <div className="dropdown-trigger">
+                        <button className="menu-dropdown" onClick={this.handleClick}>
+                            <img src={window.menu} />
+                            <p className="menu">Menu</p>
+                        </button>
+                        <ul className={this.state.active ? "dropdown-options active" : "dropdown-options hidden"}> 
+                            
+                            <li className="li-clickable" onClick={this.handleLogout}>
+                                <img src={window.menuLogout}/>
+                                <p>Logout</p>
+                            </li>
+                            {/* <li className="li-clickable" onClick={this.handleLogout}>
+                                Lunch
+                            </li>
+                            <li className="li-clickable" onClick={this.handleLogout}>
+                                My Account
+                            </li> */}
 
-                    <button className="menu-dropdown" onClick={this.handleClick}>
-                        <img src={window.menu} />
-                        <p className="menu">Menu</p>
-                    </button>
-                    <ul className={this.state.active ? "dropdown-options active" : "dropdown-options hidden"}> 
-                        
-                        <li className="li-clickable" onClick={this.handleLogout}>
-                            <img src={window.menuLogout}/>
-                            <p>Logout</p>
-                        </li>
-                        {/* <li className="li-clickable" onClick={this.handleLogout}>
-                            Lunch
-                        </li>
-                        <li className="li-clickable" onClick={this.handleLogout}>
-                            My Account
-                        </li> */}
-
-                    </ul>
-                
+                        </ul>
+                    
+                    </div>
                 </div>
             )
         }

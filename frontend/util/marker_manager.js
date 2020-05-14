@@ -54,7 +54,7 @@ export default class MarkerManager {
 
         let scope_info_windows = this.infoWindows; 
         debugger
-        marker.addListener('mouseover', function() {
+        marker.addListener('click', function() {
             infoWindow.open(this.map, marker);
           
             for(let key in scope_info_windows){

@@ -10,7 +10,7 @@ const Footer = (props) => {
                     
                 <div className="footer-links">
                     <a href="https://www.linkedin.com/in/jonathan-chen-a63122ba/">LinkedIn</a>
-                    <a href="https://www.instagram.com/influencerjo/?hl=en">Influencing</a>
+                    <a href="http://jchen143.github.io/">Personal Site</a>
                     <a href="https://github.com/jchen143">Github</a>
                 </div>
             </div>
