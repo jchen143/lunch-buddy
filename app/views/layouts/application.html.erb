@@ -18,11 +18,12 @@
   <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.google[:api_key]}" %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Patua+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Roboto:ital,wght@0,100;0,500;1,700&display=swap" rel="stylesheet">
-    
+    <script src="http://cdn.sobekrepository.org/includes/gmaps-markerwithlabel/1.9.1/gmaps-markerwithlabel-1.9.1.js" type="text/javascript"></script>
 
    <script src="https://kit.fontawesome.com/582a679bcd.js" crossorigin="anonymous"></script>
     <script type="text/javascript">

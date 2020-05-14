@@ -2,7 +2,7 @@ import React from 'react'
 import ReservationForm from '../reservations/reservation_form'
 const LunchIndexItem = (props) => {
     let { lunch, restaurant } = props; 
-    
+    debugger
 
     return (
         <li className="lunch-li" key={lunch.id}>
@@ -13,7 +13,7 @@ const LunchIndexItem = (props) => {
                 deleteReservationErrors={props.deleteReservationErrors}
                 receiveTempLunchId={props.receiveTempLunchId}/>
 
-            <div className="ken-ting-solution">
+            <div className="ken-ting-solution" id={`lunch-${lunch.restaurant_id.toString()}`}>
                 <div className="item-header">Lunch</div>
                 <img src={lunch.photoUrl} />
                 <p className="lunch-name">{lunch.name}</p>
