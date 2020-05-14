@@ -2,7 +2,7 @@ import React from 'react'
 import ReservationForm from '../reservations/reservation_form'
 const LunchIndexItem = (props) => {
     let { lunch, restaurant } = props; 
-    debugger
+    
 
     return (
         <li className="lunch-li" key={lunch.id}>

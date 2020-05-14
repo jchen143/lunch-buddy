@@ -62,6 +62,9 @@ Restaurant.create([{name: "Flatbush Flapjacks", address: '1 East Flatbush',latit
 Restaurant.create([{name: "Aunty Flo", address: '810 St Marks Pl',latitude: 40.674911, longitude: -73.946312}])
 Restaurant.create([{name: "Ernie's", address: "12 Beekman St",latitude: 40.660854, longitude: -73.957599}])
 Restaurant.create([{name: "Chik Filet", address: "1 Union Ave",latitude: 40.706387, longitude: -73.951117}])
+Restaurant.create([{name: "Mexican Taste", address: "66 Parsons Blvd",latitude: 40.734344, longitude: -73.810545}])
+Restaurant.create([{name: "Asia Taste", address: "10 Flushing St",latitude: 40.736188, longitude: -73.789873}])
+Restaurant.create([{name: "KenTing", address: "12 Jamaica St",latitude: 40.721740, longitude: -73.799802}])
 
 lunch_1 = Lunch.create(name: 'Fullstack Pancakes', description: 'Breakfast for lunch!', image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[0].id)
 file_1 = open('https://lunch-bud-seeds.s3.amazonaws.com/pancakes.jpg')
@@ -261,6 +264,24 @@ lunch_47.photo.attach(io: file_47, filename: 'roast_beef.jpg')
 lunch_48 = Lunch.create(name: "Chicken Sandwich", description: "Chicken and Cheese", image_url: 'placeholder' ,size: 'large',restaurant_id: Restaurant.all[47].id)
 file_48 = open('https://lunch-bud-seeds.s3.amazonaws.com/chicken_sandwich.jpg')
 lunch_48.photo.attach(io: file_48, filename: 'chicken_sandwich.jpg')
+
+
+lunch_49 = Lunch.create(name: "Guacamole", description: "Appetizer", image_url: 'placeholder' ,size: 'small',restaurant_id: Restaurant.all[48].id)
+file_49 = open('https://lunch-bud-seeds.s3.amazonaws.com/guac.jpg')
+lunch_49.photo.attach(io: file_49, filename: 'guac.jpg')
+
+lunch_50 = Lunch.create(name: "Mapo Tofu", description: "Classic Chinese", image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[49].id)
+file_50 = open('https://lunch-bud-seeds.s3.amazonaws.com/mapo.jpeg')
+lunch_50.photo.attach(io: file_50, filename: 'mapo.jpeg')
+
+lunch_51 = Lunch.create(name: "Pork Buns", description: "Steamed pork buns", image_url: 'placeholder' ,size: 'medium',restaurant_id: Restaurant.all[50].id)
+file_51 = open('https://lunch-bud-seeds.s3.amazonaws.com/steamed_pork.jpeg')
+lunch_51.photo.attach(io: file_51, filename: 'steamed_pork.jpeg')
+
+
+
+
+
 
 
 

@@ -1,8 +1,14 @@
+
+
 export default class MarkerManager {
+
     constructor(map){
         this.map = map;
         this.markers = {}; 
         this.infoWindows = {}; 
+        this.red_icon = { url: window.red_map_icon, size: new google.maps.Size(10, 10)}; 
+        this.blue_icon = {url: window.blue_map_icon, size: new google.maps.Size(10,10)};
+        debugger
         
     }
 
@@ -45,25 +51,27 @@ export default class MarkerManager {
                 title: restaurant.name,
                 map: this.map, 
                 labelContent: restaurant.name, 
-                labelClass: `marker-label-${restaurant.id}`
+                labelClass: `marker-label-${restaurant.id}`,
+                //icon: this.red_icon
             })
             
+            debugger 
             this.markers[restaurant.id] = marker;   
         
         
 
         let scope_info_windows = this.infoWindows; 
-        debugger
-        marker.addListener('click', function() {
-            infoWindow.open(this.map, marker);
+        
+        // marker.addListener('click', function() {
+        //     infoWindow.open(this.map, marker);
           
-            for(let key in scope_info_windows){
-                debugger
-                if(key != marker.id){
-                    scope_info_windows[key].close(); 
-                }
-            }
-        });
+        //     for(let key in scope_info_windows){
+                
+        //         if(key != marker.id){
+        //             scope_info_windows[key].close(); 
+        //         }
+        //     }
+        // });
 
         
 
@@ -73,23 +81,14 @@ export default class MarkerManager {
         let lunchItem = document.getElementById(`lunch-${marker.id.toString()}`);
 
         if (lunchItem) {
+            //lunchItem.addEventListener('mouseover', () => marker.setIcon(this.blue_icon));
+            //lunchItem.addEventListener('mouseout', () => marker.setIcon(this.red_icon));
+
             lunchItem.addEventListener('mouseover', () => marker.setAnimation(google.maps.Animation.BOUNCE));
             lunchItem.addEventListener('mouseout', () => marker.setAnimation(null));
         }
 
     }
-
-    handleHoverOn(marker){
-        let the_label = document.getElementsByClassName(`marker-label-${marker.id}`)[0];
-        the_label.style.display = 'block'; 
-        //infoWindow.open()
-    }
-
-    handleHoverOff(marker){
-        let the_label = document.getElementsByClassName(`marker-label-${marker.id}`)[0];
-        the_label.style.display = 'none'; 
-    }
-
     
 
     removeMarker(marker){
