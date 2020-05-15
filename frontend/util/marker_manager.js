@@ -1,4 +1,4 @@
-
+//import {createReservation} from '../actions/reservation_actions'
 
 export default class MarkerManager {
 
@@ -8,11 +8,13 @@ export default class MarkerManager {
         this.infoWindows = {}; 
         this.red_icon = { url: window.red_map_icon, size: new google.maps.Size(10, 10)}; 
         this.blue_icon = {url: window.blue_map_icon, size: new google.maps.Size(10,10)};
+        this.removeAllMarkers = this.removeAllMarkers.bind(this); 
         debugger
         
     }
 
     updateMarkers(restaurants){
+        
         let that = this;
         Object.values(restaurants).forEach(restaurant => {
             if (!that.markers[restaurant.id]){
@@ -95,5 +97,12 @@ export default class MarkerManager {
         marker.setMap(null);
         delete this.markers[marker.id];
     }
+
+    removeAllMarkers(){
+        for(let key in this.markers){
+            this.removeMarker(this.markers[key])
+        }
+    }
+   
     
 }

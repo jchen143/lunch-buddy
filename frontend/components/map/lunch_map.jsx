@@ -5,7 +5,6 @@ class LunchMap extends React.Component{
     constructor(props){
         super(props)
         this.initMap = this.initMap.bind(this);
-       
     }
 
     initMap() {
@@ -47,7 +46,7 @@ class LunchMap extends React.Component{
         this.initMap();
         this.registerListeners(); 
         this.MarkerManager.updateMarkers(this.props.restaurants);
-
+        
     
     }
 
@@ -86,15 +85,19 @@ class LunchMap extends React.Component{
 
     }
 
-    
+    componentWillUnmount(){
+        this.MarkerManager.removeAllMarkers(); 
+    }
 
 
 
     render() {
         
         return (
+            <div className="map-sidebar">
             <div id="map-container" ref={map => this.mapNode = map}>
 
+            </div>
             </div>
 
         )
