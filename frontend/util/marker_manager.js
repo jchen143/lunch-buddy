@@ -30,22 +30,22 @@ export default class MarkerManager {
     }
 
     createMarkerFromRestaurant(restaurant){
-            let myLatLng = new google.maps.LatLng(restaurant.latitude, restaurant.longitude);
+             let myLatLng = new google.maps.LatLng(restaurant.latitude, restaurant.longitude);
 
-            let meal_info = document.createElement('div'); 
+            // let meal_info = document.createElement('div'); 
             
-            let food_pic_url = restaurant.lunch_url; 
-            let food_pic = document.createElement('img'); 
+            // let food_pic_url = restaurant.lunch_url; 
+            // let food_pic = document.createElement('img'); 
             
-            food_pic.src = food_pic_url; 
+            // food_pic.src = food_pic_url; 
 
-            meal_info.appendChild(food_pic); 
+            // meal_info.appendChild(food_pic); 
            
-        let infoWindow = new google.maps.InfoWindow({
-            content: meal_info
-        });
+        // let infoWindow = new google.maps.InfoWindow({
+        //     content: meal_info
+        // });
 
-        this.infoWindows[restaurant.id] = infoWindow; 
+        // this.infoWindows[restaurant.id] = infoWindow; 
        
             let marker = new google.maps.Marker({
                 id: restaurant.id,
@@ -62,7 +62,7 @@ export default class MarkerManager {
         
         
 
-        let scope_info_windows = this.infoWindows; 
+        // let scope_info_windows = this.infoWindows; 
         
         // marker.addListener('click', function() {
         //     infoWindow.open(this.map, marker);
