@@ -37,8 +37,9 @@ class Search extends React.Component{
     }
     onSelect(e){
         
-        
-        this.props.updateUser({location: e.currentTarget.value}).then(() => this.props.history.push("/")) 
+        if(e.currentTarget.value !== ""){
+            this.props.updateUser({location: e.currentTarget.value}).then(() => this.props.history.push("/")) 
+        }
         
 
     }
@@ -60,13 +61,13 @@ class Search extends React.Component{
     }
     render(){
 
-
+    
         return(
             <>
                 <div className="select-wrapper">
-                <select className="search-select" id="searchSelector"onChange={this.onSelect}>
+                <select className="search-select" id="searchSelector"onChange={this.onSelect} value={this.props.user[this.props.current_user_id].location ? this.props.user[this.props.current_user_id].location : ""}>
                     
-                    <option value="" disabled selected>Select your neighborhood</option>
+                    <option value="">Select your neighborhood</option>
                     <option value="Manhattan">Manhattan</option>
                     <option value="Bronx">Bronx</option>
                     <option value="Brooklyn">Brooklyn</option>
@@ -78,7 +79,7 @@ class Search extends React.Component{
                 </div>
 
             <form className="restaurant-lunch-search" onSubmit={this.handleSubmit}>
-                <input type="text" value={this.state.query} onChange={this.handleChange('query')} placeholder="Search by restaurant or meal"/>
+                <input type="text" value={this.state.query} onChange={this.handleChange('query')} placeholder="Search: (eg. burger, The Diner, sushi)"/>
                 <button><img src={window.search}/></button> 
             </form>
             <div></div>

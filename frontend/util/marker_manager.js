@@ -9,7 +9,7 @@ export default class MarkerManager {
         this.red_icon = { url: window.red_map_icon, size: new google.maps.Size(10, 10)}; 
         this.blue_icon = {url: window.blue_map_icon, size: new google.maps.Size(10,10)};
         this.removeAllMarkers = this.removeAllMarkers.bind(this); 
-        debugger
+    
         
     }
 
@@ -57,7 +57,7 @@ export default class MarkerManager {
                 //icon: this.red_icon
             })
             
-            debugger 
+          
             this.markers[restaurant.id] = marker;   
         
         

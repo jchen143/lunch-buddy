@@ -8,7 +8,8 @@ const msp = (state, ownProps) => {
     return {
         bounds: state.ui.filters.bounds, 
         user: state.entities.users,
-        history: ownProps.history
+        history: ownProps.history,
+        current_user_id: state.session.currentUserId
     }
 }
 
