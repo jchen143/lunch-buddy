@@ -25,8 +25,7 @@ class Reservation < ApplicationRecord
         through: :lunch,
         source: :restaurant 
 
-    #we have to make sure that the reservation is valid by passsing in current user to see if they have enough meals left,
-    # do they 
+ 
 
     def ensure_user_has_remaining_meals
         user = User.find(diner_id)
@@ -47,7 +46,7 @@ class Reservation < ApplicationRecord
 
     end 
 
-    #use this for index
+   
     def self.reservations_for_current_user(user)
         records = self.where('diner_id = ?', user.id)
         return records 
